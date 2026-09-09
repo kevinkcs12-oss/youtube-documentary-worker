@@ -6,23 +6,24 @@ import hashlib
 import json
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse
 
-def run(cmd):
-    print("+", " ".join(cmd), flush=True)
-    subprocess.run(cmd, check=True)
+def run(command: list[str]) -> None:
+    print("+", " ".join(command), flush=True)
+    subprocess.run(command, check=True)
 
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             h.update(chunk)
     return h.hexdigest()
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--manifest", type=Path, required=True)
-    ap.add_argument("--output-dir", type=Path, default=Path("dist/pexels"))
-    args = ap.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument("--output-dir", type=Path, default=Path("dist/pexels"))
+    args = parser.parse_args()
 
     data = json.loads(args.manifest.read_text(encoding="utf-8"))
     out = args.output_dir
@@ -31,55 +32,49 @@ def main() -> int:
     results = []
     for asset in data["assets"]:
         asset_id = asset["id"]
-        page_url = asset["page_url"]
-        target_tpl = str(out / f"{asset_id}.%(ext)s")
+        numeric_id = asset_id.rsplit("-", 1)[-1]
+        download_url = f"https://www.pexels.com/download/video/{numeric_id}/"
+        media = out / f"{asset_id}.mp4"
 
-        before = set(out.iterdir())
+        # Use Pexels' own public download endpoint instead of scraping the
+        # JavaScript-heavy video page. The endpoint normally redirects to
+        # the videos.pexels.com CDN.
         run([
-            "yt-dlp",
-            "--no-playlist",
-            "--restrict-filenames",
-            "--merge-output-format", "mp4",
-            "-f", "bv*+ba/b",
-            "-o", target_tpl,
-            page_url,
+            "curl", "--fail", "--location",
+            "--retry", "3", "--retry-delay", "2",
+            "--user-agent", "Mozilla/5.0",
+            "--output", str(media),
+            download_url,
         ])
-        after = set(out.iterdir())
-        created = sorted(
-            p for p in (after - before)
-            if p.is_file() and p.name.startswith(asset_id + ".")
-        )
-        if not created:
-            created = sorted(out.glob(asset_id + ".*"))
-        if not created:
-            raise SystemExit(f"No file produced for {asset_id}")
 
-        media = max(created, key=lambda p: p.stat().st_size)
+        # Reject HTML/error bodies masquerading as media.
         probe = out / f"{asset_id}.ffprobe.json"
-        with probe.open("w", encoding="utf-8") as f:
+        with probe.open("w", encoding="utf-8") as handle:
             subprocess.run([
                 "ffprobe", "-v", "error",
                 "-show_format", "-show_streams",
                 "-of", "json", str(media)
-            ], stdout=f, check=True)
+            ], stdout=handle, check=True)
 
         contact = out / f"{asset_id}.contact-sheet.jpg"
         run([
             "ffmpeg", "-y", "-i", str(media),
             "-vf", "fps=0.5,scale=480:-1,tile=4x4",
             "-frames:v", "1",
-            str(contact)
+            str(contact),
         ])
 
         digest = sha256(media)
         (out / f"{asset_id}.sha256").write_text(
-            f"{digest}  {media.name}\n", encoding="utf-8"
+            f"{digest}  {media.name}\n",
+            encoding="utf-8",
         )
 
         results.append({
             "id": asset_id,
             "creator": asset["creator"],
-            "page_url": page_url,
+            "page_url": asset["page_url"],
+            "download_endpoint": download_url,
             "role": asset["role"],
             "file": media.name,
             "bytes": media.stat().st_size,
@@ -92,9 +87,9 @@ def main() -> int:
         json.dumps({
             "status": "completed",
             "project": data["project"],
-            "assets": results
+            "assets": results,
         }, indent=2),
-        encoding="utf-8"
+        encoding="utf-8",
     )
     print(json.dumps(results, indent=2))
     return 0
