@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "output": {
+    "filename": "pilot-01-structure-v1.1.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "crf": 20,
+    "preset": "veryfast"
+  },
+  "scenes": [
+    {"type": "color", "color": "#111827", "duration": 64},
+    {"type": "color", "color": "#273449", "duration": 78},
+    {"type": "color", "color": "#374151", "duration": 76},
+    {"type": "color", "color": "#4B5563", "duration": 77},
+    {"type": "color", "color": "#6B7280", "duration": 80},
+    {"type": "color", "color": "#4B5563", "duration": 85},
+    {"type": "color", "color": "#273449", "duration": 76},
+    {"type": "color", "color": "#111827", "duration": 86}
+  ]
+}
