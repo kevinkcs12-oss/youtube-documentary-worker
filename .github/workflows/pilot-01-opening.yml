@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "jobs/pilot-01-opening-real-assets-v0.1.json"
+      - "scripts/run_media_job.py"
       - "production/pilot-01/opening-real-assets-v0.1.md"
       - ".github/workflows/pilot-01-opening.yml"
 
