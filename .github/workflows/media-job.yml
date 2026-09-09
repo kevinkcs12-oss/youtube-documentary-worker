@@ -12,7 +12,7 @@ on:
     branches:
       - main
     paths:
-      - "jobs/**"
+      - "jobs/pilot-01-structure-v1.1.json"
       - "scripts/run_media_job.py"
       - "tests/**"
       - ".github/workflows/media-job.yml"
