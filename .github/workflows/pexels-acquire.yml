@@ -1,0 +1,43 @@
+name: Pexels Opening Asset Acquisition
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "jobs/pilot-01-pexels-opening.json"
+      - "scripts/fetch_pexels_assets.py"
+      - ".github/workflows/pexels-acquire.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install media tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade yt-dlp
+
+      - name: Acquire opening Pexels masters
+        run: |
+          python scripts/fetch_pexels_assets.py             --manifest jobs/pilot-01-pexels-opening.json             --output-dir dist/pexels
+
+      - name: Upload acquisition package
+        uses: actions/upload-artifact@v4
+        with:
+          name: pilot-01-pexels-opening-${{ github.run_id }}
+          path: dist/pexels/
+          if-no-files-found: error
+          retention-days: 7
