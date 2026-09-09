@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "project": "Why Does Everything Look the Same Now?",
+  "purpose": "Canonical opening gap fill",
+  "assets": [
+    {
+      "id": "pexels-3848792",
+      "creator": "Tom Fisk",
+      "page_url": "https://www.pexels.com/video/aerial-footage-of-cars-on-a-parking-lot-3848792/",
+      "role": "neutral-car parking pattern"
+    },
+    {
+      "id": "pexels-5801020",
+      "creator": "Peggy Anke",
+      "page_url": "https://www.pexels.com/video/apartment-building-facade-5801020/",
+      "role": "modern apartment facade"
+    },
+    {
+      "id": "pexels-7402387",
+      "creator": "cottonbro studio",
+      "page_url": "https://www.pexels.com/video/modern-interior-design-of-a-coffee-shop-7402387/",
+      "role": "minimalist pale-wood contemporary cafe"
+    },
+    {
+      "id": "pexels-6962182",
+      "creator": "Eva Bronzini",
+      "page_url": "https://www.pexels.com/video/a-smartphone-application-6962182/",
+      "role": "modern smartphone application interface"
+    }
+  ]
+}
