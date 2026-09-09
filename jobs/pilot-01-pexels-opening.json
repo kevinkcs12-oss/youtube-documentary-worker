@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project": "Why Does Everything Look the Same Now?",
+  "purpose": "Opening asset acquisition test",
+  "assets": [
+    {
+      "id": "pexels-12187901",
+      "creator": "Said",
+      "page_url": "https://www.pexels.com/video/storefront-of-bookshop-12187901/",
+      "role": "independent bookstore storefront"
+    },
+    {
+      "id": "pexels-5243465",
+      "creator": "Peggy Anke",
+      "page_url": "https://www.pexels.com/video/seating-arrangements-at-a-cafe-5243465/",
+      "role": "contemporary cafe interior"
+    },
+    {
+      "id": "pexels-6775059",
+      "creator": "Kindel Media",
+      "page_url": "https://www.pexels.com/video/exterior-design-of-an-office-building-6775059/",
+      "role": "contemporary office exterior"
+    }
+  ]
+}
