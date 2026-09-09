@@ -6,8 +6,15 @@ on:
       job_path:
         description: Repository-relative Layer C JSON manifest
         required: true
-        default: examples/layer-c-demo.json
+        default: jobs/pilot-01-structure-v1.1.json
         type: string
+  push:
+    branches:
+      - main
+    paths:
+      - "jobs/**"
+      - "scripts/run_media_job.py"
+      - "tests/**"
 
 permissions:
   contents: read
@@ -20,6 +27,8 @@ jobs:
   validate-and-render:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      JOB_PATH: ${{ inputs.job_path || 'jobs/pilot-01-structure-v1.1.json' }}
 
     steps:
       - name: Checkout repository
@@ -34,8 +43,6 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Validate requested job path
-        env:
-          JOB_PATH: ${{ inputs.job_path }}
         run: |
           python - <<'PY'
           import os
@@ -51,8 +58,6 @@ jobs:
           PY
 
       - name: Render Layer C job
-        env:
-          JOB_PATH: ${{ inputs.job_path }}
         run: python scripts/run_media_job.py --job "$JOB_PATH" --output-dir dist
 
       - name: Upload render and audit report
