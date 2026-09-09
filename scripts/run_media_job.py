@@ -64,6 +64,7 @@ def validate(job: dict[str, Any], root: Path) -> tuple[Settings, list[dict[str, 
         kind=scene.get("type"); require(kind in {"video","image","color"}, f"{label}.type must be video, image, or color")
         total += number(scene.get("duration"), f"{label}.duration", .1, 3600)
         if kind in {"video","image"}: resolve_asset(scene.get("source"), root, f"{label}.source")
+        if "fit" in scene: require(scene["fit"] in {"contain","cover"}, f"{label}.fit must be contain or cover")
         if "start" in scene: number(scene["start"], f"{label}.start", 0, 86400)
         if kind == "color": require(isinstance(scene.get("color", "#111111"), str) and len(scene.get("color", "#111111")) <= 32, f"{label}.color is invalid")
     require(total <= 21600, "timeline cannot exceed six hours")
@@ -74,8 +75,18 @@ def validate(job: dict[str, Any], root: Path) -> tuple[Settings, list[dict[str, 
     if "subtitles" in job: resolve_asset(job["subtitles"], root, "subtitles")
     return settings, scenes
 
-def video_filter(s: Settings) -> str:
-    return f"tpad=stop_mode=clone:stop_duration=3600,scale={s.width}:{s.height}:force_original_aspect_ratio=decrease,pad={s.width}:{s.height}:(ow-iw)/2:(oh-ih)/2:color=black,fps={s.fps},format=yuv420p,setsar=1"
+def video_filter(s: Settings, fit: str = "contain") -> str:
+    if fit == "cover":
+        framing = (
+            f"scale={s.width}:{s.height}:force_original_aspect_ratio=increase,"
+            f"crop={s.width}:{s.height}"
+        )
+    else:
+        framing = (
+            f"scale={s.width}:{s.height}:force_original_aspect_ratio=decrease,"
+            f"pad={s.width}:{s.height}:(ow-iw)/2:(oh-ih)/2:color=black"
+        )
+    return f"tpad=stop_mode=clone:stop_duration=3600,{framing},fps={s.fps},format=yuv420p,setsar=1"
 
 def render_scene(scene: dict[str, Any], i: int, root: Path, target: Path, s: Settings) -> None:
     kind=scene["type"]
@@ -85,7 +96,7 @@ def render_scene(scene: dict[str, Any], i: int, root: Path, target: Path, s: Set
         source=[]
         if scene.get("start") is not None: source += ["-ss",str(float(scene["start"]))]
         source += ["-i",str(resolve_asset(scene["source"],root,f"scenes[{i}].source"))]
-    run(["ffmpeg","-hide_banner","-loglevel","error","-y",*source,"-t",str(float(scene["duration"])),"-an","-vf",video_filter(s),"-c:v","libx264","-preset",s.preset,"-crf",str(s.crf),"-pix_fmt","yuv420p",str(target)])
+    run(["ffmpeg","-hide_banner","-loglevel","error","-y",*source,"-t",str(float(scene["duration"])),"-an","-vf",video_filter(s, str(scene.get("fit","contain"))),"-c:v","libx264","-preset",s.preset,"-crf",str(s.crf),"-pix_fmt","yuv420p",str(target)])
 
 def concat_scenes(paths: list[Path], target: Path) -> None:
     listing=target.with_suffix(".txt"); listing.write_text("".join(f"file '{p.as_posix()}'\n" for p in paths),encoding="utf-8")
