@@ -1,14 +1,24 @@
-name: Smoke Test
+name: Layer C CI
 
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
 
 jobs:
-  smoke-test:
+  test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Confirm GitHub Actions works
-        run: echo "GitHub Actions is working"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run test suite
+        run: python -m unittest discover -s tests -v
+      - name: Validate demo manifest
+        run: python scripts/run_media_job.py --job examples/layer-c-demo.json --output-dir dist --validate-only

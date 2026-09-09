@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "output": {"filename": "documentary.mp4", "width": 1280, "height": 720, "fps": 30, "crf": 20, "preset": "medium"},
+  "scenes": [
+    {"type": "color", "color": "#111827", "duration": 1.0},
+    {"type": "color", "color": "#C89B3C", "duration": 1.0}
+  ]
+}

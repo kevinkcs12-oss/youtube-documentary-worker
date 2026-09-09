@@ -1,11 +1,25 @@
-name: Media Job
+name: Layer C Media Job
 
 on:
   workflow_dispatch:
+    inputs:
+      job_path:
+        description: Repository-relative Layer C JSON manifest
+        required: true
+        default: examples/layer-c-demo.json
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: layer-c-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  media-job:
+  validate-and-render:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -16,5 +30,35 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run media job
-        run: python scripts/run_media_job.py
+      - name: Validate worker tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate requested job path
+        env:
+          JOB_PATH: ${{ inputs.job_path }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          requested = (root / os.environ["JOB_PATH"]).resolve()
+          try:
+              requested.relative_to(root)
+          except ValueError:
+              raise SystemExit("job_path must stay inside the repository")
+          if requested.suffix.lower() != ".json" or not requested.is_file():
+              raise SystemExit("job_path must reference an existing JSON file")
+          PY
+
+      - name: Render Layer C job
+        env:
+          JOB_PATH: ${{ inputs.job_path }}
+        run: python scripts/run_media_job.py --job "$JOB_PATH" --output-dir dist
+
+      - name: Upload render and audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: layer-c-${{ github.run_id }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7
