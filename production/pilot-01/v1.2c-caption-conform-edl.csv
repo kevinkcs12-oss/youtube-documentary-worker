@@ -1,0 +1,8 @@
+sequence,new_start,new_end,duration_s,source_treatment,cumulative_shift_s,protected_claims
+1-2,00:00.000,02:22.000,142.000,rights-safe first block v1.2 unchanged,0,opening thesis; museum/Axalta evidence; sample and causality caveats
+3,02:22.000,03:32.000,70.000,replace 02:28-02:42; remove six seconds; remainder shifted,-6,processing fluency remains probabilistic
+4,03:32.000,04:49.000,77.000,unchanged sequence shifted,-6,function versus aesthetic imitation; Jakob's Law boundary
+5,04:49.000,06:09.000,80.000,unchanged sequence shifted,-6,McDonald's case bounded; scale mechanism
+6,06:09.000,07:24.000,75.000,replace 06:16-07:10 with corrected 128-word passage; retain original close,-16,Spotify limited to music recommendation trade-off; loop labeled documentary model
+7,07:24.000,08:40.000,76.000,unchanged sequence shifted,-16,named counterexamples; no frequency inference
+8,08:40.000,10:02.000,82.000,retention conclusion v1.2 regenerated at native cadence,-20,case-linked synthesis; defensibility test; no universal causality
