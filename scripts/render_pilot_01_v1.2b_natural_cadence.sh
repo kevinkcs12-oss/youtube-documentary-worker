@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")" && pwd)"
-FIRST="$ROOT/materialized/Pilot_01_Animatic_Scratch_Voice_00m00_02m22_v1.2_rights_safe.mp4"
-TIMING="$ROOT/materialized/Pilot_01_Animatic_Scratch_Voice_00m00_10m02_v1.2_retention_test_delivery_exact.mp4"
-WORK="$ROOT/v12b_work"
-OUT="$ROOT/Pilot_01_Animatic_Scratch_Voice_00m00_10m02_v1.2b_natural_cadence.mp4"
+REPO_ROOT="${PILOT_ROOT:-$(cd "$(dirname "$0")/.." && pwd)}"
+FIRST="${FIRST_BLOCK_INPUT:-$REPO_ROOT/inputs/Pilot_01_Animatic_Scratch_Voice_00m00_02m22_v1.2_rights_safe.mp4}"
+TIMING="${RETENTION_TEST_INPUT:-$REPO_ROOT/inputs/Pilot_01_Animatic_Scratch_Voice_00m00_10m02_v1.2_retention_test_delivery_exact.mp4}"
+SEG_A="${SEGMENT_A_TEXT:-$REPO_ROOT/production/pilot-01/v1.2b-segment-A.txt}"
+SEG_B="${SEGMENT_B_TEXT:-$REPO_ROOT/production/pilot-01/v1.2b-segment-B.txt}"
+WORK="${WORK_DIR:-$REPO_ROOT/work/v12b}"
+DELIVERY_DIR="${DELIVERY_DIR:-$REPO_ROOT/output}"
+OUT="$DELIVERY_DIR/Pilot_01_Animatic_Scratch_Voice_00m00_10m02_v1.2b_natural_cadence.mp4"
 
-mkdir -p "$WORK"
+mkdir -p "$WORK" "$DELIVERY_DIR"
 
 printf '%s  %s\n' \
   '97e14b3d2d64bdb54c188ed4c5276c560dfd2af9d3078c0641af5d009cabad14' "$FIRST" \
@@ -18,10 +21,10 @@ sha256sum -c "$WORK/input.sha256"
 # Local Flite is only a timing instrument. These files are generated at the
 # synthesizer's native cadence, then padded—not sped up—to their edit slots.
 ffmpeg -y -loglevel error -f lavfi \
-  -i "flite=textfile=$ROOT/Pilot_01_v1.2b_segment_A.txt:voice=slt" \
+  -i "flite=textfile=$SEG_A:voice=slt" \
   -ar 48000 -ac 1 "$WORK/A_raw.wav"
 ffmpeg -y -loglevel error -f lavfi \
-  -i "flite=textfile=$ROOT/Pilot_01_v1.2b_segment_B.txt:voice=slt" \
+  -i "flite=textfile=$SEG_B:voice=slt" \
   -ar 48000 -ac 1 "$WORK/B_raw.wav"
 
 ffmpeg -y -loglevel error -i "$WORK/A_raw.wav" \
@@ -57,14 +60,13 @@ ffmpeg -v error -i "$OUT" -f null -
 
 ffmpeg -y -loglevel error -ss 140 -i "$OUT" -t 24 \
   -vf 'fps=1/2,scale=480:-1,tile=4x3:padding=4:margin=4:color=white' \
-  -frames:v 1 "$ROOT/Pilot_01_v1.2b_Boundary_A_QA.jpg"
+  -frames:v 1 "$DELIVERY_DIR/Pilot_01_v1.2b_Boundary_A_QA.jpg"
 ffmpeg -y -loglevel error -ss 372 -i "$OUT" -t 62 \
   -vf 'fps=1/5,scale=480:-1,tile=4x3:padding=4:margin=4:color=white' \
-  -frames:v 1 "$ROOT/Pilot_01_v1.2b_Boundary_B_QA.jpg"
+  -frames:v 1 "$DELIVERY_DIR/Pilot_01_v1.2b_Boundary_B_QA.jpg"
 ffmpeg -y -loglevel error -i "$OUT" \
   -vf 'fps=1/20,scale=480:-1,tile=6x6:nb_frames=36:padding=4:margin=4:color=white' \
-  -frames:v 1 "$ROOT/Pilot_01_v1.2b_Full_Contact_Sheet.jpg"
+  -frames:v 1 "$DELIVERY_DIR/Pilot_01_v1.2b_Full_Contact_Sheet.jpg"
 
-sha256sum "$OUT" "$WORK/A_14s.wav" "$WORK/B_54s.wav" \
-  "$ROOT/Pilot_01_v1.2b_Natural_Cadence_Narration.md" \
-  > "$ROOT/Pilot_01_v1.2b_SHA256SUMS.txt"
+sha256sum "$OUT" "$WORK/A_14s.wav" "$WORK/B_54s.wav" "$SEG_A" "$SEG_B" \
+  > "$DELIVERY_DIR/Pilot_01_v1.2b_SHA256SUMS.txt"
