@@ -5,7 +5,7 @@ Canonical title: **Why Does Everything Look the Same Now?**
 Current production baseline:
 - Master script v1.1 remains the canonical editorial source.
 - Full animatic v1.1 runtime: 10:22.
-- Active reversible timing/accessibility candidate: **v1.2c-caption-conform**, 10:02.
+- Active reversible review candidate: **v1.2d-evidence-safezone**, 10:02.
 - Eight-sequence structure and all seven evidence families remain intact.
 - Layer C production worker and CI are validated; no paid assets or services are used.
 
@@ -31,11 +31,21 @@ Validated v1.2c timing and caption conform:
 - QA: `production/pilot-01/v1.2c-caption-conform-qa.md`.
 - SRT/EDL: `production/pilot-01/v1.2c-caption-conform.srt` and `production/pilot-01/v1.2c-caption-conform-edl.csv`.
 
+Validated v1.2d evidence safe-zone conform:
+- Captioned contact-sheet review found a systematic defect: lower source and claim-boundary text was often hidden by two-line player captions.
+- Twenty bounded upper-band overlays now duplicate only indispensable source, scope, illustration-status, and falsification labels. Narration, subtitles, EDL, and runtime are unchanged.
+- Runtime: exactly 602.000 seconds / 15,050 frames, 1920×1080/25 fps; full decode passed.
+- Master SHA-256: `528af6373501f57a64b333696679856d6ea85309e041f273caecb9ac40e81e80`.
+- Encoded audio is byte-identical to v1.2c (`MD5 2d00f8a41c542f1c07eac5fbd074cc26`).
+- Locked layout rule: reserve y=820–1040 at 1080p for captions/player chrome; indispensable evidence text must finish above y=810.
+- Builder: `scripts/build_pilot_01_v1_2d_evidence_safezone.py`; QA and overlay map live under `production/pilot-01/`.
+- v1.2d is the active reversible audiovisual review candidate. It is not picture lock and does not choose a final voice.
+
 Current bottleneck:
-- Caption burn confirms that player captions can still cover tertiary source/caveat lines on evidence cards. Indispensable qualifications must move above the lower caption band.
-- Final audiovisual retention and motion timing require real-time review; contact sheets only validate structure and boundary alignment.
+- The 06:53–07:10 explanatory-loop card remains static for 16.80 seconds and is now the dominant visual-fatigue risk.
+- Transition silences at 03:28.65–03:32.61 and 04:45.77–04:50.04 need a real-time editorial listen before any cut.
 
 Next production gate:
-- Run a real-time audiovisual review of the complete 10:02 captioned proxy, then implement only the indispensable lower-third safe-zone corrections before any canonical promotion or picture lock.
+- Create a reversible motion-accent pass for 06:53–07:10 that preserves the explanatory-model boundary, then compare it against v1.2d in a real-time audiovisual review.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
