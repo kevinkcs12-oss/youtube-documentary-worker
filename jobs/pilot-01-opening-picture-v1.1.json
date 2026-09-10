@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "output": {
+    "filename": "pilot-01-opening-picture-v1.1.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "crf": 20,
+    "preset": "veryfast"
+  },
+  "scenes": [
+    {"type":"video","source":"assets/pexels/pexels-3848792.mp4","start":4,"duration":4},
+    {"type":"video","source":"assets/pexels/pexels-7402387.mp4","start":1,"duration":4,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-5801020.mp4","start":1,"duration":4,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-6962182.mp4","start":1,"duration":4,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-6775059.mp4","start":1,"duration":4},
+    {"type":"video","source":"assets/pexels/pexels-3848792.mp4","start":12,"duration":4},
+    {"type":"video","source":"assets/pexels/pexels-7402387.mp4","start":10,"duration":4,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-12187901.mp4","start":8,"duration":7},
+    {"type":"video","source":"assets/pexels/pexels-5243465.mp4","start":3,"duration":7,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-6775059.mp4","start":10,"duration":6},
+    {"type":"video","source":"assets/pexels/pexels-12187901.mp4","start":18,"duration":6},
+    {"type":"video","source":"assets/pexels/pexels-5243465.mp4","start":12,"duration":6,"fit":"cover"}
+  ]
+}
