@@ -5,7 +5,7 @@ Canonical title: **Why Does Everything Look the Same Now?**
 Current production baseline:
 - Master script v1.1 remains the canonical editorial source.
 - Full animatic v1.1 runtime: 10:22.
-- Active reversible retention candidate: **v1.2b-natural-cadence**, 10:02.
+- Active reversible timing/accessibility candidate: **v1.2c-caption-conform**, 10:02.
 - Eight-sequence structure and all seven evidence families remain intact.
 - Layer C production worker and CI are validated; no paid assets or services are used.
 
@@ -16,24 +16,26 @@ Validated first block:
 - Scratch-voice SHA-256: `97e14b3d2d64bdb54c188ed4c5276c560dfd2af9d3078c0641af5d009cabad14`.
 - Rights and claim-function gates pass. Final motion design must keep indispensable caveats above the lower caption band.
 
-Validated v1.2b retention candidate:
+Validated v1.2c timing and caption conform:
 - Runtime: exactly 602.000 seconds / 15,050 frames, 1920×1080/25 fps; full decode passed.
-- Master SHA-256: `274fc7d2903dc1366b4bcebc3434b9244d37e43b5ab9eda139e0def651cba95a`.
-- The v1.2 speedups are removed. Replacement A is 32 words in 14 seconds (137.1 effective WPM); replacement B is 131 words in 54 seconds (145.6 effective WPM).
-- Local Flite speech is generated at native cadence and padded; no `atempo` or finished-voice acceleration is used.
-- F3 remains probabilistic; Spotify remains limited to familiarity/similarity/discovery in music recommendation; the visual-convergence loop is explicitly the documentary's model, not Spotify's finding.
-- The rights-safe first 2:22, quantitative evidence, all named counterexamples, and the 82-second conclusion candidate are preserved.
-- v1.2b supersedes v1.2-retention-test as the active reversible timing/cadence candidate, but is not picture lock and does not choose a final voice.
-- Reproducible script: `scripts/render_pilot_01_v1.2b_natural_cadence.sh`.
-- QA: `production/pilot-01/v1.2b-natural-cadence-qa.md`.
-- Narration diff: `production/pilot-01/v1.2b-natural-cadence-narration.md`.
+- Corrected master SHA-256: `03c6d5dd01a4bce55e860a89e32e8a924fba5dcc9f419fde858cbafd27d77e11`.
+- The earlier v1.2b master (`274fc7d...`) is rejected: full subtitle conform exposed a partial semantic duplicate at the Sequence 6 splice.
+- Replacement B is corrected to 128 words in 54 seconds (142.2 effective WPM; 52.765 seconds / 145.5 WPM native Flite speech). It now ends by labeling the loop as the documentary's model; the retained close separately rejects conspiracy framing and defines the expensive-exception pressure.
+- Replacement A remains 32 words in 14 seconds (137.1 effective WPM). No `atempo` or finished-voice acceleration is used.
+- Exact EDL: Sequences 1–2 00:00–02:22; S3 02:22–03:32; S4 03:32–04:49; S5 04:49–06:09; S6 06:09–07:24; S7 07:24–08:40; S8 08:40–10:02.
+- Full SRT has 161 ordered, overlap-free cues, maximum two lines, one 43-character legacy exception and no cue above 20 characters/second; final cue ends at 10:01.200.
+- F3 remains probabilistic; Spotify remains limited to familiarity/similarity/discovery in music recommendation; the visual-convergence loop is explicitly the documentary's synthesis.
+- The rights-safe first 2:22, quantitative evidence, named counterexamples and 82-second conclusion candidate are preserved.
+- v1.2c is an active reversible timing, semantic-continuity and subtitle authority. It is not picture lock and does not choose a final voice.
+- Caption generator: `scripts/build_pilot_01_v1_2c_caption_conform.py`.
+- QA: `production/pilot-01/v1.2c-caption-conform-qa.md`.
+- SRT/EDL: `production/pilot-01/v1.2c-caption-conform.srt` and `production/pilot-01/v1.2c-caption-conform-edl.csv`.
 
 Current bottleneck:
-- The 10:02 timeline lacks an exact full subtitle/EDL conform for the new timing map.
-- Tertiary source lines remain vulnerable to player-caption occlusion.
-- Final audiovisual retention and motion timing cannot be judged from contact sheets alone.
+- Caption burn confirms that player captions can still cover tertiary source/caveat lines on evidence cards. Indispensable qualifications must move above the lower caption band.
+- Final audiovisual retention and motion timing require real-time review; contact sheets only validate structure and boundary alignment.
 
 Next production gate:
-- Build the exact full 10:02 SRT/EDL conform, then run real-time audiovisual and caption-safe-zone QA before any canonical promotion or picture lock.
+- Run a real-time audiovisual review of the complete 10:02 captioned proxy, then implement only the indispensable lower-third safe-zone corrections before any canonical promotion or picture lock.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
