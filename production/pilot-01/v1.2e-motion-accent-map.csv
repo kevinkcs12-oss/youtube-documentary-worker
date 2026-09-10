@@ -1,0 +1,6 @@
+start,end,stage,visual_accent,semantic_guardrail
+06:53.000,06:56.400,FAMILIAR,restrained halo pulse plus one traveling bead toward RECOGNIZED,qualitative sequence only; no value scale or counter
+06:56.400,06:59.800,RECOGNIZED,restrained halo pulse plus one traveling bead toward CHOSEN,qualitative sequence only; no value scale or counter
+06:59.800,07:03.200,CHOSEN,upper-clipped halo pulse plus one traveling bead toward MEASURED,reserved caption band remains unobstructed
+07:03.200,07:06.600,MEASURED,upper-clipped halo pulse plus one traveling bead toward IMITATED,reserved caption band remains unobstructed
+07:06.600,07:10.000,IMITATED,restrained halo pulse plus one traveling bead toward FAMILIAR,cycle closes without implying frequency or magnitude
