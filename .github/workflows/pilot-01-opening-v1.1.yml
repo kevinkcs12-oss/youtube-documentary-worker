@@ -1,0 +1,57 @@
+name: Pilot 01 Opening Picture v1.1
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "jobs/pilot-01-opening-picture-v1.1.json"
+      - "production/pilot-01/opening-picture-v1.1.md"
+      - ".github/workflows/pilot-01-opening-v1.1.yml"
+      - "scripts/run_media_job.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pilot-01-opening-picture-v1-1
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Acquire approved opening masters
+        run: |
+          mkdir -p jobs/assets/pexels
+          for id in 3848792 7402387 5801020 6962182 6775059 12187901 5243465; do
+            curl --fail --location --retry 3 --retry-delay 2 --user-agent "Mozilla/5.0" --output "jobs/assets/pexels/pexels-${id}.mp4" "https://www.pexels.com/download/video/${id}/"
+          done
+
+      - name: Render Sequence 1 v1.1
+        run: |
+          python scripts/run_media_job.py --job jobs/pilot-01-opening-picture-v1.1.json --output-dir dist/opening-v1-1
+
+      - name: Create editorial contact sheet
+        run: |
+          ffmpeg -hide_banner -loglevel error -y -i dist/opening-v1-1/pilot-01-opening-picture-v1.1.mp4 -vf "fps=1/4,scale=480:-1,tile=4x4" -frames:v 1 -update 1 dist/opening-v1-1/editorial-contact-sheet.jpg
+
+      - name: Upload Sequence 1 v1.1
+        uses: actions/upload-artifact@v4
+        with:
+          name: pilot-01-opening-picture-v1-1-${{ github.run_id }}
+          path: dist/opening-v1-1/
+          if-no-files-found: error
+          retention-days: 7
