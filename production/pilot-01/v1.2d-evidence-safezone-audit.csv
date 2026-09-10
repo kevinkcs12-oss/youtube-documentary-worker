@@ -1,0 +1,21 @@
+priority,start,end,sequence,problem,retained_fix,status
+P0,01:04,01:36,2,Museum sample limitation can be hidden by captions,Upper band states limited collection and non-random sample,FIXED
+P0,01:36,02:22,2,Axalta attribution can be hidden by captions,Upper band names Axalta 2025 global new-vehicle report,FIXED
+P0,02:42,02:54,3,Review evidence can be mistaken for universal preference law,Upper band states proposed relationship and non-universal boundary,FIXED
+P1,03:38,03:51,4,Jakob source footer is obscured,Upper band names Nielsen Norman Group and Jakob's Law,FIXED
+P0,04:01,04:07,4,Function/style distinction loses its visible qualification,Upper band states function does not require one aesthetic,FIXED
+P0,04:07,04:19,4,Invented modern-signals panel can resemble prevalence evidence,Upper band labels illustration and not prevalence data,FIXED
+P1,04:19,04:33,4,Responsive identity source and invented status are obscured,Upper band names Sinteza 2016 and invented identity,FIXED
+P0,04:54,05:23,5,Corporate chronology attribution is hidden by captions,Upper band discloses company-authored McDonald's source,FIXED
+P0,05:23,05:34,5,Existence example can be overread as frequency,Upper band states variation exists and frequency is unmeasured,FIXED
+P0,06:04,06:09,5,One chronology can be mistaken for proof,Upper band states the chronology does not prove the rule,FIXED
+P0,06:37,06:53,6,Spotify evidence can be overextended to visual design,Upper band limits source to 2021 music recommendations,FIXED
+P0,06:53,07:10,6,Documentary loop can be mistaken for a Spotify finding,Upper band labels explanatory model not Spotify finding,FIXED
+P0,07:17,07:24,6,Closing mechanism can be overread as measured law,Upper band states not a measured universal law,FIXED
+P0,07:29,07:40,7,First-party adaptation case can imply prevalence,Upper band states existence not prevalence,FIXED
+P0,07:40,07:51,7,Interface comparison can be mistaken for a controlled trial,Upper band identifies primary system documentation,FIXED
+P0,07:51,08:02,7,Porsche niche case can imply mass-market demand,Upper band states niche case not whole market,FIXED
+P0,08:16,08:27,7,Mechanism illustrations can resemble measured evidence,Upper band states not prevalence evidence,FIXED
+P0,08:47,08:55,8,Synthesis can imply global prevalence,Upper band states case-linked not global estimate,FIXED
+P0,09:34,09:49,8,Distinctiveness can read as automatic commercial premium,Upper band states risk and no automatic premium,FIXED
+P0,09:55,10:01,8,Final exception concept can become vague slogan,Upper band supplies explicit defensibility definition,FIXED
