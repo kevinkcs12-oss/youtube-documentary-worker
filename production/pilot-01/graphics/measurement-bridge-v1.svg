@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0e151d"/>
+  <text x="960" y="210" text-anchor="middle" fill="#edf1f3" font-family="Arial, sans-serif" font-size="76" font-weight="700">AN IMPRESSION IS NOT EVIDENCE.</text>
+  <g transform="translate(245 390)">
+    <rect width="560" height="300" rx="42" fill="#202c36" stroke="#41515d" stroke-width="3"/>
+    <text x="280" y="90" text-anchor="middle" fill="#9aa9b3" font-family="Arial, sans-serif" font-size="30" font-weight="700">FIRST</text>
+    <text x="280" y="180" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="54" font-weight="700">THE FEELING</text>
+    <circle cx="205" cy="245" r="24" fill="#e6e6e2"/><circle cx="280" cy="245" r="24" fill="#383c40"/><circle cx="355" cy="245" r="24" fill="#7a7e80"/>
+  </g>
+  <path d="M865 540 H1045" stroke="#33a6a6" stroke-width="12" stroke-linecap="round"/><path d="M1015 505 L1055 540 L1015 575" fill="none" stroke="#33a6a6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(1115 390)">
+    <rect width="560" height="300" rx="42" fill="#202c36" stroke="#41515d" stroke-width="3"/>
+    <text x="280" y="90" text-anchor="middle" fill="#9aa9b3" font-family="Arial, sans-serif" font-size="30" font-weight="700">NEXT</text>
+    <text x="280" y="168" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="700">A MEASURABLE</text>
+    <text x="280" y="225" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="700">FRAGMENT</text>
+  </g>
+  <text x="960" y="860" text-anchor="middle" fill="#8fa0ad" font-family="Arial, sans-serif" font-size="36">NO STATISTIC IS CLAIMED UNTIL THE EVIDENCE MODULE BEGINS</text>
+</svg>

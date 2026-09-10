@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "output": {
+    "filename": "pilot-01-opening-picture-v1.2.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "crf": 20,
+    "preset": "veryfast"
+  },
+  "scenes": [
+    {"type":"video","source":"assets/pexels/pexels-3848792.mp4","start":4,"duration":4},
+    {"type":"video","source":"assets/pexels/pexels-7402387.mp4","start":1,"duration":4,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-5801020.mp4","start":1,"duration":4,"fit":"cover"},
+    {"type":"image","source":"assets/graphics/interface-vocabulary-v1.png","duration":4,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-6775059.mp4","start":1,"duration":4},
+    {"type":"video","source":"assets/pexels/pexels-3848792.mp4","start":12,"duration":4},
+    {"type":"video","source":"assets/pexels/pexels-7402387.mp4","start":10,"duration":4,"fit":"cover"},
+    {"type":"image","source":"assets/graphics/system-place-contrast-v1.png","duration":7,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-5243465.mp4","start":3,"duration":7,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-6775059.mp4","start":10,"duration":6},
+    {"type":"image","source":"assets/graphics/not-one-catalog-v1.png","duration":6,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-5801020.mp4","start":10,"duration":6,"fit":"cover"},
+    {"type":"image","source":"assets/graphics/measurement-bridge-v1.png","duration":4,"fit":"cover"}
+  ]
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0d131b"/>
+  <text x="120" y="118" fill="#e9edf1" font-family="Arial, sans-serif" font-size="68" font-weight="700">SAME TASK. FAMILIAR PATTERNS.</text>
+  <text x="122" y="174" fill="#8fa0ad" font-family="Arial, sans-serif" font-size="34">ORIGINAL SCHEMATIC — NOT A REAL INTERFACE</text>
+  <g transform="translate(120 255)">
+    <rect width="500" height="650" rx="38" fill="#f3f5f6"/>
+    <circle cx="52" cy="55" r="18" fill="#33a6a6"/><rect x="90" y="41" width="164" height="28" rx="14" fill="#c8d0d5"/>
+    <rect x="42" y="115" width="416" height="170" rx="26" fill="#dfe8e8"/>
+    <rect x="42" y="325" width="265" height="32" rx="16" fill="#222f3a"/><rect x="42" y="382" width="374" height="22" rx="11" fill="#aab7c0"/>
+    <rect x="42" y="428" width="332" height="22" rx="11" fill="#c4ccd2"/><rect x="42" y="540" width="416" height="68" rx="34" fill="#33a6a6"/>
+    <text x="250" y="586" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">CONTINUE</text>
+  </g>
+  <g transform="translate(710 255)">
+    <rect width="500" height="650" rx="38" fill="#f3f5f6"/>
+    <circle cx="52" cy="55" r="18" fill="#dd7b61"/><rect x="90" y="41" width="164" height="28" rx="14" fill="#c8d0d5"/>
+    <rect x="42" y="115" width="416" height="170" rx="26" fill="#eee4df"/>
+    <rect x="42" y="325" width="265" height="32" rx="16" fill="#222f3a"/><rect x="42" y="382" width="374" height="22" rx="11" fill="#aab7c0"/>
+    <rect x="42" y="428" width="332" height="22" rx="11" fill="#c4ccd2"/><rect x="42" y="540" width="416" height="68" rx="34" fill="#dd7b61"/>
+    <text x="250" y="586" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">CONTINUE</text>
+  </g>
+  <g transform="translate(1300 255)">
+    <rect width="500" height="650" rx="38" fill="#f3f5f6"/>
+    <circle cx="52" cy="55" r="18" fill="#8675b7"/><rect x="90" y="41" width="164" height="28" rx="14" fill="#c8d0d5"/>
+    <rect x="42" y="115" width="416" height="170" rx="26" fill="#e6e2ef"/>
+    <rect x="42" y="325" width="265" height="32" rx="16" fill="#222f3a"/><rect x="42" y="382" width="374" height="22" rx="11" fill="#aab7c0"/>
+    <rect x="42" y="428" width="332" height="22" rx="11" fill="#c4ccd2"/><rect x="42" y="540" width="416" height="68" rx="34" fill="#8675b7"/>
+    <text x="250" y="586" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">CONTINUE</text>
+  </g>
+</svg>

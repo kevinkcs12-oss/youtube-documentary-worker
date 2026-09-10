@@ -1,0 +1,83 @@
+name: Pilot 01 Opening Picture v1.2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "jobs/pilot-01-opening-picture-v1.2.json"
+      - "production/pilot-01/opening-picture-v1.2.md"
+      - "production/pilot-01/graphics/*.svg"
+      - ".github/workflows/pilot-01-opening-v1.2.yml"
+      - "scripts/run_media_job.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pilot-01-opening-picture-v1-2
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg librsvg2-bin
+
+      - name: Acquire approved opening masters
+        run: |
+          mkdir -p jobs/assets/pexels
+          for id in 3848792 7402387 5801020 6775059 5243465; do
+            curl --fail --location --retry 3 --retry-delay 2 --user-agent "Mozilla/5.0" --output "jobs/assets/pexels/pexels-${id}.mp4" "https://www.pexels.com/download/video/${id}/"
+          done
+
+      - name: Rasterize original editorial graphics
+        run: |
+          mkdir -p jobs/assets/graphics
+          for source in production/pilot-01/graphics/*.svg; do
+            target="jobs/assets/graphics/$(basename "${source%.svg}").png"
+            rsvg-convert --width 1920 --height 1080 --keep-aspect-ratio "$source" --output "$target"
+          done
+
+      - name: Render Sequence 1 v1.2
+        run: |
+          python scripts/run_media_job.py --job jobs/pilot-01-opening-picture-v1.2.json --output-dir dist/opening-v1-2
+
+      - name: Verify exact editorial runtime
+        run: |
+          video="dist/opening-v1-2/pilot-01-opening-picture-v1.2.mp4"
+          duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$video")"
+          frames="$(ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of default=nw=1:nk=1 "$video")"
+          test "$duration" = "64.000000"
+          test "$frames" = "1600"
+          ffmpeg -v error -i "$video" -f null -
+
+      - name: Record provenance
+        run: |
+          sha256sum jobs/assets/pexels/*.mp4 > dist/opening-v1-2/source-sha256.txt
+          sha256sum production/pilot-01/graphics/*.svg > dist/opening-v1-2/graphics-source-sha256.txt
+          sha256sum jobs/assets/graphics/*.png > dist/opening-v1-2/graphics-render-sha256.txt
+
+      - name: Create editorial contact sheets
+        run: |
+          video="dist/opening-v1-2/pilot-01-opening-picture-v1.2.mp4"
+          ffmpeg -hide_banner -loglevel error -y -i "$video" -vf "fps=1/4,scale=480:-1,tile=4x4" -frames:v 1 -update 1 dist/opening-v1-2/editorial-contact-sheet.jpg
+          ffmpeg -hide_banner -loglevel error -y -i "$video" -vf "fps=1/2,scale=384:-1,tile=5x7" -frames:v 1 -update 1 dist/opening-v1-2/editorial-contact-sheet-2s.jpg
+
+      - name: Upload Sequence 1 v1.2
+        uses: actions/upload-artifact@v4
+        with:
+          name: pilot-01-opening-picture-v1-2-${{ github.run_id }}
+          path: dist/opening-v1-2/
+          if-no-files-found: error
+          retention-days: 7

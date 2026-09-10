@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#ebe7df"/>
+  <text x="960" y="170" text-anchor="middle" fill="#17222c" font-family="Arial, sans-serif" font-size="78" font-weight="700">NOT ONE CATALOG.</text>
+  <text x="960" y="240" text-anchor="middle" fill="#55636d" font-family="Arial, sans-serif" font-size="34">DIFFERENT PLACES. DIFFERENT OWNERS. DIFFERENT HISTORIES.</text>
+  <g transform="translate(150 355)">
+    <rect width="480" height="430" rx="38" fill="#23313c"/><path d="M55 325 L55 170 L150 90 L275 150 L420 70 L425 325 Z" fill="#d8896d"/>
+    <rect x="95" y="215" width="100" height="110" fill="#efe5cf"/><circle cx="340" cy="245" r="58" fill="#7da387"/>
+  </g>
+  <g transform="translate(720 355)">
+    <rect width="480" height="430" rx="38" fill="#38525d"/><circle cx="240" cy="185" r="120" fill="#e7c56d"/>
+    <path d="M95 325 Q240 175 385 325" fill="#f0e7d7"/>
+  </g>
+  <g transform="translate(1290 355)">
+    <rect width="480" height="430" rx="38" fill="#6b557c"/><rect x="75" y="95" width="330" height="230" rx="115" fill="#dbe6df"/>
+    <path d="M130 255 L205 160 L275 230 L350 135" fill="none" stroke="#d8896d" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <text x="960" y="900" text-anchor="middle" fill="#17222c" font-family="Arial, sans-serif" font-size="46" font-weight="700">SIMILARITY IS A PATTERN — NOT LITERAL IDENTITY</text>
+  <text x="960" y="958" text-anchor="middle" fill="#68757d" font-family="Arial, sans-serif" font-size="32">ORIGINAL EDITORIAL GRAPHIC</text>
+</svg>

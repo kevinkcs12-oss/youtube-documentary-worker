@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#10161d"/>
+  <text x="960" y="112" text-anchor="middle" fill="#edf0f2" font-family="Arial, sans-serif" font-size="64" font-weight="700">A SYSTEM IS NOT A PLACE</text>
+  <text x="960" y="164" text-anchor="middle" fill="#91a1ad" font-family="Arial, sans-serif" font-size="32">ORIGINAL SCHEMATIC — LOGICAL CONTRAST, NOT A DOCUMENTARY SAMPLE</text>
+  <line x1="960" y1="230" x2="960" y2="920" stroke="#37434e" stroke-width="3"/>
+  <g transform="translate(130 260)">
+    <text x="350" y="0" text-anchor="middle" fill="#91a1ad" font-family="Arial, sans-serif" font-size="32" font-weight="700">REPEATABLE SYSTEM</text>
+    <g fill="#d8dee2">
+      <rect x="40" y="90" width="190" height="460"/><rect x="255" y="90" width="190" height="460"/><rect x="470" y="90" width="190" height="460"/>
+    </g>
+    <g fill="#657684">
+      <rect x="78" y="145" width="115" height="90"/><rect x="293" y="145" width="115" height="90"/><rect x="508" y="145" width="115" height="90"/>
+      <rect x="78" y="270" width="115" height="90"/><rect x="293" y="270" width="115" height="90"/><rect x="508" y="270" width="115" height="90"/>
+    </g>
+    <g fill="#33a6a6"><rect x="78" y="405" width="115" height="105"/><rect x="293" y="405" width="115" height="105"/><rect x="508" y="405" width="115" height="105"/></g>
+    <text x="350" y="635" text-anchor="middle" fill="#c0c9cf" font-family="Arial, sans-serif" font-size="30">ONE FORMAT · MANY SITES</text>
+  </g>
+  <g transform="translate(1090 260)">
+    <text x="350" y="0" text-anchor="middle" fill="#91a1ad" font-family="Arial, sans-serif" font-size="32" font-weight="700">ONE-OFF PLACE</text>
+    <path d="M70 550 L70 205 L180 115 L330 170 L470 85 L635 220 L635 550 Z" fill="#e7d8c5"/>
+    <path d="M70 205 L180 115 L330 170 L470 85 L635 220" fill="none" stroke="#dd7b61" stroke-width="28" stroke-linejoin="round"/>
+    <rect x="130" y="300" width="150" height="250" fill="#355562"/><rect x="340" y="255" width="220" height="155" rx="70" fill="#8ca88f"/>
+    <circle cx="525" cy="485" r="42" fill="#c58d52"/>
+    <text x="350" y="635" text-anchor="middle" fill="#c0c9cf" font-family="Arial, sans-serif" font-size="30">SPECIFIC · IRREGULAR · LOCAL</text>
+  </g>
+</svg>
