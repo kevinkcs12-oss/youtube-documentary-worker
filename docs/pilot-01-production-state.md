@@ -5,7 +5,7 @@ Canonical title: **Why Does Everything Look the Same Now?**
 Current production baseline:
 - Master script v1.1 remains the canonical editorial source.
 - Full animatic v1.1 runtime: 10:22.
-- Active reversible review candidate: **v1.2d-evidence-safezone**, 10:02.
+- Active reversible review candidate: **v1.2e-motion-accent**, 10:02.
 - Eight-sequence structure and all seven evidence families remain intact.
 - Layer C production worker and CI are validated; no paid assets or services are used.
 
@@ -39,13 +39,24 @@ Validated v1.2d evidence safe-zone conform:
 - Encoded audio is byte-identical to v1.2c (`MD5 2d00f8a41c542f1c07eac5fbd074cc26`).
 - Locked layout rule: reserve y=820–1040 at 1080p for captions/player chrome; indispensable evidence text must finish above y=810.
 - Builder: `scripts/build_pilot_01_v1_2d_evidence_safezone.py`; QA and overlay map live under `production/pilot-01/`.
-- v1.2d is the active reversible audiovisual review candidate. It is not picture lock and does not choose a final voice.
+- v1.2d remains the evidence-safe layout baseline. It is not picture lock and does not choose a final voice.
+
+Validated v1.2e motion-accent candidate:
+- The 06:53–07:10 static explanatory-loop hold is replaced by one restrained qualitative cycle: five stages of 3.4 seconds, each with a low-alpha halo and traveling bead.
+- No numbers, counters, rates, rankings, or data-like traces were introduced; the on-screen “EXPLANATORY MODEL / NOT A SPOTIFY FINDING” boundary remains visible.
+- Runtime: exactly 602.000 seconds / 15,050 frames, 1920×1080/25 fps; full master decode passed.
+- Master SHA-256: `12dc2f21b408ec44d1b06cb659fab7d1c6a48f0896626be1d5300d58e1d48ae4`.
+- Encoded audio remains byte-identical to v1.2d (`MD5 2d00f8a41c542f1c07eac5fbd074cc26`); the canonical 161-cue SRT is unchanged.
+- Overlay reproducibility was verified by identical independent SHA-256 renders: `25de248a59920161475fc3dafdf53bfac8d20dcb94e2ab8481beb8bcf602df17`.
+- A local partial-file fault in the v1.2d source was caught before retention; the source was recovered from persistent storage and matched the locked v1.2d SHA before rebuilding.
+- Builder: `scripts/build_pilot_01_v1_2e_motion_accent.py`; QA and timing map live under `production/pilot-01/`.
+- v1.2e is the active reversible audiovisual review candidate. It is not picture lock and does not choose a final voice.
 
 Current bottleneck:
-- The 06:53–07:10 explanatory-loop card remains static for 16.80 seconds and is now the dominant visual-fatigue risk.
-- Transition silences at 03:28.65–03:32.61 and 04:45.77–04:50.04 need a real-time editorial listen before any cut.
+- The static-loop fatigue risk is resolved in the active candidate.
+- Transition silences at 03:28.65–03:32.61 and 04:45.77–04:50.04 now require a real-time editorial listen before any cut.
 
 Next production gate:
-- Create a reversible motion-accent pass for 06:53–07:10 that preserves the explanatory-model boundary, then compare it against v1.2d in a real-time audiovisual review.
+- Perform a real-time audiovisual review of v1.2e and classify both long silences as intentional breathing room or pacing defects; only then build a reversible trim branch if needed.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
