@@ -5,7 +5,7 @@ Canonical title: **Why Does Everything Look the Same Now?**
 Current production baseline:
 - Master script v1.1 remains the canonical editorial source.
 - Full animatic v1.1 runtime: 10:22.
-- Active reversible review candidate: **v1.2e-motion-accent**, 10:02.
+- Active reversible review candidate: **v1.2f-pacing-trim**, 09:57.760.
 - Eight-sequence structure and all seven evidence families remain intact.
 - Layer C production worker and CI are validated; no paid assets or services are used.
 
@@ -50,13 +50,23 @@ Validated v1.2e motion-accent candidate:
 - Overlay reproducibility was verified by identical independent SHA-256 renders: `25de248a59920161475fc3dafdf53bfac8d20dcb94e2ab8481beb8bcf602df17`.
 - A local partial-file fault in the v1.2d source was caught before retention; the source was recovered from persistent storage and matched the locked v1.2d SHA before rebuilding.
 - Builder: `scripts/build_pilot_01_v1_2e_motion_accent.py`; QA and timing map live under `production/pilot-01/`.
-- v1.2e is the active reversible audiovisual review candidate. It is not picture lock and does not choose a final voice.
+- v1.2e remains the motion-treatment baseline. It is not picture lock and does not choose a final voice.
+
+Validated v1.2f pacing-trim candidate:
+- Audio, caption, and picture inspection classified the 03:28.64–03:32.61 and 04:45.76–04:50.05 gaps as overlong static holds; exactly 2.00 seconds of each breath is retained.
+- Removed intervals: 03:30.640–03:32.600 (1.96s) and 04:47.760–04:50.040 (2.28s), total 4.24s / 106 frames.
+- Runtime: exactly 597.760 seconds / 14,944 frames, 1920×1080/25 fps; master and caption proxy fully decode.
+- Master SHA-256: `038b9eb7a638b07be70fe61d8c037c1332d41c5eb40d63862ea7d31717685c7a`.
+- The 161-cue SRT is deterministically retimed, overlap-free, and ends at 09:56.960. No speech, evidence, qualification, counterexample, or v1.2e motion accent is removed.
+- The first inclusive-endpoint render removed 108 frames and was rejected; the retained builder uses half-open intervals and passes the exact 14,944-frame gate.
+- Builder: `scripts/build_pilot_01_v1_2f_pacing_trim.py`; QA and EDL live under `production/pilot-01/`.
+- v1.2f is the active reversible review candidate. It is not picture lock and does not choose a final voice.
 
 Current bottleneck:
-- The static-loop fatigue risk is resolved in the active candidate.
-- Transition silences at 03:28.65–03:32.61 and 04:45.77–04:50.04 now require a real-time editorial listen before any cut.
+- The static-loop and two overlong-transition fatigue risks are resolved in v1.2f.
+- The remaining gate is a full-film visual-density and chapter-transition audit before timing may be frozen as a picture-lock candidate.
 
 Next production gate:
-- Perform a real-time audiovisual review of v1.2e and classify both long silences as intentional breathing room or pacing defects; only then build a reversible trim branch if needed.
+- Audit v1.2f end to end for new P0 visual, subtitle, evidence-boundary, or transition defects; if none appear, freeze the animatic timing as a picture-lock candidate and prepare final voice/music authorization options without selecting or purchasing either.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
