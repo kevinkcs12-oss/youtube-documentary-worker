@@ -22,6 +22,7 @@ The same first 142 seconds of the repaired scratch-voice master are muxed for ti
 | Full decode | pass |
 | Black-frame interval | none detected at 0.08-second threshold |
 | Subtitle cues | 20, ordered, overlap-free, 00:00:00.000–00:02:22.000 |
+| Reproduction check | pass; rerun produced byte-identical picture and narrated SHA-256 values |
 
 ### Integrity
 
