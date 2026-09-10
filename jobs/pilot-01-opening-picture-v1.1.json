@@ -20,6 +20,7 @@
     {"type":"video","source":"assets/pexels/pexels-5243465.mp4","start":3,"duration":7,"fit":"cover"},
     {"type":"video","source":"assets/pexels/pexels-6775059.mp4","start":10,"duration":6},
     {"type":"video","source":"assets/pexels/pexels-12187901.mp4","start":18,"duration":6},
-    {"type":"video","source":"assets/pexels/pexels-5243465.mp4","start":12,"duration":6,"fit":"cover"}
+    {"type":"video","source":"assets/pexels/pexels-5243465.mp4","start":12,"duration":6,"fit":"cover"},
+    {"type":"video","source":"assets/pexels/pexels-12187901.mp4","start":24,"duration":4}
   ]
 }

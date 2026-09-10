@@ -44,6 +44,18 @@ jobs:
         run: |
           python scripts/run_media_job.py --job jobs/pilot-01-opening-picture-v1.1.json --output-dir dist/opening-v1-1
 
+      - name: Verify exact editorial runtime
+        run: |
+          video="dist/opening-v1-1/pilot-01-opening-picture-v1.1.mp4"
+          duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$video")"
+          frames="$(ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of default=nw=1:nk=1 "$video")"
+          test "$duration" = "64.000000"
+          test "$frames" = "1600"
+
+      - name: Record source provenance
+        run: |
+          sha256sum jobs/assets/pexels/*.mp4 > dist/opening-v1-1/source-sha256.txt
+
       - name: Create editorial contact sheet
         run: |
           ffmpeg -hide_banner -loglevel error -y -i dist/opening-v1-1/pilot-01-opening-picture-v1.1.mp4 -vf "fps=1/4,scale=480:-1,tile=4x4" -frames:v 1 -update 1 dist/opening-v1-1/editorial-contact-sheet.jpg
