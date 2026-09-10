@@ -1,0 +1,6 @@
+operation,source_in,source_out,source_duration,output_in,output_out,editorial_function
+keep,00:00.000,03:30.640,210.640,00:00.000,03:30.640,all content through first retained breath
+remove,03:30.640,03:32.600,1.960,03:30.640,03:30.640,excess static hold after DEFENSIBLE EXCEPTION
+keep,03:32.600,04:47.760,75.160,03:30.640,04:45.800,interface section through second retained breath
+remove,04:47.760,04:50.040,2.280,04:45.800,04:45.800,excess static hold before PHYSICAL SPACE
+keep,04:50.040,10:02.000,311.960,04:45.800,09:57.760,all remaining evidence counterexamples conclusion and motion accent
