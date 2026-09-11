@@ -62,11 +62,20 @@ Validated v1.2f pacing-trim candidate:
 - Builder: `scripts/build_pilot_01_v1_2f_pacing_trim.py`; QA and EDL live under `production/pilot-01/`.
 - v1.2f is the active reversible review candidate. It is not picture lock and does not choose a final voice.
 
+Validated v1.2f full-film audit and timing freeze:
+- Full-film contact review sampled captioned frames every four seconds and inspected all seven chapter junctions at six frame-aligned offsets.
+- No P0 visual, subtitle, evidence-boundary, transition, decode, or runtime defect was found.
+- Caption audit remains clean: 161 cues, zero overlap, maximum two lines, maximum 19.99 characters/second, final cue at 09:56.960.
+- Scratch-audio control measures -19.8 LUFS integrated, 7.6 LU LRA, -2.4 dBFS true peak; no -42 dB silence exceeds 2.110 seconds.
+- Long evidence cards in S2–S5 and conclusion cards in S8 remain P1 motion-design opportunities, not timing defects; shortening them would reduce chart-reading or synthesis time.
+- The v1.2f animatic timing is frozen as the current picture-lock candidate. It is not final picture lock, final voice, or licensed music.
+- Audit: `production/pilot-01/v1.2f-full-film-visual-density-chapter-audit.md`; chapter matrix: `production/pilot-01/v1.2f-full-film-visual-density-chapter-audit.csv`.
+
 Current bottleneck:
-- The static-loop and two overlong-transition fatigue risks are resolved in v1.2f.
-- The remaining gate is a full-film visual-density and chapter-transition audit before timing may be frozen as a picture-lock candidate.
+- v1.2f has passed the full-film visual-density and chapter-transition audit; its animatic timing is frozen as the current picture-lock candidate.
+- The remaining blocker is authorization-aware final voice and music planning. No voice, license, paid model, purchase, or publication has been selected.
 
 Next production gate:
-- Audit v1.2f end to end for new P0 visual, subtitle, evidence-boundary, or transition defects; if none appear, freeze the animatic timing as a picture-lock candidate and prepare final voice/music authorization options without selecting or purchasing either.
+- Prepare a no-purchase final voice and music authorization brief with performance requirements, audition lines, free and paid routes separated, mix targets, decision criteria, and the exact authorization Kevin must provide before any commitment.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
