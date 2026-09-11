@@ -71,11 +71,15 @@ Validated v1.2f full-film audit and timing freeze:
 - The v1.2f animatic timing is frozen as the current picture-lock candidate. It is not final picture lock, final voice, or licensed music.
 - Audit: `production/pilot-01/v1.2f-full-film-visual-density-chapter-audit.md`; chapter matrix: `production/pilot-01/v1.2f-full-film-visual-density-chapter-audit.csv`.
 
+Final voice and music authorization brief:
+- The no-purchase decision brief is complete: locked four-part audition reel, 100-point voice and music scorecards, hard failure gates, four-phase music architecture, mix targets, rights/provenance fields, and exact authorization language.
+- The standing autonomous-production mandate opens reversible no-cost internal auditions using rights-verified free/local tools. External contact, paid calls, subscriptions, licences, purchases, publication, and financial commitments remain closed.
+- Brief: `production/pilot-01/final-voice-music-authorization-brief-v1.0.md`; scorecard: `production/pilot-01/final-voice-music-decision-scorecard-v1.0.csv`.
+
 Current bottleneck:
-- v1.2f has passed the full-film visual-density and chapter-transition audit; its animatic timing is frozen as the current picture-lock candidate.
-- The remaining blocker is authorization-aware final voice and music planning. No voice, license, paid model, purchase, or publication has been selected.
+- Final voice performance remains untested. No release voice, music, licence, paid model, purchase, provider contact, or publication has been selected.
 
 Next production gate:
-- Prepare a no-purchase final voice and music authorization brief with performance requirements, audition lines, free and paid routes separated, mix targets, decision criteria, and the exact authorization Kevin must provide before any commitment.
+- Build a blind no-cost internal voice audition comparison from the four locked excerpts, using only rights-verified free/local tools and without changing v1.2f timing.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
