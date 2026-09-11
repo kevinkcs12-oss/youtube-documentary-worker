@@ -194,11 +194,13 @@ For every retained voice, cue, ambience, and sound effect record:
 
 Missing provenance means exclusion, not provisional picture lock.
 
-## 9. Exact authorization menu
+## 9. Standing mandate and exact authorization menu
+
+Kevin’s standing autonomous-production mandate already permits reversible, no-cost internal production using rights-verified free/local tools. It therefore opens Gate A below without any new approval. It does **not** authorize external contact, paid credits, subscriptions, licences, bookings, purchases, publication, or other financial commitments. Gates C, D, and E remain closed; any future paid-option research must remain non-transactional and must not make paid calls.
 
 Kevin can unlock only the desired scope by sending one of these explicit instructions later:
 
-### Gate A — no-cost internal auditions only
+### Gate A — no-cost internal auditions only (already open under the standing mandate)
 
 `I authorize no-cost internal voice auditions for Pilot 01 using only rights-verified free/local routes. Do not publish, contact third parties, subscribe, buy credits, or incur costs.`
 
@@ -232,4 +234,4 @@ Decision-ready: yes. Purchase-ready: no. Release-ready: no.
 
 The brief deliberately avoids choosing a provider, performer, track, licence, or budget before authorization. The largest current risk is not audio fidelity; it is allowing a convenient voice or cue to distort the film’s qualified evidence posture. The frozen v1.2f timing should remain closed unless a real final-voice test proves that a protected line cannot be delivered naturally.
 
-Next unblocked action after Gate A: build a blind, no-cost internal audition comparison using the four locked excerpts, without altering v1.2f.
+Next unblocked action: build a blind, no-cost internal audition comparison using the four locked excerpts, without altering v1.2f.
