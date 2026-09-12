@@ -156,3 +156,11 @@ Final voice recording session pack v1.0:
 - Only Nielsen and Spotify occur in the narration and require pronunciation confirmation; nine other names remain reference-only.
 - The session pack SHA-256 is `3bc03731720aa79b2b336987774746af7eb29a25ef370413eb45da424a6e4437`.
 - Builder and session artifacts live under `scripts/` and `production/pilot-01/`. No voice was selected or generated; the existing human selection, performance, audio-conform, and publication gates remain closed.
+
+Executive release decision gate v1.0:
+- One fail-closed manifest now consolidates the remaining human choices: retain/revert v1.2g, blind voice A–D or reject all, no-music versus rights-cleared-music review, metadata cell/test mode, and publication scope.
+- Current normal-review verdict is PASS_CLOSED_GATES. Release mode is correctly BLOCKED by four pending choices, publication HOLD, absent authorization ID, and absent exact attestation.
+- Unlisted upload and public publication are separate scopes. An affirmative scope cannot bypass final audio conform, prepublication validation, rights, evidence, caption, decode, loudness, or checksum QA.
+- The 12 MB review pack bundles the 89-second motion comparison, four-candidate blind audition, thumbnail contact sheet, scorecards, source appendix, audio gate, preflight report, decision card, manifest and validator.
+- Pack SHA-256: `ba4d3a78080f466a2e62463b15042ff7a0b5d6746ae5f9d51d2aa78a7342d32b`. Drive pack: `15rJwCdTENLshSOpuy-JkQBUZUNB3P4KP`. Library pack: `libfile_327efc8d71f08191890b420d90748b5f`.
+- No decision was inferred, no voice was selected, and no spend, contact, upload, or publication occurred.
