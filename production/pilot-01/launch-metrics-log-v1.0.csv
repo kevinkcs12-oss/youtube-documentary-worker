@@ -1,0 +1,6 @@
+read_window,recorded_at_utc,test_status,total_impressions,views,watch_time_hours,avg_view_duration,avg_percentage_viewed,intro_retention_30s,traffic_browse_pct,traffic_suggested_pct,traffic_search_pct,traffic_external_pct,cell_a_watch_time_share,cell_b_watch_time_share,cell_c_watch_time_share,native_result,largest_dip_timestamp,largest_dip_context,subscribers_gained,substantive_comments,hard_defect,decision,notes
+6h,,,,,,,,,,,,,,,,,,,,,,,OBSERVE_ONLY,"Retention verdict prohibited"
+24h,,,,,,,,,,,,,,,,,,,,,,,OBSERVE_UNLESS_HARD_DEFECT,"Record traffic-source mix"
+72h,,,,,,,,,,,,,,,,,,,,,,,DIAGNOSE,"Retention may now be processed"
+7d,,,,,,,,,,,,,,,,,,,,,,,HOLD_TEST,"Do not manually change active test"
+14d_or_completion,,,,,,,,,,,,,,,,,,,,,,,LOCK_NATIVE_RESULT_OR_NO_CLEAR_WINNER,"Record exact Studio wording"
