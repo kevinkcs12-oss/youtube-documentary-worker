@@ -1,0 +1,7 @@
+review_order,sequence,source_window,comparison_window,editorial_job,scan_order_1to5,distraction_1to5,evidence_boundary_pass_fail,caption_legibility_pass_fail,retain_revert,notes
+1,S2,01:49–02:03,00:00–00:14,Read published arithmetic from components to total,,,,,,
+2,S3,02:26–02:44,00:14–00:32,Follow signal to route to familiar recognition,,,,,,
+3,S4,04:15–04:33,00:32–00:50,Read identity reduction from large to compact,,,,,,
+4,S5,05:02–05:21,00:50–01:09,Follow earlier schematic through transition to later schematic,,,,,,
+5,S8,08:57–09:17,01:09–01:29,Read three failure-mode transformations in order,,,,,,
+GLOBAL,ALL,full-film proxy 09:57.760,comparison reel 01:29.000,Retain only if motion improves reading without feeling instructional,,,,,,
