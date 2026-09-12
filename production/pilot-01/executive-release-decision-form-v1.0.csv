@@ -1,0 +1,6 @@
+decision,allowed_values,current_value,required_for_release,notes
+motion,"RETAIN_V1_2G | REVERT_V1_2F",PENDING,YES,Timing remains v1.2f in either case
+voice,"CANDIDATE_A | CANDIDATE_B | CANDIDATE_C | CANDIDATE_D | REJECT_ALL",PENDING,YES,Blind editorial listening required
+mix,"NO_MUSIC | RIGHTS_CLEARED_MUSIC_AFTER_REVIEW",PENDING,YES,No spend or contact is implied
+metadata,"NATIVE_AB_TEST_A_B_C | CELL_A | CELL_B | CELL_C",PENDING,YES,Native test uses watch-time authority
+publication,"HOLD | AUTHORIZE_UNLISTED_UPLOAD | AUTHORIZE_PUBLICATION",HOLD,YES,Requires authorization ID and exact attestation
