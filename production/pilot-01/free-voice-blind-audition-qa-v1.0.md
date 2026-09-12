@@ -28,7 +28,7 @@ The v1.2f picture-lock timing candidate remains unchanged at 09:57.760 / 14,944 
 
 \*232 words divided by voiced-program duration after subtracting the locked 6.0 seconds of inter-excerpt silence.
 
-The cadence spread is 0.19 WPM, small enough that listeners are not effectively choosing the fastest voice. Every WAV and MP3 fully decodes. All retained outputs are 48 kHz mono and remain below the audition peak ceiling.
+The cadence spread is 0.17 WPM, small enough that listeners are not effectively choosing the fastest voice. Every WAV and MP3 fully decodes. All retained outputs are 48 kHz mono and remain below the audition peak ceiling.
 
 ## Rights and provenance
 
