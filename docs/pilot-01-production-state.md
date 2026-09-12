@@ -76,10 +76,18 @@ Final voice and music authorization brief:
 - The standing autonomous-production mandate opens reversible no-cost internal auditions using rights-verified free/local tools. External contact, paid calls, subscriptions, licences, purchases, publication, and financial commitments remain closed.
 - Brief: `production/pilot-01/final-voice-music-authorization-brief-v1.0.md`; scorecard: `production/pilot-01/final-voice-music-decision-scorecard-v1.0.csv`.
 
+Blind no-cost voice audition v1.0:
+- Four anonymous CMU Flite candidates cover the locked 232-word, four-excerpt reel at a cadence-matched 141.98–142.15 effective WPM; no post-render time stretch was used.
+- All retained WAV masters (48 kHz/24-bit mono) and MP3 review files (48 kHz/192 kb/s mono) fully decode. Integrated levels are -20.6 to -20.2 LUFS; peaks remain at or below -3.0 dBFS except Candidate A at -6.9 dBFS.
+- Rights provenance is pinned to Debian libflite1 2.2-6build3, the local package notice, and SHA-256 checksums for the runtime and each sealed voice library.
+- Red-team rejected three intermediate states: unequal native cadence, an invalid voice-feature pointer, and a truncated Candidate C MP3 that disagreed with its WAV header. The retained builder now fails on decode, duration, or container mismatch.
+- The technical gate passes, but no release voice is selected: naturalness, authority, pronunciation and restraint remain blind-listening gates and cannot be inferred from waveform metrics.
+- Builder: `scripts/build_pilot_01_free_voice_audition_v1_0.py`; QA and scorecard: `production/pilot-01/free-voice-blind-audition-qa-v1.0.md` and `production/pilot-01/free-voice-blind-audition-scorecard-v1.0.csv`.
+
 Current bottleneck:
-- Final voice performance remains untested. No release voice, music, licence, paid model, purchase, provider contact, or publication has been selected.
+- The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. No release voice, music, licence, paid model, purchase, provider contact, or publication has been selected.
 
 Next production gate:
-- Build a blind no-cost internal voice audition comparison from the four locked excerpts, using only rights-verified free/local tools and without changing v1.2f timing.
+- Complete the blind editorial listen, record scores before unsealing the mapping, and either nominate one no-cost control for a full-film scratch conform or reject the entire local set without changing v1.2f timing.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
