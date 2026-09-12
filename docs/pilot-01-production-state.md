@@ -113,10 +113,20 @@ Validated v1.2g progressive-focus candidate:
 - v1.2g is retained as a reversible motion-design candidate; v1.2f remains the timing authority. Continuous human viewing may still revert the accents without affecting timing.
 
 
+Validated v1.2g human-review kit:
+- A full 1280×720 captioned review proxy preserves the exact 597.760-second / 14,944-frame v1.2g timeline and fully decodes.
+- An exact 89.000-second / 2,225-frame side-by-side reel covers all five v1.2f/v1.2g intervention windows with two seconds of context where available.
+- The 161-cue canonical SRT is unchanged; independent parsing confirms zero cues above two text lines. Final proxy captions remain in the lower player/caption region while upper-band evidence labels remain visible.
+- Three intermediate states were rejected: a memory-heavy ten-renderer graph, a concat with non-monotonic audio timestamps and one extra frame, and an oversized subtitle style.
+- Builder: `scripts/build_pilot_01_v1_2g_review_kit.py`; QA and scorecard live under `production/pilot-01/`.
+- Review-pack SHA-256: `d382f8ae867520ff625ba2a09b55ea4b5b90d4bb1dedc993b678643867a0735a`.
+- This kit enables the human retain/revert decision; it does not make that subjective decision or alter the frozen v1.2f timing authority.
+
+
 Current bottleneck:
 - The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. Launch instrumentation and the verified source appendix are ready but cannot be activated before final voice/music and explicit publication authorization. No release voice, music, licence, paid model, purchase, provider contact, upload, or publication has been selected.
 
 Next production gate:
-- Complete the blind editorial listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing. The reversible v1.2g progressive-focus pass is technically validated; continuous human viewing may retain or revert it without altering the frozen timing or evidence boundaries.
+- Complete the blind editorial listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing. The v1.2g human-review kit is ready; continuous human viewing may retain or revert the motion pass without altering the frozen timing or evidence boundaries.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
