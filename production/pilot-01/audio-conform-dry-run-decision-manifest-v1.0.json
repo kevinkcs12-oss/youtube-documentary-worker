@@ -1,0 +1,11 @@
+{
+  "mode": "dry_run_control",
+  "motion_decision_authorized": false,
+  "voice_selected_authorized": false,
+  "mix_path_authorized": false,
+  "publication_authorized": false,
+  "authorization_id": null,
+  "narration_role": "existing scratch-track control only",
+  "music": null,
+  "rights_note": "No new voice, music, licence, purchase, external contact or publication is authorized by this control manifest."
+}
