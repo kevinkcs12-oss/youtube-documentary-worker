@@ -1,0 +1,16 @@
+sequence,source_hold,start,end,duration_s,focus_target,color,box_xywh,evidence_effect,timing_effect
+S2,Axalta arithmetic,111.04,116.36,5.32,existing component arithmetic,F4C95D,"90,205,335,130",none,none
+S2,Axalta arithmetic,116.36,121.68,5.32,existing 81 percent total,F4C95D,"690,500,520,210",none,none
+S3,Processing fluency,148.08,152.74,4.66,existing signal cluster,78B7CF,"100,420,720,390",none,none
+S3,Processing fluency,152.74,157.40,4.66,existing directional arrow,78B7CF,"885,560,190,115",none,none
+S3,Processing fluency,157.40,162.08,4.68,existing familiar card,78B7CF,"1095,435,690,380",none,none
+S4,Responsive identity,257.12,260.62,3.50,existing full lockup,F4C95D,"108,455,505,330",none,none
+S4,Responsive identity,260.62,264.12,3.50,existing reduced wordmark,F4C95D,"695,495,433,250",none,none
+S4,Responsive identity,264.12,267.62,3.50,existing monogram,F4C95D,"1205,530,312,180",none,none
+S4,Responsive identity,267.62,271.12,3.50,existing compact monogram,F4C95D,"1595,560,152,120",none,none
+S5,McDonald's chronology,303.84,308.84,5.00,existing 1953 schematic,63C7BE,"175,495,370,210",none,none
+S5,McDonald's chronology,308.84,313.84,5.00,existing chronology arrow,63C7BE,"615,585,325,115",none,none
+S5,McDonald's chronology,313.84,318.84,5.00,existing 1969 schematic,63C7BE,"1045,495,370,210",none,none
+S8,Failure mode,539.32,544.54,5.22,existing recognition row,FF7B68,"165,305,1590,130",none,none
+S8,Failure mode,544.54,549.76,5.22,existing adaptability row,FF7B68,"165,490,1590,125",none,none
+S8,Failure mode,549.76,555.00,5.24,existing risk row,FF7B68,"165,670,1590,125",none,none
