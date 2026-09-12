@@ -1,0 +1,30 @@
+{
+  "schema": "pilot-01-blind-voice-interleaved-comparison-v1.0",
+  "candidate_labels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "excerpt_count": 4,
+  "comparison_count": 16,
+  "candidate_orders": [
+    "ABCD",
+    "BCDA",
+    "CDAB",
+    "DABC"
+  ],
+  "order_design": "Latin-square rotation; each candidate occupies each ordinal position once",
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 25
+  },
+  "audio": {
+    "sample_rate_hz": 48000,
+    "channels": 1
+  },
+  "expected_timeline_seconds": 411.0,
+  "editorial_status": "BLIND_HUMAN_REVIEW_REQUIRED",
+  "release_voice_selected": false
+}
