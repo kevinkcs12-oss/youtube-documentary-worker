@@ -1,0 +1,12 @@
+term,function,instruction,present_in_canonical_text,status
+Axalta,brand / company name,verify against first-party pronunciation before recording,NO,REFERENCE_ONLY
+Mihajlović,author surname,verify with an authoritative speaker or author source; do not anglicize silently,NO,REFERENCE_ONLY
+Reber,author surname,confirm preferred author pronunciation,NO,REFERENCE_ONLY
+Winkielman,author surname,confirm preferred author pronunciation,NO,REFERENCE_ONLY
+Jakob's Law,named UX principle,use the established English name; confirm Jakob Nielsen name pronunciation,NO,REFERENCE_ONLY
+Nielsen,surname / organization,confirm English rendering before recording,YES,VERIFY_BEFORE_RECORDING
+Spotify,brand,standard English brand pronunciation,YES,VERIFY_BEFORE_RECORDING
+Porsche,brand,avoid one-syllable English shortcut unless editorially chosen,NO,REFERENCE_ONLY
+McDonald's,brand,standard English brand pronunciation,NO,REFERENCE_ONLY
+Material Design 3,design system,say the numeral as ‘three’,NO,REFERENCE_ONLY
+IBM Carbon,design system,"say I-B-M, then Carbon",NO,REFERENCE_ONLY
