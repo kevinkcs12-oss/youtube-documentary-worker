@@ -148,3 +148,11 @@ Validated audio-conform gate v1.0:
 - Red-team rejected an unauthorized release invocation and two loudness-validation states before the retained two-pass conform.
 - Music remains deliberately excluded from v1.0 and requires separate rights and mix authorization.
 - Builder: `scripts/build_pilot_01_audio_conform_gate.py`; report, closed decision manifest, and QA matrix live under `production/pilot-01/`.
+
+Final voice recording session pack v1.0:
+- The canonical v1.2f SRT SHA-256 `2bc54569b979eb9e312a82ad1ec59332560e75c4a2f84523061104230681b2b9` is converted mechanically into a recording script: 161 cues, 1,198 unchanged words, 91 take IDs, eight chapters, zero cue overlap.
+- At the 142 WPM planning midpoint, speech occupies 506.197 seconds and preserves 91.563 seconds of the frozen 597.760-second timeline for evidence reading, breaths, and transitions.
+- Three short timing diagnostics require human direction rather than acceleration or rewriting: T023 (167.1 WPM), T031 (171.8 WPM), and T065 (169.3 WPM). Eight expansive evidence windows are deliberately not treated as slow-delivery targets.
+- Only Nielsen and Spotify occur in the narration and require pronunciation confirmation; nine other names remain reference-only.
+- The session pack SHA-256 is `3bc03731720aa79b2b336987774746af7eb29a25ef370413eb45da424a6e4437`.
+- Builder and session artifacts live under `scripts/` and `production/pilot-01/`. No voice was selected or generated; the existing human selection, performance, audio-conform, and publication gates remain closed.
