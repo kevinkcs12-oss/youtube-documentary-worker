@@ -1,0 +1,18 @@
+check_id,check,result,status,blocking_if_failed
+FV01,Canonical SRT SHA-256,2bc54569b979eb9e312a82ad1ec59332560e75c4a2f84523061104230681b2b9,PASS,YES
+FV02,Cue count,161,PASS,YES
+FV03,Cue overlap count,0,PASS,YES
+FV04,Last cue end,00:09:56.960,PASS,YES
+FV05,Frozen picture duration,00:09:57.760,PASS,YES
+FV06,Canonical word count,1198,PASS,YES
+FV07,Recording take count,91,PASS,NO
+FV08,Target cadence,138-146 WPM overall,PASS,YES
+FV09,Estimated speech at 142 WPM,506.197 seconds,PASS,NO
+FV10,Timeline pause budget at 142 WPM,91.563 seconds,PASS,NO
+FV11,Tight takes over 165 WPM,"T023; T031; T065",REVIEW,NO
+FV12,Expansive takes below 100 WPM,"T010; T011; T012; T013; T015; T017; T018; T019",REVIEW,NO
+FV13,Pronunciations present in narration,"Nielsen; Spotify",REVIEW,YES
+FV14,Final voice selected,No,BLOCKED_HUMAN_GATE,YES
+FV15,Final audio present,No,BLOCKED_HUMAN_GATE,YES
+FV16,Publication authorized,No,BLOCKED_AUTHORIZATION,YES
+FV17,Paid credits or external contact,None,PASS,YES
