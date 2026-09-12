@@ -93,10 +93,19 @@ Launch instrumentation v1.0:
 - Plan: `production/pilot-01/launch-instrumentation-plan-v1.0.md`; log: `production/pilot-01/launch-metrics-log-v1.0.csv`; cells: `production/pilot-01/metadata-variants-v1.0.csv`.
 - Nothing was uploaded to YouTube or published; publication remains an explicit authorization gate.
 
+Final source-link and description appendix v1.0:
+- The seven master-script evidence families F1–F7 are mapped one-to-one to publication URLs, supported claims, excluded inferences, chapter anchors, and visual-rights restrictions.
+- Ten URLs were checked on 2026-09-12: seven evidence sources plus the Material 3, IBM Carbon, and Porsche named counterexamples. Counterexamples remain separated as existence cases, not prevalence evidence.
+- The publisher page behind the F3 DOI produced one automated timeout; the DOI remains canonical and the accessibility caveat is disclosed rather than silently treated as a pass.
+- The publication-ready description is 2,317 characters, contains all eight exact v1.2f chapter anchors and ten source links, and stays independent of any upload or publication action.
+- Appendix, registry, description, QA report, and SHA-256 manifest live under `production/pilot-01/`. Persistent pack SHA-256: `391dc47321cdaa0d9fdefaeaec7141d80fe437dfa1b3b2ab3b2714f9186ea535`.
+- No source chart, logo, interface, photograph, or long quotation was copied; links are attribution and verification, not visual-use permission.
+
+
 Current bottleneck:
-- The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. Launch instrumentation is ready but cannot be activated before final voice/music, link-rights review, and explicit publication authorization. No release voice, music, licence, paid model, purchase, provider contact, upload, or publication has been selected.
+- The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. Launch instrumentation and the verified source appendix are ready but cannot be activated before final voice/music and explicit publication authorization. No release voice, music, licence, paid model, purchase, provider contact, upload, or publication has been selected.
 
 Next production gate:
-- While the blind editorial listen remains open, build and verify the final source-link/description evidence appendix against the canonical seven evidence families. Then complete the blind listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing.
+- Complete the blind editorial listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing. In parallel, reversible P1 motion-design refinements may continue only where they do not alter the frozen timing or evidence boundaries.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
