@@ -1,0 +1,5 @@
+candidate,duration_seconds,effective_wpm,integrated_lufs,lra_lu,true_peak_dbfs,sample_rate_hz,channels,full_decode,technical_gate,editorial_naturalness_40,authority_15,pronunciation_15,restraint_10,release_decision
+Candidate_A,104.020,142.01,-20.4,2.2,-6.9,48000,1,PASS,PASS,UNSCORED,UNSCORED,UNSCORED,UNSCORED,HOLD_BLIND_LISTENING
+Candidate_B,103.925,142.15,-20.2,2.9,-3.0,48000,1,PASS,PASS,UNSCORED,UNSCORED,UNSCORED,UNSCORED,HOLD_BLIND_LISTENING
+Candidate_C,104.000,142.04,-20.3,2.9,-3.0,48000,1,PASS,PASS,UNSCORED,UNSCORED,UNSCORED,UNSCORED,HOLD_BLIND_LISTENING
+Candidate_D,104.041,141.98,-20.6,2.3,-3.0,48000,1,PASS,PASS,UNSCORED,UNSCORED,UNSCORED,UNSCORED,HOLD_BLIND_LISTENING
