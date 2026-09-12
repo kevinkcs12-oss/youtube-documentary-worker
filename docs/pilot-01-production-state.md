@@ -130,3 +130,11 @@ Next production gate:
 - Complete the blind editorial listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing. The v1.2g human-review kit is ready; continuous human viewing may retain or revert the motion pass without altering the frozen timing or evidence boundaries.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
+
+
+Pre-publication control pack v1.0:
+- A deterministic offline validator cross-checks the current v1.2g picture candidate, v1.2f timing authority, 161-cue SRT, eight chapter anchors, F1–F7 evidence families, CE1–CE3 counterexamples, three metadata/thumbnail cells, five analytics windows, and the four-candidate blind voice pack.
+- All 32 technical checks pass. Master identity remains `3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27`, 597.760 seconds / 14,944 frames / 1920×1080 / 25 fps.
+- The control pack SHA-256 is `abb98567184edd16e04e57b57f5c2f8d47bce42fcb29c2ce718f0db62f59023a`.
+- The result is PASS_WITH_HUMAN_GATES, not publish authorization. Remaining gates are retain/revert v1.2g, blind final-voice selection, music/no-music authorization, final audio conform, metadata-cell choice, and explicit publication authorization.
+- Validator: `scripts/validate_pilot_01_prepublication_bundle.py`; report, manifest, and upload checklist live under `production/pilot-01/`.
