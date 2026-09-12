@@ -1,0 +1,24 @@
+{
+  "schema": "pilot-01-executive-release-decision-v1.0",
+  "project": "Why Does Everything Look the Same Now?",
+  "timing_authority": "v1.2f-pacing-trim",
+  "timing_seconds": 597.76,
+  "picture_candidate": "v1.2g-progressive-focus",
+  "decisions": {
+    "motion": "PENDING",
+    "voice": "PENDING",
+    "mix": "PENDING",
+    "metadata": "PENDING",
+    "publication": "HOLD"
+  },
+  "authorization_id": null,
+  "authorization_attestation": null,
+  "allowed_values": {
+    "motion": ["RETAIN_V1_2G", "REVERT_V1_2F"],
+    "voice": ["CANDIDATE_A", "CANDIDATE_B", "CANDIDATE_C", "CANDIDATE_D", "REJECT_ALL"],
+    "mix": ["NO_MUSIC", "RIGHTS_CLEARED_MUSIC_AFTER_REVIEW"],
+    "metadata": ["NATIVE_AB_TEST_A_B_C", "CELL_A", "CELL_B", "CELL_C"],
+    "publication": ["HOLD", "AUTHORIZE_UNLISTED_UPLOAD", "AUTHORIZE_PUBLICATION"]
+  },
+  "status": "HOLD_HUMAN_DECISIONS_REQUIRED"
+}
