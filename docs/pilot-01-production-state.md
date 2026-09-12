@@ -164,3 +164,14 @@ Executive release decision gate v1.0:
 - The 12 MB review pack bundles the 89-second motion comparison, four-candidate blind audition, thumbnail contact sheet, scorecards, source appendix, audio gate, preflight report, decision card, manifest and validator.
 - Pack SHA-256: `ba4d3a78080f466a2e62463b15042ff7a0b5d6746ae5f9d51d2aa78a7342d32b`. Drive pack: `15rJwCdTENLshSOpuy-JkQBUZUNB3P4KP`. Library pack: `libfile_327efc8d71f08191890b420d90748b5f`.
 - No decision was inferred, no voice was selected, and no spend, contact, upload, or publication occurred.
+
+
+Blind voice interleaved comparison v1.0:
+- The four sealed no-cost auditions are now interleaved excerpt-by-excerpt into one 06:51.000 review reel: 411.000 seconds / 10,275 frames / 1280×720 / 25 fps; full audiovisual decode passed.
+- Order is counterbalanced by Latin-square rotation (ABCD, BCDA, CDAB, DABC), so each candidate occupies every ordinal position exactly once.
+- The reel contains sixteen comparisons across hook/scope, numbers/limits, model boundary, and final landing. Identical visual treatment and scoring criteria are used for all candidates.
+- Source audio is trimmed only at detected inter-excerpt silences; no time-stretch, pitch shift, re-synthesis, rewriting, loudness ranking, or automatic winner selection is applied.
+- Reel SHA-256: `6bf3f5348f24b7a28a07f850a5e9ad25ab74262f74a0fadbe2125f1e7fd6e33a`. Pack SHA-256: `e3b32c9b1dbecdc0fc90431394f8eb5a87018573b4a1c51cd23ec7e79ed77263`.
+- Drive reel/pack: `1ZdwNoGeGSLVxkBXkEcMSGw1ijfSJpCZs` / `12G1vqKiTHBe73LmA8Zva1xzYk7Rkh8Ab`. Library reel/pack: `libfile_fef7c5bcaab48191a35ea7951f34e818` / `libfile_aa10ef2eca748191ab8e44e17e9ed0c7`.
+- Builder, timing map, manifest, scorecard and QA report live under `scripts/`, `production/pilot-01/`, and `docs/`.
+- Human listening remains required. No voice was selected and all release gates remain closed.
