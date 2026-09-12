@@ -138,3 +138,13 @@ Pre-publication control pack v1.0:
 - The control pack SHA-256 is `abb98567184edd16e04e57b57f5c2f8d47bce42fcb29c2ce718f0db62f59023a`.
 - The result is PASS_WITH_HUMAN_GATES, not publish authorization. Remaining gates are retain/revert v1.2g, blind final-voice selection, music/no-music authorization, final audio conform, metadata-cell choice, and explicit publication authorization.
 - Validator: `scripts/validate_pilot_01_prepublication_bundle.py`; report, manifest, and upload checklist live under `production/pilot-01/`.
+
+
+Validated audio-conform gate v1.0:
+- A deterministic narration-only conform harness now refuses release mode unless motion, voice, mix-path, and publication authorizations are all affirmative and an authorization ID is present.
+- The dry-run control uses only the existing scratch narration; it is tagged DO NOT PUBLISH and is not a final-master candidate.
+- Exact picture identity is enforced against v1.2g SHA-256 `3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27`.
+- Retained dry run: 597.760 seconds / 14,944 frames / 1920×1080 / 25 fps; full decode passed; mono 48 kHz; -15.88 LUFS integrated; -1.06 dBTP; output SHA-256 `852f6fe5bc8cfdbff1d6c97f248abe94890fac084d1a365653c39d992c7ccbc0`.
+- Red-team rejected an unauthorized release invocation and two loudness-validation states before the retained two-pass conform.
+- Music remains deliberately excluded from v1.0 and requires separate rights and mix authorization.
+- Builder: `scripts/build_pilot_01_audio_conform_gate.py`; report, closed decision manifest, and QA matrix live under `production/pilot-01/`.
