@@ -102,10 +102,21 @@ Final source-link and description appendix v1.0:
 - No source chart, logo, interface, photograph, or long quotation was copied; links are attribution and verification, not visual-use permission.
 
 
+Validated v1.2g progressive-focus candidate:
+- Five P1 long graphic holds in S2, S3, S4, S5, and S8 now use fifteen restrained, sequential outline-only focus accents on existing elements.
+- The pass introduces no new words, figures, interfaces, evidence, causal claims, counters, or data-like traces; evidence/illustration boundaries remain unchanged.
+- Runtime: exactly 597.760 seconds / 14,944 frames, 1920×1080/25 fps; full master decode passed.
+- Master SHA-256: `3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27`.
+- Encoded audio is bit-identical to v1.2f (`MD5 29ec265e370b50584c9dfdaaba569d02`); the 161-cue SRT and frozen edit timing are unchanged.
+- Every new accent ends at or above y=815, preserving the locked y=820–1040 subtitle/player-control zone.
+- Builder: `scripts/build_pilot_01_v1_2g_progressive_focus.py`; QA and timing map live under `production/pilot-01/`.
+- v1.2g is retained as a reversible motion-design candidate; v1.2f remains the timing authority. Continuous human viewing may still revert the accents without affecting timing.
+
+
 Current bottleneck:
 - The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. Launch instrumentation and the verified source appendix are ready but cannot be activated before final voice/music and explicit publication authorization. No release voice, music, licence, paid model, purchase, provider contact, upload, or publication has been selected.
 
 Next production gate:
-- Complete the blind editorial listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing. In parallel, reversible P1 motion-design refinements may continue only where they do not alter the frozen timing or evidence boundaries.
+- Complete the blind editorial listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing. The reversible v1.2g progressive-focus pass is technically validated; continuous human viewing may retain or revert it without altering the frozen timing or evidence boundaries.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
