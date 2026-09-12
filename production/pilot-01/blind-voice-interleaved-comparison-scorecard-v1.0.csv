@@ -1,0 +1,18 @@
+excerpt,title,order_position,candidate,clarity_1_to_5,naturalness_1_to_5,editorial_restraint_1_to_5,fatigue_risk_1_to_5,hard_fail_yes_no,notes
+1,HOOK + SCOPE,1,A,,,,,,
+1,HOOK + SCOPE,2,B,,,,,,
+1,HOOK + SCOPE,3,C,,,,,,
+1,HOOK + SCOPE,4,D,,,,,,
+2,NUMBERS + LIMIT,1,B,,,,,,
+2,NUMBERS + LIMIT,2,C,,,,,,
+2,NUMBERS + LIMIT,3,D,,,,,,
+2,NUMBERS + LIMIT,4,A,,,,,,
+3,MODEL BOUNDARY,1,C,,,,,,
+3,MODEL BOUNDARY,2,D,,,,,,
+3,MODEL BOUNDARY,3,A,,,,,,
+3,MODEL BOUNDARY,4,B,,,,,,
+4,FINAL LANDING,1,D,,,,,,
+4,FINAL LANDING,2,A,,,,,,
+4,FINAL LANDING,3,B,,,,,,
+4,FINAL LANDING,4,C,,,,,,
+
