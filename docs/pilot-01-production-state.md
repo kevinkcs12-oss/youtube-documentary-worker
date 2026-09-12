@@ -84,10 +84,19 @@ Blind no-cost voice audition v1.0:
 - The technical gate passes, but no release voice is selected: naturalness, authority, pronunciation and restraint remain blind-listening gates and cannot be inferred from waveform metrics.
 - Builder: `scripts/build_pilot_01_free_voice_audition_v1_0.py`; QA and scorecard: `production/pilot-01/free-voice-blind-audition-qa-v1.0.md` and `production/pilot-01/free-voice-blind-audition-scorecard-v1.0.csv`.
 
+
+Launch instrumentation v1.0:
+- Three claim-safe title/thumbnail cells are locked for a future native YouTube A/B test: canonical curiosity, concrete three-domain scope, and bounded safe-choice mechanism.
+- All thumbnails are original 1280×720 vector-derived graphics with no brand, logo, copied interface, stock asset, or fabricated statistic; desktop and 320×180 mobile contact reviews passed.
+- The primary packaging outcome is YouTube's native watch-time result, not raw CTR. Retention is read at the frozen v1.2f chapter boundaries; traffic-source mix and sample size are required before diagnosis.
+- Early-reaction and universal-benchmark rules are rejected. The 6h read is technical only; retention review begins after processing, with 14 days or native completion as the lock point.
+- Plan: `production/pilot-01/launch-instrumentation-plan-v1.0.md`; log: `production/pilot-01/launch-metrics-log-v1.0.csv`; cells: `production/pilot-01/metadata-variants-v1.0.csv`.
+- Nothing was uploaded to YouTube or published; publication remains an explicit authorization gate.
+
 Current bottleneck:
-- The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. No release voice, music, licence, paid model, purchase, provider contact, or publication has been selected.
+- The calibrated blind audition is technically ready, but its subjective editorial evaluation remains open. Launch instrumentation is ready but cannot be activated before final voice/music, link-rights review, and explicit publication authorization. No release voice, music, licence, paid model, purchase, provider contact, upload, or publication has been selected.
 
 Next production gate:
-- Complete the blind editorial listen, record scores before unsealing the mapping, and either nominate one no-cost control for a full-film scratch conform or reject the entire local set without changing v1.2f timing.
+- While the blind editorial listen remains open, build and verify the final source-link/description evidence appendix against the canonical seven evidence families. Then complete the blind listen and either nominate one no-cost control for a full-film scratch conform or reject the local set without changing v1.2f timing.
 
 Layer C should ingest repository-relative manifests and render only assets explicitly staged in the job directory. No paid APIs, external publishing, or secrets are required.
