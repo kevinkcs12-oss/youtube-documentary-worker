@@ -1,0 +1,101 @@
+{
+  "cue_count": 161,
+  "expansive_take_ids": [
+    "T010",
+    "T011",
+    "T012",
+    "T013",
+    "T015",
+    "T017",
+    "T018",
+    "T019"
+  ],
+  "first_cue_start": "00:00:00.000",
+  "gates": [
+    "blind_voice_selection",
+    "pronunciation_verification",
+    "human_performance_direction",
+    "final_audio_conform",
+    "publication_authorization"
+  ],
+  "last_cue_end": "00:09:56.960",
+  "schema": "pilot-01-final-voice-session-pack-v1.0",
+  "sequence_stats": [
+    {
+      "cue_count": 14,
+      "first_cue_start": "00:00:00.000",
+      "last_cue_end": "00:01:04.000",
+      "sequence": "S1",
+      "title": "The feeling of sameness",
+      "word_count": 120
+    },
+    {
+      "cue_count": 18,
+      "first_cue_start": "00:01:04.000",
+      "last_cue_end": "00:02:22.000",
+      "sequence": "S2",
+      "title": "What the evidence can\u2014and cannot\u2014show",
+      "word_count": 118
+    },
+    {
+      "cue_count": 16,
+      "first_cue_start": "00:02:22.547",
+      "last_cue_end": "00:03:28.603",
+      "sequence": "S3",
+      "title": "Why familiarity feels easier",
+      "word_count": 126
+    },
+    {
+      "cue_count": 22,
+      "first_cue_start": "00:03:30.640",
+      "last_cue_end": "00:04:43.759",
+      "sequence": "S4",
+      "title": "Interfaces and identities",
+      "word_count": 157
+    },
+    {
+      "cue_count": 20,
+      "first_cue_start": "00:04:45.800",
+      "last_cue_end": "00:06:03.960",
+      "sequence": "S5",
+      "title": "Architecture at scale",
+      "word_count": 165
+    },
+    {
+      "cue_count": 25,
+      "first_cue_start": "00:06:05.560",
+      "last_cue_end": "00:07:18.960",
+      "sequence": "S6",
+      "title": "The feedback loop",
+      "word_count": 169
+    },
+    {
+      "cue_count": 23,
+      "first_cue_start": "00:07:20.560",
+      "last_cue_end": "00:08:34.960",
+      "sequence": "S7",
+      "title": "The exceptions that matter",
+      "word_count": 160
+    },
+    {
+      "cue_count": 23,
+      "first_cue_start": "00:08:36.560",
+      "last_cue_end": "00:09:56.960",
+      "sequence": "S8",
+      "title": "A more defensible answer",
+      "word_count": 183
+    }
+  ],
+  "source_srt": "restored/Pilot_01_Animatic_00m00_09m57.760_v1.2f_pacing_trim.srt",
+  "source_srt_sha256": "2bc54569b979eb9e312a82ad1ec59332560e75c4a2f84523061104230681b2b9",
+  "status": "READY_FOR_HUMAN_VOICE_AFTER_SELECTION",
+  "take_count": 91,
+  "target_speech_seconds_at_142_wpm": 506.197,
+  "tight_take_ids": [
+    "T023",
+    "T031",
+    "T065"
+  ],
+  "timeline_pause_budget_at_142_wpm": 91.563,
+  "word_count": 1198
+}
