@@ -1,0 +1,42 @@
+Why do cars, cafés, interfaces, logos and new buildings so often feel as if they share one visual language?
+
+This documentary follows seven bounded evidence families—from object colour and vehicle markets to processing fluency, interface conventions, responsive identity, repeatable architecture and recommendation systems. The argument is not that everything is literally identical, or that one cause explains it all. It is that scale, familiarity, legibility, uncertainty and imitation can repeatedly reward the same low-friction choices.
+
+CHAPTERS
+00:00 The feeling of sameness
+01:04 What the evidence can—and cannot—show
+02:22 Why familiarity feels easier
+03:30 Interfaces and identities
+04:45 Architecture at scale
+06:04 The feedback loop
+07:19 The exceptions that matter
+08:35 A more defensible answer
+
+SOURCES
+F1 — Science Museum Group collection analysis (non-random sample):
+https://pec.ac.uk/blog_entries/a-little-greyer/
+
+F2 — Axalta 2025 Global Automotive Color Popularity Report:
+https://ir.axalta.com/news/press-releases/detail/673/axalta-releases-2025-global-automotive-color-popularity-report
+
+F3 — Reber, Schwarz & Winkielman (2004), processing fluency and aesthetic pleasure:
+https://doi.org/10.1207/S15327957PSPR0804_3
+
+F4 — Nielsen Norman Group, Jakob’s Law:
+https://www.nngroup.com/articles/end-of-web-design/
+
+F5 — Mihajlović et al. (2016), responsive logo design:
+https://portal.sinteza.singidunum.ac.rs/paper/396
+
+F6 — McDonald’s corporate history, Red and White / Mansard / later adaptations:
+https://corporate.mcdonalds.com/corpmcd/our-company/who-we-are/our-history.html
+
+F7 — Spotify Research, familiarity–similarity–discovery trade-off in music recommendation:
+https://research.atspotify.com/publications/algorithmic-balancing-of-familiarity-similarity-discovery-in-music-recommendations
+
+NAMED COUNTEREXAMPLES — existence, not prevalence
+Material Design 3: https://m3.material.io/styles/color/overview
+IBM Carbon: https://carbondesignsystem.com/elements/color/overview/
+Porsche Paint to Sample: https://newsroom.porsche.com/en/2022/products/porsche-911-gt3-paint-to-sample-porsche-exclusive-manufaktur-27832.html
+
+The source links support the limited claims stated in the film; they do not grant visual-use rights. Documentary graphics are original or explicitly labelled illustrations.
