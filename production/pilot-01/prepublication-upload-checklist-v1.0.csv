@@ -1,0 +1,9 @@
+order,gate,owner,status,hard_stop_if_failed,action
+1,motion_candidate_review,Kevin,PENDING,yes,"Retain or revert v1.2g after continuous review"
+2,blind_voice_selection,Kevin,PENDING,yes,"Score four anonymized candidates and select or reject all"
+3,music_mix_authorization,Kevin,PENDING,yes,"Authorize no-music or licensed/music path; no spend implied"
+4,final_audio_conform,Production,BLOCKED_BY_2_3,yes,"Render final voice/mix without timing drift"
+5,final_validator_rerun,Production,BLOCKED_BY_4,yes,"Require zero failed deterministic checks"
+6,metadata_cell_selection,Kevin,PENDING,yes,"Choose A B or C; native test may use all three if authorized"
+7,publication_authorization,Kevin,PENDING,yes,"Explicit authorization required before external publication"
+8,analytics_logging,Production,BLOCKED_BY_7,no,"Record 6h 24h 72h 7d and test completion windows"
