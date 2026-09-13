@@ -1,0 +1,6 @@
+test,expected,observed,result
+positive fixture,PASS_FIXTURE_CONFORM_ONLY,PASS_FIXTURE_CONFORM_ONLY,PASS
+independent deterministic rerender,identical SHA-256,4158f3e9b13dff6eb2ef2f542868cdbc9b60e0f4e8699aa8854c3ccf128639e4,PASS
+overlong take,BLOCKED,BLOCKED,PASS
+missing take,BLOCKED,BLOCKED,PASS
+altered cue sheet,BLOCKED,BLOCKED,PASS
