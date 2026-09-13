@@ -294,3 +294,13 @@ Media-verified chained release preflight v1.1:
 - Pack SHA-256: 0b2570478a181c0cb1746a02e4bc9ed636b0897aaaf2e9072428b3df982617d5. Validator SHA-256: c474cd5e730ad57fae1036718117fa12ee62d201058fc453f6654b5ea2d1afeb.
 - Drive pack/QA: 1dLaMYBhqsoAY4I4FNX52ji1aapATbxT8 / 1cWNOZJpyicCL6brBrfw6-WY3nAy4_spa. Library pack/QA/matrix: libfile_2bdf958645788191922fa45339cf0de5 / libfile_6b08700fbe98819185d5157f1306aca7 / libfile_bed60b3cc1c8819181baa6d644c70119.
 - v1.1 supersedes v1.0. The live positive path and every final-master, upload and publication power remain closed.
+
+Final master candidate builder v1.0:
+- Added a deterministic metadata-only MP4 remux that accepts only the exact audio conform bound by a clean media-verified preflight v1.1.
+- Video and audio are stream-copied. Independent SHA-256 elementary-stream hashes must match before and after remux; no picture or sound re-encoding is permitted.
+- The output identity is PILOT 01 FINAL MASTER CANDIDATE — DO NOT UPLOAD. A successful result sets master_candidate_present=true but keeps final_master_present, upload_authorized, publishable and release_authorized false.
+- Existing output paths are refused with FFmpeg -n. A closed preflight returns code 2 and creates no candidate file.
+- Fourteen of fourteen new tests pass; all fifty-three tests across the five upstream gate suites remain green. A real two-second remux was byte-deterministic across two builds and preserved both stream hashes.
+- Pack SHA-256: 3d0a2332b8002e36922abf0eff1da1f83cd70355a04695fab4e0d67124fa40f0. Builder SHA-256: 1977e9814c43e35960b65646af1eba780116fdcba8eb037fcdc675e2ec68f741.
+- Drive pack/QA: 1M8MEnw9LEMQtY4xBTGb7ZHefSJpRdkHE / 15fW5esA1JS2sgAWqM6kyddNvKPMvk04W. Library pack/QA/matrix: libfile_3de725754e34819193824f1a50c3e2ef / libfile_ed6bb27ab5d88191b667ed25a58e244e / libfile_276fb0ff3198819185a99a2ddb3baac4.
+- No live master candidate was created because the canonical project is HOLD. Captions, description, sources, thumbnail and upload packaging remain separate.
