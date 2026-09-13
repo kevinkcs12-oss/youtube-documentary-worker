@@ -246,3 +246,12 @@ Final narration timeline conform v1.0:
 - Five of five tests pass: positive fixture, byte-identical rerender, overlong-take rejection, missing-take rejection and altered-cue-sheet rejection.
 - Drive pack/fixture: `1SdwvQ-uFUpnUwv_zaKjRcbQ5Ph-LynPw` / `1rGE08JmtltV2Djj4ZHRNXjRsmxSESC8q`. Library pack/report/fixture: `libfile_8c4b12b739f081918f58cd9e8da73a0f` / `libfile_a2dce21eae748191a4861f6031351eaa` / `libfile_78b63cecda148191941213bd8d8fa2e4`.
 - Verdict is `PASS_FIXTURE_CONFORM_ONLY`; the fixture is explicitly DO NOT PUBLISH. Production conform remains blocked until an explicitly selected, authorized and consented final voice delivery passes intake. Final mix and release gates remain separate and closed.
+
+Audio conform provenance gate v1.1:
+- The downstream audio conform gate now requires `--narration-conform-result`; duration alone can no longer admit a narration file.
+- Narration bytes must match the upstream output SHA-256 and carry exact 28,692,480-sample / 91-take / PCM24 mono 48 kHz provenance plus valid cue-sheet, validator, intake-result, delivery-manifest and placement-map lineage hashes.
+- Dry-run control may accept `PASS_FIXTURE_CONFORM_ONLY` only with `fixture_mode=true`. Release mode accepts only a non-fixture `PASS_NARRATION_CONFORM_ONLY` result; upstream publishable/release claims, time-stretch and music are rejected.
+- Nine of nine positive/adversarial tests pass. The actual 597.760-second synthetic fixture passes dry-run provenance and is blocked in release mode before picture rendering.
+- Pack SHA-256: `7d286f6a998ebb5dac394b75b171dc170fce5bc61db0d47cdb785bc24e91ed52`. Updated script SHA-256: `03fbd2345889fdac5a04565af6e829e4527bf8928f21ff0d8d213055b0fd8a0c`.
+- Drive pack/QA: `1l1HQHt60_xviJicmg-tyqy9s5_9ZesSX` / `1U2Q_QZfQA9plJAg_SUKjFhnNEnIfyqYU`. Library pack/QA: `libfile_10de75938d4c8191b9a9e4c02feff38a` / `libfile_90e31b00ea4c8191ad0ae932a89d8462`.
+- No active repository workflow or caller referenced the old CLI. All eleven human decisions and every production/upload/publication gate remain closed.
