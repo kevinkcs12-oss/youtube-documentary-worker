@@ -208,3 +208,12 @@ Chapter-transition procedural sound-design sampler v1.0:
 - Independent rerender is byte-identical. Stem SHA-256: `3cb47996309b7dd486c4f0b6f2457eca56b3149197791e20e381c8fcff7d6fb3`; sampler: `9adae98226e0cb3a4f6ae5216a7f124c4e3f588a8730db10b9e51ffa83bd54e7`; pack: `52247d486b5aaba897c2c260282e4e4ed0f6a38698eab3a88649d82575d82f29`.
 - Drive pack/sampler/QA/contact sheet: `1EIfRsCFe6gNZeK67AWCYJwiNEgGXNWrz` / `1a5taVXraiXdGVORo89uu9H2e4fq5Mp2q` / `1GIKwWLJo6ov8ROjiUfMoDt-pKv115adR` / `1fAc2ux3hUXEgJGsNaMaB9enCt_XPLgPL`. Library pack: `libfile_b67ff720390881918c4dc7f1b347b74e`.
 - Human review may retain or revert each treatment independently. No final sound design, voice, music, mix, spend, contact, upload, or publication is authorized.
+
+
+Executive release decision gate v1.1:
+- v1.0 is superseded. The fail-closed manifest now exposes eleven unresolved configuration choices: motion, voice, opening sound, six independent chapter-transition sound treatments, mix path, and metadata cell; publication remains HOLD.
+- Opening and chapter treatments accept only DRY or PROCEDURAL_V1. Exact chapter keys are enforced, and an exact sound-review attestation is required after all seven A/B surfaces have been reviewed.
+- A v1.0 defect is closed: REJECT_ALL is an editorial rejection state, not a selected final voice, and now blocks release-mode completeness.
+- Default control verdict: PASS_CLOSED_GATES. Default release verdict: BLOCKED. All seven adversarial self-tests pass; validator output always retains release_authorized=false.
+- Pack SHA-256: `9659e255ee8b2f6d4e6cc021348603b1e11a7cfe8831f34c08ab583e4b4b61a9`. Drive pack/card/form/QA: `1CIt5X7VBVjcZAkTTQ_q6mwWy_PvdxuTj` / `11rCG-6buQc0ii0PDKC4AEYQoFQRJUWdP` / `1y90bYfJaItP9aZiTLMFwNHQDme19Pqw_` / `1Gb7gpq9HBNC3fC3nfbQCxD-AAQX8d9Yl`. Library pack: `libfile_5f6322f75de881919bc7ff8eae832106`.
+- A complete manifest may only open downstream conform and preflight. No voice, sound treatment, mix, metadata cell, spend, contact, upload, or publication was selected or authorized.
