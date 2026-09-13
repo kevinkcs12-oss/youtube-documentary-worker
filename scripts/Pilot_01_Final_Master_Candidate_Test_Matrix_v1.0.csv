@@ -1,0 +1,15 @@
+test,expected,actual,failures,result
+complete_preflight_contract,true,true,,PASS
+wrong_schema_blocks,false,false,preflight_schema,PASS
+blocked_verdict_blocks,false,false,preflight_verdict,PASS
+nonempty_failures_block,false,false,preflight_failures,PASS
+unobserved_media_blocks,false,false,media_not_observed,PASS
+decode_not_proven_blocks,false,false,preflight_decode,PASS
+wrong_input_bytes_block,false,false,audio_conform_sha256,PASS
+upload_claim_blocks,false,false,preflight_upload_authorized,PASS
+publishable_claim_blocks,false,false,preflight_publishable,PASS
+release_claim_blocks,false,false,preflight_release_authorized,PASS
+real_remux_preserves_stream_payloads,true,true,,PASS
+real_remux_is_byte_deterministic,true,true,,PASS
+real_remux_sets_nonupload_identity,true,true,,PASS
+closed_preflight_creates_no_candidate,true,true,,PASS
