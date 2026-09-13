@@ -186,3 +186,14 @@ Final voice delivery intake gate v1.0:
 - The validator always emits release_authorized=false. An intake pass cannot choose a performance, alter v1.2f timing, retain v1.2g, authorize music, upload, or publish.
 - Contract SHA-256: `8d706e969fde40f46696efc5c0d9b8336ffd14711736367a5a698299f491c882`. Pack SHA-256: `320c0c0840b34ef96007072e9659fbd00fe3f441cf3bbca9accf9be08bfccfcd`.
 - Drive pack/report/contract/template: `1AJN20ewju54IRZ6dkcIoWRR-IPxj9OOC` / `1jQO6wsHxSCqBdua-qpIHy9yzrd17XQD6` / `1sPuVZpuUsY4KH56vDU2vfnIOsJDjgR1r` / `1kX6UBdWqCsEDqEwLF3wXTxNFudHKm820`. Library pack: `libfile_bee8e149b700819184ffd825a6dedbd3`.
+
+
+Opening procedural sound-design review v1.0:
+- A reversible original sound-design candidate now covers 00:00–01:04 without changing picture, narration, captions, or the v1.2f timing authority.
+- The retained stem uses only fixed-seed pink/white noise and five 380 ms transition textures at 00:07, 00:16, 00:30, 00:46, and 00:54. It contains no sample, melody, harmony, musical work, third-party audio, copied interface sound, or factual recording.
+- Added audio is explicitly illustrative, not evidence or diegetic fact. The designed candidate and A/B reel carry clear labels.
+- Candidate: 64.000 seconds / 1,600 frames / 1920×1080 / 25 fps; full decode passed; -18.2 LUFS integrated / -3.5 dBTP. A/B reel: 132.000 seconds / 3,300 frames / 1280×720 / 25 fps; full decode passed.
+- The initial -62.3 LUFS stem was rejected as too quiet for a meaningful comparison. The retained stem measures -38.4 LUFS / -23.7 dBTP, leaving narration dominant.
+- Independent rerender produced byte-identical stem, candidate, A/B reel, and manifest. Candidate SHA-256: `ad06fc64827d5372c02e387dfe41abfa08507e88102fe3f1db047228bd0e976e`; A/B SHA-256: `3322ebb52d9aae5d48e8096fa68d16da999b397aa8e274e7915fb7cf23d2b70d`; pack SHA-256: `3c62b24f9c68bf099264edc4b19f90b8b48c958d35df58823c9ac391b9844d90`.
+- Drive pack/candidate/A-B/QA/spectrogram: `1DXgA7xQFQCZN9C23ytpM-DDhahui8ZO9` / `1-QP4Dvx4HYy8ombe2-YtLRfI5GXRUBx3` / `153l_Q7Zp90l6FmI8KwV6iQ-1gAsvzg_L` / `1TJfP6KhqxJvtjqfmYkdFTumFq6Mpqr-L` / `1OnVCmqFSW-2PNCK5hCkk-XPvOIxD4Gmf`. Library pack: `libfile_bb3c867c9f2081918fa499893c27f7aa`.
+- Human comparison remains required. No final sound design, voice, music, spend, contact, upload, or publication is authorized.
