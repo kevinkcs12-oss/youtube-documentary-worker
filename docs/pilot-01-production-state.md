@@ -255,3 +255,13 @@ Audio conform provenance gate v1.1:
 - Pack SHA-256: `7d286f6a998ebb5dac394b75b171dc170fce5bc61db0d47cdb785bc24e91ed52`. Updated script SHA-256: `03fbd2345889fdac5a04565af6e829e4527bf8928f21ff0d8d213055b0fd8a0c`.
 - Drive pack/QA: `1l1HQHt60_xviJicmg-tyqy9s5_9ZesSX` / `1U2Q_QZfQA9plJAg_SUKjFhnNEnIfyqYU`. Library pack/QA: `libfile_10de75938d4c8191b9a9e4c02feff38a` / `libfile_90e31b00ea4c8191ad0ae932a89d8462`.
 - No active repository workflow or caller referenced the old CLI. All eleven human decisions and every production/upload/publication gate remain closed.
+
+Audio conform executive handoff v1.2:
+- The audio conform gate now imports and executes the canonical executive decision validator v1.1. The obsolete four-boolean authorization contract is removed rather than translated.
+- Dry-run control requires the canonical HOLD manifest and PASS_CLOSED_GATES. Authorization-bound conform requires all eleven decisions, exact sound and release attestations, and a non-placeholder authorization ID.
+- REJECT_ALL, incomplete chapter sound choices, legacy booleans, missing attestations and non-HOLD dry-run manifests fail closed before rendering.
+- Every output remains publishable=false, release_authorized=false and audio_conform_only=true. A narration-only conform is never a final master; production metadata says NOT FINAL MASTER.
+- Nine of nine v1.2 executive-handoff tests pass, and all nine v1.1 narration-provenance regression tests remain green. No test authorization was persisted and no media was rendered from it.
+- Pack SHA-256: 3861d8494b4d5408f2c5ba926a4d9ab9c1419164703e9007070e9756ccde734c. Script SHA-256: c77103b5798d074c4ca8815d27a43f18a9b4038efa9f884cdfa904616db316bc.
+- Drive pack/QA: 10d0g0JHyWMzCkrf5-OrmItFpzgUPivYX / 1CEfy5TwCXaGZ_TvuYdReuHYGEuxvpn10. Library pack/QA/matrix: libfile_d4e15f0ac2308191bb220797bf59a6dd / libfile_9bf032df9fcc8191bedf32ff4f0ebfe3 / libfile_4b217b9461708191aae1158b30650532.
+- All eleven human decisions and every final-master, upload and publication gate remain closed.
