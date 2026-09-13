@@ -1,0 +1,8 @@
+event_id,start_seconds,end_seconds,duration_seconds,layer,purpose,classification,source
+AMB-01,0.000,64.000,64.000,pink_noise_ambience,Low-level environmental bed,illustrative_only,procedural_fixed_seed_1101
+AIR-01,0.000,64.000,64.000,white_noise_air,High-frequency room air,illustrative_only,procedural_fixed_seed_2202
+TR-01,7.000,7.380,0.380,transition_texture,Underline existing picture transition,illustrative_only,procedural_fixed_seed_3300
+TR-02,16.000,16.380,0.380,transition_texture,Underline existing picture transition,illustrative_only,procedural_fixed_seed_3301
+TR-03,30.000,30.380,0.380,transition_texture,Underline existing picture transition,illustrative_only,procedural_fixed_seed_3302
+TR-04,46.000,46.380,0.380,transition_texture,Underline existing picture transition,illustrative_only,procedural_fixed_seed_3303
+TR-05,54.000,54.380,0.380,transition_texture,Underline existing picture transition,illustrative_only,procedural_fixed_seed_3304
