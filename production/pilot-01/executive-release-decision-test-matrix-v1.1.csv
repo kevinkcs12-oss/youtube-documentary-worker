@@ -1,0 +1,8 @@
+test_id,mode,fixture,expected,actual,result,reason
+T01,control,default_pending_manifest,PASS_CLOSED_GATES,PASS_CLOSED_GATES,PASS,"Closed-gate intake may remain pending"
+T02,release,default_pending_manifest,BLOCKED,BLOCKED,PASS,"Release cannot infer decisions from silence"
+T03,release,complete_authorized_shape,DECISION_MANIFEST_COMPLETE_FOR_DOWNSTREAM_PREFLIGHT,DECISION_MANIFEST_COMPLETE_FOR_DOWNSTREAM_PREFLIGHT,PASS,"All explicit decisions and attestations present"
+T04,release,reject_all_voice,BLOCKED,BLOCKED,PASS,"REJECT_ALL is not a final voice selection"
+T05,release,missing_chapter_key,BLOCKED,BLOCKED,PASS,"Each of six chapter choices is mandatory"
+T06,release,extra_chapter_key,BLOCKED,BLOCKED,PASS,"Unexpected chapter keys indicate schema drift"
+T07,release,missing_sound_review_attestation,BLOCKED,BLOCKED,PASS,"Sound review cannot be inferred from selections"
