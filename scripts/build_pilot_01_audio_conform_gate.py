@@ -2,8 +2,8 @@
 """Build a frame-locked narration-only conform after explicit gate checks.
 
 This script intentionally does not select a voice, authorize publication, or mix
-music. It accepts a full-timeline narration file and refuses release mode unless
-the supplied decision manifest records the required human authorizations.
+music. It accepts only a provenance-bound full-timeline narration file and refuses
+release mode unless both the narration conform and decision gates are satisfied.
 """
 
 from __future__ import annotations
@@ -18,6 +18,7 @@ from pathlib import Path
 TARGET_SECONDS = 597.760
 TARGET_FRAMES = 14944
 TARGET_PICTURE_SHA = "3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27"
+NARRATION_CONFORM_SCHEMA = "pilot-01-final-narration-timeline-conform-v1.0"
 
 
 def run(cmd: list[str], capture: bool = False) -> subprocess.CompletedProcess[str]:
@@ -55,14 +56,61 @@ def audio_stats(path: Path) -> dict:
     return json.loads(p.stderr[start:end + 1])
 
 
+def validate_narration_provenance(narration: Path, conform_result_path: Path,
+                                  dry_run: bool) -> dict:
+    """Bind narration bytes to the upstream fail-closed conform verdict."""
+    result = json.loads(conform_result_path.read_text(encoding="utf-8"))
+    if result.get("schema") != NARRATION_CONFORM_SCHEMA:
+        raise ValueError("Narration conform schema mismatch")
+    if result.get("publishable") is not False or result.get("release_authorized") is not False:
+        raise ValueError("Upstream narration conform must not claim publication or release authority")
+    if result.get("time_stretch_applied") is not False or result.get("music_present") is not False:
+        raise ValueError("Upstream narration conform used forbidden time-stretch or music")
+    if result.get("samples") != 28692480 or result.get("takes_placed") != 91:
+        raise ValueError("Narration conform sample or take count mismatch")
+    if (result.get("sample_rate_hz"), result.get("bit_depth"), result.get("channels")) != (48000, 24, 1):
+        raise ValueError("Narration conform format contract mismatch")
+    if result.get("output_sha256") != sha256(narration):
+        raise ValueError("Narration bytes do not match upstream conform SHA-256")
+
+    lineage_fields = ["cue_sheet_sha256", "validator_sha256", "intake_validation_sha256",
+                      "delivery_manifest_sha256", "placements_sha256"]
+    missing_lineage = [name for name in lineage_fields
+                       if not isinstance(result.get(name), str)
+                       or len(result[name]) != 64
+                       or any(c not in "0123456789abcdef" for c in result[name])]
+    if missing_lineage:
+        raise ValueError("Narration conform lineage is incomplete: " + ", ".join(missing_lineage))
+
+    verdict = result.get("verdict")
+    fixture_mode = result.get("fixture_mode")
+    if dry_run:
+        if verdict not in {"PASS_FIXTURE_CONFORM_ONLY", "PASS_NARRATION_CONFORM_ONLY"}:
+            raise ValueError("Dry-run narration lacks an accepted conform verdict")
+        if verdict == "PASS_FIXTURE_CONFORM_ONLY" and fixture_mode is not True:
+            raise ValueError("Fixture verdict is missing fixture_mode=true")
+    else:
+        if verdict != "PASS_NARRATION_CONFORM_ONLY" or fixture_mode is not False:
+            raise ValueError("Release mode requires a non-fixture PASS_NARRATION_CONFORM_ONLY result")
+    return result
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--picture", type=Path, required=True)
     ap.add_argument("--narration", type=Path, required=True)
+    ap.add_argument("--narration-conform-result", type=Path, required=True)
     ap.add_argument("--decision-manifest", type=Path, required=True)
     ap.add_argument("--output", type=Path, required=True)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+
+    try:
+        narration_conform = validate_narration_provenance(
+            args.narration, args.narration_conform_result, args.dry_run
+        )
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"Narration provenance gate closed: {exc}")
 
     decision = json.loads(args.decision_manifest.read_text(encoding="utf-8"))
     if args.dry_run:
@@ -119,6 +167,9 @@ def main() -> int:
         "first_pass_measurement": first_pass,
         "picture_sha256": sha256(args.picture),
         "narration_sha256": sha256(args.narration),
+        "narration_conform_result_sha256": sha256(args.narration_conform_result),
+        "narration_conform_verdict": narration_conform["verdict"],
+        "narration_fixture_mode": narration_conform["fixture_mode"],
         "output_sha256": sha256(args.output),
     }
     failures = []
