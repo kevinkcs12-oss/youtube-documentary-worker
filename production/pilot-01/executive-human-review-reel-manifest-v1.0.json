@@ -1,0 +1,15 @@
+{
+  "artifact": "Pilot_01_Executive_Human_Review_Reel_DO_NOT_PUBLISH_v1.0.mp4",
+  "status": "REVIEW_ONLY_SCRATCH_VOICE_DO_NOT_PUBLISH",
+  "duration_seconds": 1126.76,
+  "expected_frames": 28169,
+  "video": "1280x720/25fps H.264 yuv420p",
+  "audio": "AAC-LC stereo 48kHz 192kb/s target",
+  "source_sha256": {
+    "MOTION": "5392d8333a345c8a82f7cd826638084e45fc7cb9fa58a6138d5ecbae43cd56b9",
+    "VOICE": "6bf3f5348f24b7a28a07f850a5e9ad25ab74262f74a0fadbe2125f1e7fd6e33a",
+    "SOUND": "189a708711ef292ef819b7144b30c435d06203ca6fe4f4f82f2a89502794c5d5"
+  },
+  "output_sha256": "58876a5fc5217c55a40475e70657c20ec808a1e046ac9590b9b82bc07de4934e",
+  "decision_policy": "No decision is inferred; silence and incomplete forms remain HOLD."
+}
