@@ -227,3 +227,13 @@ Full-film procedural sound-design review v1.0:
 - Independent rerender is byte-identical. Candidate SHA-256: `189a708711ef292ef819b7144b30c435d06203ca6fe4f4f82f2a89502794c5d5`; pack SHA-256: `1b51099ecd6adff68f8e4660ae4e2c04feee4a5e7322b96c1920dae6931fd081`.
 - Drive pack/candidate/QA/scorecard/spectrogram: `1zAZ9ThNQR71AN01dg7E_k4JmTzaBu8Wm` / `1k6zCm2LHz5QbpV2LnHnQJWSuX3BF3ZGa` / `1AEuu4LjXm1AkViNzCvRII15YxbjWFSxF` / `1M1XG0kP2TpQwH3jUA4WUyuElLwyFclvN` / `143NiSTVw1v6zeNxaKzkNRVOt90WGddRz`. Library pack/candidate: `libfile_df966b5709f48191a880a6c96c8d2d2c` / `libfile_ed38d61b3bf08191912da75938fb2196`.
 - The file is explicitly marked REVIEW ONLY / SCRATCH VOICE / DO NOT PUBLISH. Human listening remains required; all eleven v1.1 decisions and all release gates remain closed.
+
+
+Executive human-review reel v1.0:
+- One chaptered convenience reel consolidates the three remaining human-review surfaces without selecting any option: motion v1.2f/v1.2g, counterbalanced voices A-D, and continuous full-film procedural sound design.
+- Review timeline authority: 1,126.760 seconds / 28,169 frames / 1280x720 / 25 fps. Full audiovisual decode passes. The 1,126.781-second container duration includes 21 ms of AAC encoder padding, not video drift.
+- Audio is stereo AAC 48 kHz, -20.05 LUFS integrated, 7.10 LU LRA and -5.42 dBTP. Equal-power mono conversion prevents the previously rejected +3 dB stereo-duplication bias.
+- Eight ordered chapters and standalone slates preserve the review boundaries. The 1920x600 motion source is proportionally letterboxed without crop.
+- Independent full rerender is byte-identical. Reel SHA-256: `58876a5fc5217c55a40475e70657c20ec808a1e046ac9590b9b82bc07de4934e`; pack SHA-256: `db2a64a2aa488be18e9c0e1b2db3e106b6dfbb0e503dfc2bb5c201d8782153f8`.
+- Drive reel/pack/QA/cue/contact: `1Ciy3F-SagCHhVzB94T9X7eC6AeR2WRkk` / `1qhs1fn-bEW-nyr_O7BwRqGe80b6pW9yM` / `12_lvGrj7CZQMzRAZ7Aa_bQ6cxkYF7llC` / `1Q_ydnypq_sRJWYOgii6tEHETleUuQEES` / `13OcVfxCc2xoJ-apKigJPe1RQ2s2c0-1g`. Library reel/pack: `libfile_e87183511b5881919a96f9f3e59d4db1` / `libfile_fb3df9eb7f0c8191a3093f1ec03274f2`.
+- This reel is explicitly REVIEW ONLY / SCRATCH VOICE / DO NOT PUBLISH. Original review assets remain fidelity authorities. Watching it is not an attestation; the v1.1 form must be completed explicitly and silence remains HOLD.
