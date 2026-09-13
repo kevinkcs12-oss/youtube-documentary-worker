@@ -265,3 +265,13 @@ Audio conform executive handoff v1.2:
 - Pack SHA-256: 3861d8494b4d5408f2c5ba926a4d9ab9c1419164703e9007070e9756ccde734c. Script SHA-256: c77103b5798d074c4ca8815d27a43f18a9b4038efa9f884cdfa904616db316bc.
 - Drive pack/QA: 10d0g0JHyWMzCkrf5-OrmItFpzgUPivYX / 1CEfy5TwCXaGZ_TvuYdReuHYGEuxvpn10. Library pack/QA/matrix: libfile_d4e15f0ac2308191bb220797bf59a6dd / libfile_9bf032df9fcc8191bedf32ff4f0ebfe3 / libfile_4b217b9461708191aae1158b30650532.
 - All eleven human decisions and every final-master, upload and publication gate remain closed.
+
+Audio conform picture-decision binding v1.3:
+- The v1.2 gate pinned only the v1.2g picture SHA, making the valid executive choice REVERT_V1_2F impossible to execute and risking a decision/media contradiction.
+- RETAIN_V1_2G now requires exact v1.2g bytes at SHA-256 3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27. REVERT_V1_2F requires exact v1.2f bytes at SHA-256 038b9eb7a638b07be70fe61d8c037c1332d41c5eb40d63862ea7d31717685c7a.
+- Closed-gate dry-run accepts only the manifest's declared pinned review candidate. Both cross-branch substitutions and unknown candidates fail before FFmpeg starts.
+- Validation output now declares schema pilot-01-audio-conform-validation-v1.3 plus effective motion, picture variant, picture hash and decision-manifest hash for downstream provenance.
+- Eight of eight v1.3 tests pass; all nine v1.2 executive-handoff and nine v1.1 narration-provenance tests remain green.
+- Pack SHA-256: cc6c35b7f62a65a9b97d1b6a9d29e10099c70e62e4c5e249ef5d95489b2db28c. Script SHA-256: 94cf70f27e5ad718ecae24eebc0512ba40ccc827c78521d5cea0c1db29d53e14.
+- Drive pack/QA: 10R_du4i9hYT-QUTF6rl8uCwK4Wxfsr83 / 1wOdia7H7WcB5LPQHCE13J61s894pdzGR. Library pack/QA/matrix: libfile_f0ef21339e408191bf71b3fb692980dd / libfile_11ef0bb354c88191a50b7bc6ccb06fc2 / libfile_a6f1d63190c08191b762aa2618292184.
+- No motion choice was made. All eleven human decisions and every final-master, upload and publication gate remain closed.
