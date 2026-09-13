@@ -304,3 +304,13 @@ Final master candidate builder v1.0:
 - Pack SHA-256: 3d0a2332b8002e36922abf0eff1da1f83cd70355a04695fab4e0d67124fa40f0. Builder SHA-256: 1977e9814c43e35960b65646af1eba780116fdcba8eb037fcdc675e2ec68f741.
 - Drive pack/QA: 1M8MEnw9LEMQtY4xBTGb7ZHefSJpRdkHE / 15fW5esA1JS2sgAWqM6kyddNvKPMvk04W. Library pack/QA/matrix: libfile_3de725754e34819193824f1a50c3e2ef / libfile_ed6bb27ab5d88191b667ed25a58e244e / libfile_276fb0ff3198819185a99a2ddb3baac4.
 - No live master candidate was created because the canonical project is HOLD. Captions, description, sources, thumbnail and upload packaging remain separate.
+
+Offline upload review bundle builder v1.0:
+- Added a deterministic offline-only ZIP builder for the future human upload review handoff. It has no network or YouTube integration and never grants upload or publication authority.
+- The builder binds the master-candidate validation, media-verified preflight v1.1, canonical executive v1.1 decision manifest, candidate bytes, captions, description, sources, metadata cells and selected thumbnails by direct validation and SHA-256.
+- Sidecar gates require exactly 161 SRT cues, the eight frozen chapter anchors, both scope/rights disclaimers, source rows F1–F7 plus CE1–CE3 with explicit claim boundaries, metadata cells A/B/C, and directly probed 1280x720 thumbnails.
+- ZIP entries are sorted with fixed timestamps and normalized permissions. Output is written atomically through a partial path; existing outputs are refused and failed builds leave no archive.
+- Seventeen of seventeen new adversarial/end-to-end tests pass; all sixty-seven upstream regressions remain green. Total: 84/84.
+- Pack SHA-256: e8463fa89649af53a88a3821cfed48a33277b766ff0ad11d68a462f088655569. Builder SHA-256: 96e3266aa5a6aa6dfa8fd3a512d289eb584b0ba09078c340df7eb601d45584d9.
+- Drive pack/QA: 1zzWsn2PUuhkvmKyA-L2-ONOBV68dgtoL / 1nnA_rzMuceGssFnIzLfcmkmj61UPxi1b. Library pack/QA/matrix: libfile_9e5c8404c6f88191b206d28d1a882203 / libfile_c5bf6413a6808191a72ef30c9ad9bdd1 / libfile_f5ea7486a75481918c8faafd60a1e74a.
+- No live upload bundle was created because the eleven decisions and authorized final narration remain unavailable. Every final-master, upload and publication gate remains closed.
