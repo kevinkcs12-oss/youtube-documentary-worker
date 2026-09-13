@@ -1,0 +1,37 @@
+{
+  "schema": "pilot-01-executive-release-decision-v1.1",
+  "project": "Why Does Everything Look the Same Now?",
+  "timing_authority": "v1.2f-pacing-trim",
+  "timing_seconds": 597.76,
+  "picture_candidate": "v1.2g-progressive-focus",
+  "decisions": {
+    "motion": "PENDING",
+    "voice": "PENDING",
+    "opening_sound": "PENDING",
+    "chapter_sound": {
+      "C02_02m22": "PENDING",
+      "C03_03m30": "PENDING",
+      "C04_04m45": "PENDING",
+      "C05_06m04": "PENDING",
+      "C06_07m19": "PENDING",
+      "C07_08m35": "PENDING"
+    },
+    "mix": "PENDING",
+    "metadata": "PENDING",
+    "publication": "HOLD"
+  },
+  "sound_review_attestation": null,
+  "authorization_id": null,
+  "authorization_attestation": null,
+  "allowed_values": {
+    "motion": ["RETAIN_V1_2G", "REVERT_V1_2F"],
+    "voice": ["CANDIDATE_A", "CANDIDATE_B", "CANDIDATE_C", "CANDIDATE_D", "REJECT_ALL"],
+    "opening_sound": ["DRY", "PROCEDURAL_V1"],
+    "chapter_sound": ["DRY", "PROCEDURAL_V1"],
+    "mix": ["NO_MUSIC", "RIGHTS_CLEARED_MUSIC_AFTER_REVIEW"],
+    "metadata": ["NATIVE_AB_TEST_A_B_C", "CELL_A", "CELL_B", "CELL_C"],
+    "publication": ["HOLD", "AUTHORIZE_UNLISTED_UPLOAD", "AUTHORIZE_PUBLICATION"]
+  },
+  "status": "HOLD_HUMAN_DECISIONS_REQUIRED",
+  "release_authorized": false
+}
