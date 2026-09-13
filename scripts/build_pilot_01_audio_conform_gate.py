@@ -15,10 +15,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+from validate_pilot_01_executive_release_decision_v1_1 import validate_data
+
 TARGET_SECONDS = 597.760
 TARGET_FRAMES = 14944
 TARGET_PICTURE_SHA = "3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27"
 NARRATION_CONFORM_SCHEMA = "pilot-01-final-narration-timeline-conform-v1.0"
+EXECUTIVE_DECISION_SCHEMA = "pilot-01-executive-release-decision-v1.1"
 
 
 def run(cmd: list[str], capture: bool = False) -> subprocess.CompletedProcess[str]:
@@ -95,6 +98,22 @@ def validate_narration_provenance(narration: Path, conform_result_path: Path,
     return result
 
 
+def validate_executive_decision(decision: dict, dry_run: bool) -> dict:
+    """Use the canonical v1.1 validator; never translate legacy booleans."""
+    if decision.get("schema") != EXECUTIVE_DECISION_SCHEMA:
+        raise ValueError("Canonical executive decision schema v1.1 is required")
+    result = validate_data(decision, release=not dry_run)
+    if result.get("release_authorized") is not False:
+        raise ValueError("Executive validator improperly claims release authority")
+    if dry_run:
+        if result.get("status") != "PASS_CLOSED_GATES" or result.get("publication_scope") != "HOLD":
+            raise ValueError("Dry run requires canonical HOLD / PASS_CLOSED_GATES")
+    elif result.get("status") != "DECISION_MANIFEST_COMPLETE_FOR_DOWNSTREAM_PREFLIGHT":
+        detail = "; ".join(result.get("errors", [])) or str(result.get("status"))
+        raise ValueError("Executive release gate closed: " + detail)
+    return result
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--picture", type=Path, required=True)
@@ -113,15 +132,10 @@ def main() -> int:
         raise SystemExit(f"Narration provenance gate closed: {exc}")
 
     decision = json.loads(args.decision_manifest.read_text(encoding="utf-8"))
-    if args.dry_run:
-        if decision.get("mode") != "dry_run_control":
-            raise SystemExit("Dry run requires mode=dry_run_control")
-    else:
-        required = ["motion_decision_authorized", "voice_selected_authorized",
-                    "mix_path_authorized", "publication_authorized"]
-        missing = [k for k in required if decision.get(k) is not True]
-        if missing or not decision.get("authorization_id"):
-            raise SystemExit("Release gate closed: " + ", ".join(missing or ["authorization_id"]))
+    try:
+        decision_validation = validate_executive_decision(decision, args.dry_run)
+    except ValueError as exc:
+        raise SystemExit(f"Executive decision gate closed: {exc}")
 
     if sha256(args.picture) != TARGET_PICTURE_SHA:
         raise SystemExit("Picture identity mismatch")
@@ -139,7 +153,8 @@ def main() -> int:
         f"measured_thresh={first_pass['input_thresh']}:"
         f"offset={first_pass['target_offset']}"
     )
-    metadata = "PILOT 01 DRY-RUN CONTROL — DO NOT PUBLISH" if args.dry_run else "PILOT 01 AUTHORIZED AUDIO CONFORM"
+    metadata = ("PILOT 01 DRY-RUN CONTROL — DO NOT PUBLISH" if args.dry_run
+                else "PILOT 01 AUTHORIZATION-BOUND AUDIO CONFORM — NOT FINAL MASTER")
     run([
         "ffmpeg", "-y", "-v", "error", "-i", str(args.picture), "-i", str(args.narration),
         "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
@@ -155,8 +170,12 @@ def main() -> int:
     audio = next(s for s in outprobe["streams"] if s["codec_type"] == "audio")
     duration = float(outprobe["format"]["duration"])
     result = {
-        "mode": decision["mode"],
-        "publishable": not args.dry_run,
+        "mode": "dry_run_control" if args.dry_run else "authorization_bound_audio_conform",
+        "publishable": False,
+        "release_authorized": False,
+        "audio_conform_only": True,
+        "executive_decision_status": decision_validation["status"],
+        "publication_scope": decision_validation["publication_scope"],
         "duration_seconds": duration,
         "video_frames": int(video["nb_read_frames"]),
         "geometry": f"{video['width']}x{video['height']}",
