@@ -1,0 +1,10 @@
+test,expected,observed,detail,result
+canonical HOLD dry run,PASS_CLOSED_GATES,PASS_CLOSED_GATES,safe control path,PASS
+canonical HOLD release,BLOCKED,BLOCKED,"Executive release gate closed: unresolved decisions: motion, voice, opening_sound, mix, metadata, chapter_sound.C02_02m22, chapter_sound.C03_03m30, chapter_sound.C04_04m45, chapter_sound.C05_06m04, chapter_sound.C06_07m19, chapter_sound.C07_08m35; publication remains HOLD; publication scope is not affirmative; exact sound-review attestation missing; authorization_id missing; exact authorization attestation missing",PASS
+legacy boolean bypass,BLOCKED,BLOCKED,Canonical executive decision schema v1.1 is required,PASS
+complete canonical downstream shape,DECISION_MANIFEST_COMPLETE_FOR_DOWNSTREAM_PREFLIGHT,DECISION_MANIFEST_COMPLETE_FOR_DOWNSTREAM_PREFLIGHT,gate isolation only,PASS
+REJECT_ALL voice,BLOCKED,BLOCKED,Executive release gate closed: voice REJECT_ALL cannot enter release conform,PASS
+partial chapter sound,BLOCKED,BLOCKED,Executive release gate closed: unresolved decisions: chapter_sound.C07_08m35,PASS
+missing exact release attestation,BLOCKED,BLOCKED,Executive release gate closed: exact authorization attestation missing,PASS
+non-HOLD dry run,BLOCKED,BLOCKED,Dry run requires canonical HOLD / PASS_CLOSED_GATES,PASS
+source-level non-release invariants,NO_LEGACY_BYPASS_AND_FALSE_AUTHORITY,NO_LEGACY_BYPASS_AND_FALSE_AUTHORITY,static fail-closed guard,PASS
