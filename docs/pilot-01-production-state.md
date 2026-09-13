@@ -284,3 +284,13 @@ Chained release preflight v1.0:
 - Pack SHA-256: aaf14585a8f40bf06175e8411f75a744156193bd9c0894350cc4edfaff2aee10. Validator SHA-256: a22f76c201cc12c525f2a64af85c241c79d6f2dab1e0ca97538daeb843379148.
 - Drive pack/QA: 1Y5GC-PHiQdcKQqDheMvse1NQWUoOBgQU / 1jWQakCN-pDDfQM0I1X2zVJ-uiTJUzQpz. Library pack/QA/matrix: libfile_7112a9c77d648191aa0e6d2e5aef8bf2 / libfile_f80c3a88be508191bd01fa344a80171f / libfile_996c9fb782e4819193fc3dfdb76bcd63.
 - The real positive path remains blocked until all eleven human decisions, exact attestations and a non-fixture 91-take narration delivery exist. No final master, upload or publication was authorized.
+
+Media-verified chained release preflight v1.1:
+- v1.0 bound the audio-conform bytes but still trusted duration, frame, stream, format and loudness values declared in the upstream JSON. v1.1 independently inspects the supplied media.
+- ffprobe now counts frames and verifies one video plus one audio stream, 597.760 s, 14,944 frames, 1920x1080/25 fps and mono 48 kHz. FFmpeg performs a full decode and an independent loudness/true-peak measurement.
+- The media must carry the exact authorization-bound audio-conform identity metadata, and every directly observed field must agree with the v1.3 declaration.
+- Fourteen of fourteen new tests pass; all thirteen v1.0 chained-preflight and twenty-six earlier audio regressions remain green.
+- A disposable real negative probe was decoded and correctly blocked with fourteen mismatches. No synthetic authorization or test media was persisted as production.
+- Pack SHA-256: 0b2570478a181c0cb1746a02e4bc9ed636b0897aaaf2e9072428b3df982617d5. Validator SHA-256: c474cd5e730ad57fae1036718117fa12ee62d201058fc453f6654b5ea2d1afeb.
+- Drive pack/QA: 1dLaMYBhqsoAY4I4FNX52ji1aapATbxT8 / 1cWNOZJpyicCL6brBrfw6-WY3nAy4_spa. Library pack/QA/matrix: libfile_2bdf958645788191922fa45339cf0de5 / libfile_6b08700fbe98819185d5157f1306aca7 / libfile_bed60b3cc1c8819181baa6d644c70119.
+- v1.1 supersedes v1.0. The live positive path and every final-master, upload and publication power remain closed.
