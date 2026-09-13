@@ -1,0 +1,26 @@
+{
+  "schema": "pilot-01-final-narration-timeline-conform-v1.0",
+  "verdict": "PASS_FIXTURE_CONFORM_ONLY",
+  "fixture_mode": true,
+  "publishable": false,
+  "release_authorized": false,
+  "time_stretch_applied": false,
+  "music_present": false,
+  "sample_rate_hz": 48000,
+  "bit_depth": 24,
+  "channels": 1,
+  "duration_seconds": 597.76,
+  "samples": 28692480,
+  "takes_placed": 91,
+  "cue_sheet_sha256": "226747fb55ac45941997230d3e35f331e40c94f248385e68a1e3ebd22b74cccf",
+  "validator_sha256": "62193b4e16a4453c766d07a70a028105bbeca6c7f24904c41a764c6b353fb7ec",
+  "intake_validation_sha256": "f9960ec5924ea7c665ebc6207afdc9c983a65ffbb7eed79ca46033295ed4fcda",
+  "delivery_manifest_sha256": "ba6bbfd3c7ff0c08ff32b3d5db92fcf3d19d9cf83a3302b795ef76c9302c4217",
+  "output_sha256": "4158f3e9b13dff6eb2ef2f542868cdbc9b60e0f4e8699aa8854c3ccf128639e4",
+  "placements_sha256": "361174bfa07e39a342676b80cabe0ca77783aa0f9160242b4d74d881b23e9762",
+  "intake_warnings": [
+    "T023: review active-speech rate 171.1 WPM",
+    "T031: review active-speech rate 175.7 WPM",
+    "T065: review active-speech rate 175.4 WPM"
+  ]
+}
