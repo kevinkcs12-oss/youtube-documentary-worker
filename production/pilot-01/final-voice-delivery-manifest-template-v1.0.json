@@ -1,0 +1,477 @@
+{
+  "schema": "pilot-01-final-voice-delivery-v1.0",
+  "editorial_status": "PENDING_HUMAN_DECISIONS",
+  "selected_voice": "PENDING",
+  "recording_authorization_id": "",
+  "performer_consent_asserted": false,
+  "pronunciation_verified": {
+    "Nielsen": false,
+    "Spotify": false
+  },
+  "capture": {
+    "dry": true,
+    "music_present": false,
+    "sample_rate_hz": 48000,
+    "bit_depth": 24,
+    "channels": 1
+  },
+  "room_tone_file": "ROOM_TONE.wav",
+  "contract_sha256": "8d706e969fde40f46696efc5c0d9b8336ffd14711736367a5a698299f491c882",
+  "takes": [
+    {
+      "take_id": "T001",
+      "filename": "T001.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T002",
+      "filename": "T002.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T003",
+      "filename": "T003.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T004",
+      "filename": "T004.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T005",
+      "filename": "T005.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T006",
+      "filename": "T006.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T007",
+      "filename": "T007.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T008",
+      "filename": "T008.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T009",
+      "filename": "T009.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T010",
+      "filename": "T010.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T011",
+      "filename": "T011.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T012",
+      "filename": "T012.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T013",
+      "filename": "T013.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T014",
+      "filename": "T014.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T015",
+      "filename": "T015.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T016",
+      "filename": "T016.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T017",
+      "filename": "T017.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T018",
+      "filename": "T018.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T019",
+      "filename": "T019.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T020",
+      "filename": "T020.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T021",
+      "filename": "T021.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T022",
+      "filename": "T022.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T023",
+      "filename": "T023.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T024",
+      "filename": "T024.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T025",
+      "filename": "T025.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T026",
+      "filename": "T026.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T027",
+      "filename": "T027.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T028",
+      "filename": "T028.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T029",
+      "filename": "T029.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T030",
+      "filename": "T030.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T031",
+      "filename": "T031.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T032",
+      "filename": "T032.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T033",
+      "filename": "T033.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T034",
+      "filename": "T034.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T035",
+      "filename": "T035.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T036",
+      "filename": "T036.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T037",
+      "filename": "T037.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T038",
+      "filename": "T038.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T039",
+      "filename": "T039.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T040",
+      "filename": "T040.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T041",
+      "filename": "T041.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T042",
+      "filename": "T042.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T043",
+      "filename": "T043.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T044",
+      "filename": "T044.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T045",
+      "filename": "T045.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T046",
+      "filename": "T046.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T047",
+      "filename": "T047.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T048",
+      "filename": "T048.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T049",
+      "filename": "T049.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T050",
+      "filename": "T050.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T051",
+      "filename": "T051.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T052",
+      "filename": "T052.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T053",
+      "filename": "T053.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T054",
+      "filename": "T054.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T055",
+      "filename": "T055.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T056",
+      "filename": "T056.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T057",
+      "filename": "T057.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T058",
+      "filename": "T058.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T059",
+      "filename": "T059.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T060",
+      "filename": "T060.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T061",
+      "filename": "T061.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T062",
+      "filename": "T062.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T063",
+      "filename": "T063.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T064",
+      "filename": "T064.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T065",
+      "filename": "T065.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T066",
+      "filename": "T066.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T067",
+      "filename": "T067.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T068",
+      "filename": "T068.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T069",
+      "filename": "T069.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T070",
+      "filename": "T070.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T071",
+      "filename": "T071.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T072",
+      "filename": "T072.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T073",
+      "filename": "T073.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T074",
+      "filename": "T074.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T075",
+      "filename": "T075.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T076",
+      "filename": "T076.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T077",
+      "filename": "T077.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T078",
+      "filename": "T078.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T079",
+      "filename": "T079.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T080",
+      "filename": "T080.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T081",
+      "filename": "T081.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T082",
+      "filename": "T082.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T083",
+      "filename": "T083.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T084",
+      "filename": "T084.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T085",
+      "filename": "T085.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T086",
+      "filename": "T086.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T087",
+      "filename": "T087.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T088",
+      "filename": "T088.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T089",
+      "filename": "T089.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T090",
+      "filename": "T090.wav",
+      "sha256": ""
+    },
+    {
+      "take_id": "T091",
+      "filename": "T091.wav",
+      "sha256": ""
+    }
+  ]
+}
