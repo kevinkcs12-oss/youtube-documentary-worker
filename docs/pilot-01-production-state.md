@@ -175,3 +175,14 @@ Blind voice interleaved comparison v1.0:
 - Drive reel/pack: `1ZdwNoGeGSLVxkBXkEcMSGw1ijfSJpCZs` / `12G1vqKiTHBe73LmA8Zva1xzYk7Rkh8Ab`. Library reel/pack: `libfile_fef7c5bcaab48191a35ea7951f34e818` / `libfile_aa10ef2eca748191ab8e44e17e9ed0c7`.
 - Builder, timing map, manifest, scorecard and QA report live under `scripts/`, `production/pilot-01/`, and `docs/`.
 - Human listening remains required. No voice was selected and all release gates remain closed.
+
+
+Final voice delivery intake gate v1.0:
+- The 91-take session plan is now bound to an exact machine-readable delivery contract: T001.wav–T091.wav plus at least 30 seconds of ROOM_TONE.wav.
+- Intake requires dry mono PCM WAV at 48 kHz/24-bit, per-file SHA-256, the approved A–D voice identity, an authorization ID, performer-consent assertion, and explicit Nielsen/Spotify pronunciation confirmation.
+- The validator blocks missing/unexpected files, checksum drift, wrong codec/rate/channel count, clipping, peaks above -0.5 dBFS, absent speech, implausible active-speech rates, short room tone, and digital-silence room tone.
+- Full synthetic positive fixture: PASS_INTAKE_ONLY with 91/91 takes, zero failures and zero warnings. Incomplete and 16-bit/44.1 kHz/stereo fixtures are correctly BLOCKED.
+- A first synthetic loop fixture was rejected after FFmpeg consumed stdin and malformed filenames; the corrected test uses -nostdin and validates all 92 required WAVs.
+- The validator always emits release_authorized=false. An intake pass cannot choose a performance, alter v1.2f timing, retain v1.2g, authorize music, upload, or publish.
+- Contract SHA-256: `8d706e969fde40f46696efc5c0d9b8336ffd14711736367a5a698299f491c882`. Pack SHA-256: `320c0c0840b34ef96007072e9659fbd00fe3f441cf3bbca9accf9be08bfccfcd`.
+- Drive pack/report/contract/template: `1AJN20ewju54IRZ6dkcIoWRR-IPxj9OOC` / `1jQO6wsHxSCqBdua-qpIHy9yzrd17XQD6` / `1sPuVZpuUsY4KH56vDU2vfnIOsJDjgR1r` / `1kX6UBdWqCsEDqEwLF3wXTxNFudHKm820`. Library pack: `libfile_bee8e149b700819184ffd825a6dedbd3`.
