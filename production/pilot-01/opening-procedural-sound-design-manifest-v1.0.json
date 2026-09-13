@@ -1,0 +1,24 @@
+{
+  "schema": "pilot-01-opening-procedural-sound-design-v1.0",
+  "scope": "00:00-01:04 reversible review candidate",
+  "sound_class": "original deterministic procedural ambience and transition texture",
+  "music_present": false,
+  "third_party_audio_present": false,
+  "factual_evidence": false,
+  "illustrative_only": true,
+  "transition_seconds": [
+    7.0,
+    16.0,
+    30.0,
+    46.0,
+    54.0
+  ],
+  "expected_candidate_seconds": 64.0,
+  "expected_candidate_frames": 1600,
+  "source_master_sha256": "3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27",
+  "stem_sha256": "f14e511cde9108e1212236906087f91dab78b7d99c2b2e4ffd153dc259da1aa0",
+  "candidate_sha256": "ad06fc64827d5372c02e387dfe41abfa08507e88102fe3f1db047228bd0e976e",
+  "comparison_sha256": "3322ebb52d9aae5d48e8096fa68d16da999b397aa8e274e7915fb7cf23d2b70d",
+  "editorial_status": "REVERSIBLE_HUMAN_REVIEW_REQUIRED",
+  "release_authorized": false
+}
