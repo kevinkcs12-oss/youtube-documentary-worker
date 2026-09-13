@@ -1,0 +1,9 @@
+test,expected,observed,detail,result
+closed HOLD resolves declared review candidate,RETAIN_V1_2G,RETAIN_V1_2G,v1.2g-progressive-focus,PASS
+HOLD candidate exact bytes,PASS,PASS,3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27,PASS
+explicit retain resolves v1.2g,RETAIN_V1_2G,RETAIN_V1_2G,v1.2g-progressive-focus,PASS
+explicit revert resolves v1.2f,REVERT_V1_2F,REVERT_V1_2F,v1.2f-pacing-trim,PASS
+retain decision with v1.2f bytes,BLOCKED,BLOCKED,Picture identity contradicts selected v1.2g-progressive-focus authority,PASS
+revert decision with v1.2g bytes,BLOCKED,BLOCKED,Picture identity contradicts selected v1.2f-pacing-trim authority,PASS
+unknown HOLD picture candidate,BLOCKED,BLOCKED,Dry-run picture_candidate is not a pinned picture authority,PASS
+downstream schema and manifest binding,PASS,PASS,pilot-01-audio-conform-validation-v1.3,PASS
