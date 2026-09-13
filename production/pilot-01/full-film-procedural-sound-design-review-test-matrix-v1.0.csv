@@ -1,0 +1,13 @@
+test_id,control,expected,actual,result
+T01,runtime_seconds,597.760,597.760,PASS
+T02,video_frames,14944,14944,PASS
+T03,video_format,1280x720_25fps_H264,1280x720_25fps_H264,PASS
+T04,audio_format,stereo_48000Hz_AAC,stereo_48000Hz_AAC,PASS
+T05,full_decode,no_errors,no_errors,PASS
+T06,video_elementary_stream_md5,identical_to_captioned_v1.2g,identical_7164f03dad3ea9059a0097ea208ad817,PASS
+T07,independent_rerender_sha256,identical,identical_189a708711ef292ef819b7144b30c435d06203ca6fe4f4f82f2a89502794c5d5,PASS
+T08,integrated_loudness,near_dry_reference,-19.8_LUFS,PASS
+T09,true_peak,below_-1_dBTP,-2.4_dBTP,PASS
+T10,stem_vs_narration_rms,stem_at_least_20dB_lower_all_windows,minimum_21.2dB_lower,PASS
+T11,publication_metadata,explicit_do_not_publish,explicit_do_not_publish,PASS
+T12,first_full_level_stereo_render,reject_if_plus_3dB_bias,rejected_at_-16.8_LUFS,PASS
