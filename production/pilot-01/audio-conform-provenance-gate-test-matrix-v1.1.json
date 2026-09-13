@@ -1,0 +1,69 @@
+{
+  "verdict": "PASS",
+  "tests": 9,
+  "matrix": [
+    {
+      "test": "fixture in dry-run",
+      "expected": "PASS",
+      "observed": "PASS",
+      "detail": "review-only fixture accepted",
+      "result": "PASS"
+    },
+    {
+      "test": "fixture in release mode",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Release mode requires a non-fixture PASS_NARRATION_CONFORM_ONLY result",
+      "result": "PASS"
+    },
+    {
+      "test": "production conform in release mode",
+      "expected": "PASS",
+      "observed": "PASS",
+      "detail": "non-fixture provenance accepted",
+      "result": "PASS"
+    },
+    {
+      "test": "narration hash substitution",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Narration bytes do not match upstream conform SHA-256",
+      "result": "PASS"
+    },
+    {
+      "test": "upstream publishable claim",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Upstream narration conform must not claim publication or release authority",
+      "result": "PASS"
+    },
+    {
+      "test": "sample-count drift",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Narration conform sample or take count mismatch",
+      "result": "PASS"
+    },
+    {
+      "test": "time-stretch flag",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Upstream narration conform used forbidden time-stretch or music",
+      "result": "PASS"
+    },
+    {
+      "test": "schema substitution",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Narration conform schema mismatch",
+      "result": "PASS"
+    },
+    {
+      "test": "missing intake lineage",
+      "expected": "BLOCKED",
+      "observed": "BLOCKED",
+      "detail": "Narration conform lineage is incomplete: intake_validation_sha256",
+      "result": "PASS"
+    }
+  ]
+}
