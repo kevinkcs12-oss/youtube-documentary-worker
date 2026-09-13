@@ -1,0 +1,7 @@
+test_id,fixture,expected,observed,status,notes
+FV-01,canonical cue-sheet contract,PASS_CONTRACT_ONLY,PASS_CONTRACT_ONLY,PASS,"91 ordered takes; contract SHA-256 generated"
+FV-02,complete synthetic technical fixture,PASS_INTAKE_ONLY,PASS_INTAKE_ONLY,PASS,"91/91 takes plus 30-second room tone; zero failures and zero warnings; synthetic QA only"
+FV-03,incomplete delivery,BLOCKED,BLOCKED,PASS,"missing take list and unopened authorization gates reported"
+FV-04,wrong codec/rate/channel,BLOCKED,BLOCKED,PASS,"pcm_s16le, 44.1 kHz, stereo rejected independently"
+FV-05,release authority,NEVER_GRANTED,release_authorized=false,PASS,"an intake pass cannot authorize upload or publication"
+
