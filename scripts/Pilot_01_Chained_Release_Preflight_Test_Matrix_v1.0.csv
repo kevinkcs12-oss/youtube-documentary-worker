@@ -1,0 +1,14 @@
+test,expected,actual,authority_closed,result,failures
+valid_synthetic_chain,PASS_CHAINED_PREFLIGHT_ONLY,PASS_CHAINED_PREFLIGHT_ONLY,true,PASS,
+hold_manifest_blocks,BLOCKED,BLOCKED,true,PASS,executive_decision_incomplete|executive_status_mismatch|publication_scope_not_affirmative|publication_scope_mismatch
+wrong_audio_schema_blocks,BLOCKED,BLOCKED,true,PASS,audio_schema
+dry_run_mode_blocks,BLOCKED,BLOCKED,true,PASS,audio_mode
+fixture_narration_blocks,BLOCKED,BLOCKED,true,PASS,narration_fixture_mode
+decision_hash_mismatch_blocks,BLOCKED,BLOCKED,true,PASS,decision_manifest_sha256
+media_hash_mismatch_blocks,BLOCKED,BLOCKED,true,PASS,audio_media_sha256
+motion_mismatch_blocks,BLOCKED,BLOCKED,true,PASS,motion_decision
+picture_mismatch_blocks,BLOCKED,BLOCKED,true,PASS,picture_sha256
+technical_failure_blocks,BLOCKED,BLOCKED,true,PASS,technical_baseline_failures
+authority_claim_blocks,BLOCKED,BLOCKED,true,PASS,audio_claims_publishable
+publication_scope_mismatch_blocks,BLOCKED,BLOCKED,true,PASS,publication_scope_mismatch
+nan_duration_blocks,BLOCKED,BLOCKED,true,PASS,duration
