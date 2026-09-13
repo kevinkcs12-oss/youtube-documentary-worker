@@ -1,0 +1,9 @@
+section,start_seconds,end_seconds,duration_seconds,decision_boundary
+INTRO,0.000,6.000,6.000,No decision
+MOTION_BRIEF,6.000,11.000,5.000,MOTION = RETAIN_V1_2G or REVERT_V1_2F
+MOTION,11.000,100.000,89.000,MOTION = RETAIN_V1_2G or REVERT_V1_2F
+VOICE_BRIEF,100.000,105.000,5.000,"VOICE = A, B, C, D, or REJECT_ALL"
+VOICE,105.000,516.000,411.000,"VOICE = A, B, C, D, or REJECT_ALL"
+SOUND_BRIEF,516.000,521.000,5.000,Seven independent choices = DRY or PROCEDURAL_V1
+SOUND,521.000,1118.760,597.760,Seven independent choices = DRY or PROCEDURAL_V1
+OUTRO,1118.760,1126.760,8.000,All release gates remain closed
