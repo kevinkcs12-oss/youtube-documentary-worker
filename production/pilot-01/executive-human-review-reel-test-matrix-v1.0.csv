@@ -1,0 +1,15 @@
+test_id,control,expected,observed,status
+ER01,Source existence,Three canonical review sources present,All three present,PASS
+ER02,Video duration authority,1126.760 seconds,28169 frames at 25 fps = 1126.760 seconds,PASS
+ER03,Frame count,28169,28169,PASS
+ER04,Canvas and cadence,1280x720 at 25 fps,1280x720 at 25/1,PASS
+ER05,Audio format,Stereo AAC 48 kHz,Stereo AAC 48 kHz,PASS
+ER06,Full decode,No audiovisual decode error,No error,PASS
+ER07,Chapter map,Eight ordered non-overlapping chapters,0.000 through 1126.760 with eight chapters,PASS
+ER08,Loudness integrity,No +3 dB mono duplication bias,-20.05 LUFS and -5.42 dBTP,PASS
+ER09,Motion framing,Proportional fit without crop,Letterboxed 1920x600 source in 1280x720,PASS
+ER10,Separator safety,No labels over evidence frames,All instructions on standalone slates,PASS
+ER11,Release warning,Explicit review-only scratch-voice warning,Container and every slate marked DO NOT PUBLISH,PASS
+ER12,Decision neutrality,No option selected or inferred,All eleven v1.1 choices remain open and silence remains HOLD,PASS
+ER13,Reproducibility,Independent rerender byte-identical,SHA-256 equality PASS,PASS
+ER14,Archive readiness,Manifest cue sheet QA and builder available,All present,PASS
