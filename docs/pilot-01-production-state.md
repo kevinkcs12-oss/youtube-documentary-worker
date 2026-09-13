@@ -237,3 +237,12 @@ Executive human-review reel v1.0:
 - Independent full rerender is byte-identical. Reel SHA-256: `58876a5fc5217c55a40475e70657c20ec808a1e046ac9590b9b82bc07de4934e`; pack SHA-256: `db2a64a2aa488be18e9c0e1b2db3e106b6dfbb0e503dfc2bb5c201d8782153f8`.
 - Drive reel/pack/QA/cue/contact: `1Ciy3F-SagCHhVzB94T9X7eC6AeR2WRkk` / `1qhs1fn-bEW-nyr_O7BwRqGe80b6pW9yM` / `12_lvGrj7CZQMzRAZ7Aa_bQ6cxkYF7llC` / `1Q_ydnypq_sRJWYOgii6tEHETleUuQEES` / `13OcVfxCc2xoJ-apKigJPe1RQ2s2c0-1g`. Library reel/pack: `libfile_e87183511b5881919a96f9f3e59d4db1` / `libfile_fb3df9eb7f0c8191a3093f1ec03274f2`.
 - This reel is explicitly REVIEW ONLY / SCRATCH VOICE / DO NOT PUBLISH. Original review assets remain fidelity authorities. Watching it is not an attestation; the v1.1 form must be completed explicitly and silence remains HOLD.
+
+Final narration timeline conform v1.0:
+- A new fail-closed bridge now assembles an intake-approved 91-take delivery into the frozen 597.760-second narration timeline without time-stretching, voice selection, music or release authority.
+- The conformer invokes the existing canonical intake validator, pins both validator and cue-sheet SHA-256, rechecks take hashes after intake, rejects cue overlap and blocks any decoded take exceeding its exact sample window.
+- Synthetic fixture validation passes at 28,692,480 samples, PCM s24le mono/48 kHz, with all T001-T091 placed and unused capacity filled only with digital silence. The three known tight-cue warnings T023/T031/T065 remain visible.
+- Two independent complete conforms are byte-identical. Synthetic fixture SHA-256: `4158f3e9b13dff6eb2ef2f542868cdbc9b60e0f4e8699aa8854c3ccf128639e4`; reproducibility pack SHA-256: `5e51bb3f0b595837d5d8d088781f46b13bc33db4bda19a6deaf5f20e7c830934`.
+- Five of five tests pass: positive fixture, byte-identical rerender, overlong-take rejection, missing-take rejection and altered-cue-sheet rejection.
+- Drive pack/fixture: `1SdwvQ-uFUpnUwv_zaKjRcbQ5Ph-LynPw` / `1rGE08JmtltV2Djj4ZHRNXjRsmxSESC8q`. Library pack/report/fixture: `libfile_8c4b12b739f081918f58cd9e8da73a0f` / `libfile_a2dce21eae748191a4861f6031351eaa` / `libfile_78b63cecda148191941213bd8d8fa2e4`.
+- Verdict is `PASS_FIXTURE_CONFORM_ONLY`; the fixture is explicitly DO NOT PUBLISH. Production conform remains blocked until an explicitly selected, authorized and consented final voice delivery passes intake. Final mix and release gates remain separate and closed.
