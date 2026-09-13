@@ -19,9 +19,19 @@ from validate_pilot_01_executive_release_decision_v1_1 import validate_data
 
 TARGET_SECONDS = 597.760
 TARGET_FRAMES = 14944
-TARGET_PICTURE_SHA = "3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27"
 NARRATION_CONFORM_SCHEMA = "pilot-01-final-narration-timeline-conform-v1.0"
 EXECUTIVE_DECISION_SCHEMA = "pilot-01-executive-release-decision-v1.1"
+AUDIO_CONFORM_SCHEMA = "pilot-01-audio-conform-validation-v1.3"
+PICTURE_BY_MOTION = {
+    "RETAIN_V1_2G": {
+        "variant": "v1.2g-progressive-focus",
+        "sha256": "3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27",
+    },
+    "REVERT_V1_2F": {
+        "variant": "v1.2f-pacing-trim",
+        "sha256": "038b9eb7a638b07be70fe61d8c037c1332d41c5eb40d63862ea7d31717685c7a",
+    },
+}
 
 
 def run(cmd: list[str], capture: bool = False) -> subprocess.CompletedProcess[str]:
@@ -114,6 +124,33 @@ def validate_executive_decision(decision: dict, dry_run: bool) -> dict:
     return result
 
 
+def resolve_picture_authority(decision: dict, dry_run: bool) -> tuple[str, dict]:
+    """Resolve exact picture bytes from the explicit motion decision.
+
+    The closed-gate dry-run manifest has motion=PENDING, so it may use only its
+    declared review candidate. Authorization-bound mode always requires an
+    explicit RETAIN/REVERT decision through the executive validator.
+    """
+    motion = decision.get("decisions", {}).get("motion")
+    if dry_run and motion == "PENDING":
+        candidate = decision.get("picture_candidate")
+        matches = [(key, value) for key, value in PICTURE_BY_MOTION.items()
+                   if value["variant"] == candidate]
+        if len(matches) != 1:
+            raise ValueError("Dry-run picture_candidate is not a pinned picture authority")
+        return matches[0]
+    if motion not in PICTURE_BY_MOTION:
+        raise ValueError("Explicit RETAIN_V1_2G or REVERT_V1_2F motion decision required")
+    return motion, PICTURE_BY_MOTION[motion]
+
+
+def validate_picture_sha(actual_sha: str, authority: dict) -> None:
+    if actual_sha != authority["sha256"]:
+        raise ValueError(
+            f"Picture identity contradicts selected {authority['variant']} authority"
+        )
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--picture", type=Path, required=True)
@@ -134,11 +171,15 @@ def main() -> int:
     decision = json.loads(args.decision_manifest.read_text(encoding="utf-8"))
     try:
         decision_validation = validate_executive_decision(decision, args.dry_run)
+        motion_decision, picture_authority = resolve_picture_authority(decision, args.dry_run)
     except ValueError as exc:
         raise SystemExit(f"Executive decision gate closed: {exc}")
 
-    if sha256(args.picture) != TARGET_PICTURE_SHA:
-        raise SystemExit("Picture identity mismatch")
+    picture_sha = sha256(args.picture)
+    try:
+        validate_picture_sha(picture_sha, picture_authority)
+    except ValueError as exc:
+        raise SystemExit(f"Picture decision gate closed: {exc}")
     nprobe = probe(args.narration)
     nduration = float(nprobe["format"]["duration"])
     if abs(nduration - TARGET_SECONDS) > 0.021:
@@ -170,12 +211,15 @@ def main() -> int:
     audio = next(s for s in outprobe["streams"] if s["codec_type"] == "audio")
     duration = float(outprobe["format"]["duration"])
     result = {
+        "schema": AUDIO_CONFORM_SCHEMA,
         "mode": "dry_run_control" if args.dry_run else "authorization_bound_audio_conform",
         "publishable": False,
         "release_authorized": False,
         "audio_conform_only": True,
         "executive_decision_status": decision_validation["status"],
         "publication_scope": decision_validation["publication_scope"],
+        "motion_decision": motion_decision,
+        "picture_variant": picture_authority["variant"],
         "duration_seconds": duration,
         "video_frames": int(video["nb_read_frames"]),
         "geometry": f"{video['width']}x{video['height']}",
@@ -184,7 +228,8 @@ def main() -> int:
         "audio_channels": int(audio["channels"]),
         "audio_measurement": audio_stats(args.output),
         "first_pass_measurement": first_pass,
-        "picture_sha256": sha256(args.picture),
+        "picture_sha256": picture_sha,
+        "decision_manifest_sha256": sha256(args.decision_manifest),
         "narration_sha256": sha256(args.narration),
         "narration_conform_result_sha256": sha256(args.narration_conform_result),
         "narration_conform_verdict": narration_conform["verdict"],
