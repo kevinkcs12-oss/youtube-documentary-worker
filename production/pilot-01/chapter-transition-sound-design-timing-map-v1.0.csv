@@ -1,0 +1,7 @@
+chapter_id,anchor_seconds,window_start,window_end,title,bridge_start,bridge_end,accent_start,accent_end,classification
+C02,142.000,137.000,149.000,What the evidence can show,140.500,143.500,142.000,142.460,illustrative_only
+C03,210.000,205.000,217.000,Why familiarity feels easier,208.500,211.500,210.000,210.460,illustrative_only
+C04,285.000,280.000,292.000,Interfaces and identities,283.500,286.500,285.000,285.460,illustrative_only
+C05,364.000,359.000,371.000,Architecture at scale,362.500,365.500,364.000,364.460,illustrative_only
+C06,439.000,434.000,446.000,The feedback loop,437.500,440.500,439.000,439.460,illustrative_only
+C07,515.000,510.000,522.000,The exceptions that matter,513.500,516.500,515.000,515.460,illustrative_only
