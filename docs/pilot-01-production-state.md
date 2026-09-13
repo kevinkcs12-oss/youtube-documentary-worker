@@ -197,3 +197,14 @@ Opening procedural sound-design review v1.0:
 - Independent rerender produced byte-identical stem, candidate, A/B reel, and manifest. Candidate SHA-256: `ad06fc64827d5372c02e387dfe41abfa08507e88102fe3f1db047228bd0e976e`; A/B SHA-256: `3322ebb52d9aae5d48e8096fa68d16da999b397aa8e274e7915fb7cf23d2b70d`; pack SHA-256: `3c62b24f9c68bf099264edc4b19f90b8b48c958d35df58823c9ac391b9844d90`.
 - Drive pack/candidate/A-B/QA/spectrogram: `1DXgA7xQFQCZN9C23ytpM-DDhahui8ZO9` / `1-QP4Dvx4HYy8ombe2-YtLRfI5GXRUBx3` / `153l_Q7Zp90l6FmI8KwV6iQ-1gAsvzg_L` / `1TJfP6KhqxJvtjqfmYkdFTumFq6Mpqr-L` / `1OnVCmqFSW-2PNCK5hCkk-XPvOIxD4Gmf`. Library pack: `libfile_bb3c867c9f2081918fa499893c27f7aa`.
 - Human comparison remains required. No final sound design, voice, music, spend, contact, upload, or publication is authorized.
+
+
+Chapter-transition procedural sound-design sampler v1.0:
+- Six chapter handoffs at 02:22, 03:30, 04:45, 06:04, 07:19, and 08:35 now have a bounded dry-versus-designed comparison surface; v1.2f timing and v1.2g picture remain unchanged.
+- Each treatment uses only a three-second fixed-seed pink-noise bridge and one 460 ms fixed-seed white-noise accent. No sample, music, melody, harmony, third-party audio, factual recording, or copied interface sound is present.
+- Added sound is explicitly illustrative, not evidence or diegetic fact. The 597.760-second stem includes the already-tested opening bed plus these chapter textures.
+- Sampler: 156.000 seconds / 3,900 frames / 1280×720 / 25 fps; full decode passed; -17.0 LUFS integrated / -3.4 dBTP. Stem: 597.760 seconds / PCM 24-bit stereo 48 kHz / -38.5 LUFS / -23.7 dBTP.
+- The first sampler render was rejected because persistent A/B badges collided with upper evidence text. The retained version uses standalone slates and leaves picture labels unobscured.
+- Independent rerender is byte-identical. Stem SHA-256: `3cb47996309b7dd486c4f0b6f2457eca56b3149197791e20e381c8fcff7d6fb3`; sampler: `9adae98226e0cb3a4f6ae5216a7f124c4e3f588a8730db10b9e51ffa83bd54e7`; pack: `52247d486b5aaba897c2c260282e4e4ed0f6a38698eab3a88649d82575d82f29`.
+- Drive pack/sampler/QA/contact sheet: `1EIfRsCFe6gNZeK67AWCYJwiNEgGXNWrz` / `1a5taVXraiXdGVORo89uu9H2e4fq5Mp2q` / `1GIKwWLJo6ov8ROjiUfMoDt-pKv115adR` / `1fAc2ux3hUXEgJGsNaMaB9enCt_XPLgPL`. Library pack: `libfile_b67ff720390881918c4dc7f1b347b74e`.
+- Human review may retain or revert each treatment independently. No final sound design, voice, music, mix, spend, contact, upload, or publication is authorized.
