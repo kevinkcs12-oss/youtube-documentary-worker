@@ -217,3 +217,13 @@ Executive release decision gate v1.1:
 - Default control verdict: PASS_CLOSED_GATES. Default release verdict: BLOCKED. All seven adversarial self-tests pass; validator output always retains release_authorized=false.
 - Pack SHA-256: `9659e255ee8b2f6d4e6cc021348603b1e11a7cfe8831f34c08ab583e4b4b61a9`. Drive pack/card/form/QA: `1CIt5X7VBVjcZAkTTQ_q6mwWy_PvdxuTj` / `11rCG-6buQc0ii0PDKC4AEYQoFQRJUWdP` / `1y90bYfJaItP9aZiTLMFwNHQDme19Pqw_` / `1Gb7gpq9HBNC3fC3nfbQCxD-AAQX8d9Yl`. Library pack: `libfile_5f6322f75de881919bc7ff8eae832106`.
 - A complete manifest may only open downstream conform and preflight. No voice, sound treatment, mix, metadata cell, spend, contact, upload, or publication was selected or authorized.
+
+
+Full-film procedural sound-design review v1.0:
+- One uninterrupted captioned 597.760-second / 14,944-frame / 1280×720 / 25 fps review candidate now exposes the opening bed and all six chapter treatments in cumulative context.
+- The H.264 elementary stream is unchanged from the canonical captioned v1.2g proxy (MD5 `7164f03dad3ea9059a0097ea208ad817`); full decode passed.
+- The retained equal-power stereo mix measures -19.8 LUFS integrated, 7.7 LU LRA, and -2.4 dBTP. The procedural stem remains 21.2–25.5 dB below narration RMS across all seven decision windows.
+- The first continuous render was rejected at -16.8 LUFS because full-level mono duplication introduced an approximately +3 dB comparison bias. Equal-power conversion removes that bias.
+- Independent rerender is byte-identical. Candidate SHA-256: `189a708711ef292ef819b7144b30c435d06203ca6fe4f4f82f2a89502794c5d5`; pack SHA-256: `1b51099ecd6adff68f8e4660ae4e2c04feee4a5e7322b96c1920dae6931fd081`.
+- Drive pack/candidate/QA/scorecard/spectrogram: `1zAZ9ThNQR71AN01dg7E_k4JmTzaBu8Wm` / `1k6zCm2LHz5QbpV2LnHnQJWSuX3BF3ZGa` / `1AEuu4LjXm1AkViNzCvRII15YxbjWFSxF` / `1M1XG0kP2TpQwH3jUA4WUyuElLwyFclvN` / `143NiSTVw1v6zeNxaKzkNRVOt90WGddRz`. Library pack/candidate: `libfile_df966b5709f48191a880a6c96c8d2d2c` / `libfile_ed38d61b3bf08191912da75938fb2196`.
+- The file is explicitly marked REVIEW ONLY / SCRATCH VOICE / DO NOT PUBLISH. Human listening remains required; all eleven v1.1 decisions and all release gates remain closed.
