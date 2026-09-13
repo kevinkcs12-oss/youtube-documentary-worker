@@ -1,0 +1,56 @@
+{
+  "schema": "pilot-01-chapter-transition-sound-design-v1.0",
+  "scope": "six chapter handoffs plus previously tested opening bed",
+  "master_runtime_seconds": 597.76,
+  "transition_seconds": [
+    142.0,
+    210.0,
+    285.0,
+    364.0,
+    439.0,
+    515.0
+  ],
+  "sampler_windows": [
+    {
+      "start": 137.0,
+      "end": 149.0,
+      "title": "WHAT THE EVIDENCE CAN SHOW"
+    },
+    {
+      "start": 205.0,
+      "end": 217.0,
+      "title": "WHY FAMILIARITY FEELS EASIER"
+    },
+    {
+      "start": 280.0,
+      "end": 292.0,
+      "title": "INTERFACES AND IDENTITIES"
+    },
+    {
+      "start": 359.0,
+      "end": 371.0,
+      "title": "ARCHITECTURE AT SCALE"
+    },
+    {
+      "start": 434.0,
+      "end": 446.0,
+      "title": "THE FEEDBACK LOOP"
+    },
+    {
+      "start": 510.0,
+      "end": 522.0,
+      "title": "THE EXCEPTIONS THAT MATTER"
+    }
+  ],
+  "sampler_expected_seconds": 156.0,
+  "sampler_expected_frames": 3900,
+  "music_present": false,
+  "third_party_audio_present": false,
+  "illustrative_only": true,
+  "factual_evidence": false,
+  "source_master_sha256": "3d1643246c066f377e841edc0f8653fec3c1bd9910d15151fb53732039259d27",
+  "stem_sha256": "3cb47996309b7dd486c4f0b6f2457eca56b3149197791e20e381c8fcff7d6fb3",
+  "sampler_sha256": "9adae98226e0cb3a4f6ae5216a7f124c4e3f588a8730db10b9e51ffa83bd54e7",
+  "editorial_status": "REVERSIBLE_HUMAN_REVIEW_REQUIRED",
+  "release_authorized": false
+}
