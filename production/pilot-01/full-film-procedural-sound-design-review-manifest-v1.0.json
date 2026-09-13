@@ -1,0 +1,28 @@
+{
+  "schema": "pilot-01-full-film-procedural-sound-design-review-v1.0",
+  "editorial_status": "REVERSIBLE_HUMAN_REVIEW_REQUIRED",
+  "release_authorized": false,
+  "do_not_publish": true,
+  "runtime_seconds": 597.76,
+  "expected_frames": 14944,
+  "picture_timing_authority": "v1.2f",
+  "picture_review_candidate": "v1.2g progressive-focus",
+  "captions_burned_in": true,
+  "voice_status": "SCRATCH_ONLY",
+  "music_present": false,
+  "procedural_sound_classification": "ILLUSTRATIVE_NOT_EVIDENCE",
+  "sound_decisions_included": {
+    "opening": "PROCEDURAL_V1",
+    "chapter_transitions": [
+      "C02_02m22",
+      "C03_03m30",
+      "C04_04m45",
+      "C05_06m04",
+      "C06_07m19",
+      "C07_08m35"
+    ]
+  },
+  "source_picture_sha256": "8837a26c5298501da23c5e71e3fc66052f1ad8dc203410958abe40c63d8c08fc",
+  "source_stem_sha256": "3cb47996309b7dd486c4f0b6f2457eca56b3149197791e20e381c8fcff7d6fb3",
+  "output_sha256": "189a708711ef292ef819b7144b30c435d06203ca6fe4f4f82f2a89502794c5d5"
+}
