@@ -275,3 +275,12 @@ Audio conform picture-decision binding v1.3:
 - Pack SHA-256: cc6c35b7f62a65a9b97d1b6a9d29e10099c70e62e4c5e249ef5d95489b2db28c. Script SHA-256: 94cf70f27e5ad718ecae24eebc0512ba40ccc827c78521d5cea0c1db29d53e14.
 - Drive pack/QA: 10R_du4i9hYT-QUTF6rl8uCwK4Wxfsr83 / 1wOdia7H7WcB5LPQHCE13J61s894pdzGR. Library pack/QA/matrix: libfile_f0ef21339e408191bf71b3fb692980dd / libfile_11ef0bb354c88191a50b7bc6ccb06fc2 / libfile_a6f1d63190c08191b762aa2618292184.
 - No motion choice was made. All eleven human decisions and every final-master, upload and publication gate remain closed.
+
+Chained release preflight v1.0:
+- The downstream preflight now binds the 32-check technical baseline, canonical executive v1.1 validation, v1.3 audio conform bytes, decision-manifest SHA-256, motion choice, pinned picture identity, publication scope and non-fixture narration lineage.
+- Every successful result remains preflight-only and forces final_master_present=false, upload_authorized=false, publishable=false and release_authorized=false.
+- Thirteen of thirteen new adversarial tests pass; all eight v1.3 picture-binding, nine v1.2 executive-handoff and nine v1.1 provenance regressions remain green.
+- Red-team correction: non-finite duration values are rejected and five upstream lineage fields must be valid lowercase SHA-256 values.
+- Pack SHA-256: aaf14585a8f40bf06175e8411f75a744156193bd9c0894350cc4edfaff2aee10. Validator SHA-256: a22f76c201cc12c525f2a64af85c241c79d6f2dab1e0ca97538daeb843379148.
+- Drive pack/QA: 1Y5GC-PHiQdcKQqDheMvse1NQWUoOBgQU / 1jWQakCN-pDDfQM0I1X2zVJ-uiTJUzQpz. Library pack/QA/matrix: libfile_7112a9c77d648191aa0e6d2e5aef8bf2 / libfile_f80c3a88be508191bd01fa344a80171f / libfile_996c9fb782e4819193fc3dfdb76bcd63.
+- The real positive path remains blocked until all eleven human decisions, exact attestations and a non-fixture 91-take narration delivery exist. No final master, upload or publication was authorized.
