@@ -1,0 +1,13 @@
+decision,allowed_values,current_value,required_for_release,review_surface,notes
+motion,"RETAIN_V1_2G | REVERT_V1_2F",PENDING,YES,Pilot_01_v1.2f_vs_v1.2g_Progressive_Focus_Comparison.mp4,Timing remains v1.2f either way
+voice,"CANDIDATE_A | CANDIDATE_B | CANDIDATE_C | CANDIDATE_D | REJECT_ALL",PENDING,YES,Pilot_01_Blind_Voice_Interleaved_Comparison_Reel_v1.0.mp4,REJECT_ALL blocks release until replaced
+opening_sound,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Opening_Dry_vs_Procedural_Sound_Design_Comparison_v1.0.mp4,Illustrative sound only
+chapter_sound_C02_02m22,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Chapter_Transition_Dry_vs_Designed_Sampler_v1.0.mp4,Decide independently
+chapter_sound_C03_03m30,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Chapter_Transition_Dry_vs_Designed_Sampler_v1.0.mp4,Decide independently
+chapter_sound_C04_04m45,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Chapter_Transition_Dry_vs_Designed_Sampler_v1.0.mp4,Decide independently
+chapter_sound_C05_06m04,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Chapter_Transition_Dry_vs_Designed_Sampler_v1.0.mp4,Decide independently
+chapter_sound_C06_07m19,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Chapter_Transition_Dry_vs_Designed_Sampler_v1.0.mp4,Decide independently
+chapter_sound_C07_08m35,"DRY | PROCEDURAL_V1",PENDING,YES,Pilot_01_Chapter_Transition_Dry_vs_Designed_Sampler_v1.0.mp4,Decide independently
+mix,"NO_MUSIC | RIGHTS_CLEARED_MUSIC_AFTER_REVIEW",PENDING,YES,Pilot_01_Audio_Conform_Gate_v1.0.md,No spend or contact implied
+metadata,"NATIVE_AB_TEST_A_B_C | CELL_A | CELL_B | CELL_C",PENDING,YES,Pilot_01_Launch_Thumbnail_Contact_Sheet_v1.0.jpg,Native test uses watch-time authority
+publication,"HOLD | AUTHORIZE_UNLISTED_UPLOAD | AUTHORIZE_PUBLICATION",HOLD,YES,Pilot_01_Prepublication_Readiness_Report_v1.0.md,Requires IDs and exact attestations
