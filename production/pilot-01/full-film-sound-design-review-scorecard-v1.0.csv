@@ -1,0 +1,9 @@
+decision_id,timecode,scope,choice,clarity_1_5,fatigue_1_5,tonal_fit_1_5,false_diegesis_risk_1_5,over_direction_risk_1_5,notes
+OPENING,00:00-01:04,Opening bed and five accents,DRY|PROCEDURAL_V1,,,,,,
+C02_02m22,02:20-02:25,Chapter 2 handoff,DRY|PROCEDURAL_V1,,,,,,
+C03_03m30,03:28-03:33,Chapter 3 handoff,DRY|PROCEDURAL_V1,,,,,,
+C04_04m45,04:43-04:48,Chapter 4 handoff,DRY|PROCEDURAL_V1,,,,,,
+C05_06m04,06:02-06:07,Chapter 5 handoff,DRY|PROCEDURAL_V1,,,,,,
+C06_07m19,07:17-07:22,Chapter 6 handoff,DRY|PROCEDURAL_V1,,,,,,
+C07_08m35,08:33-08:38,Chapter 7 handoff,DRY|PROCEDURAL_V1,,,,,,
+GLOBAL,00:00-09:57.760,Cumulative restraint and fatigue,ACCEPT_PATTERN|MIXED|REJECT_PATTERN,,,,,,
