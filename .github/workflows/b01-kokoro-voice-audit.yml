@@ -1,0 +1,41 @@
+name: B01 Kokoro Free Voice Audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/b01_kokoro_voice_audit.py"
+      - ".github/workflows/b01-kokoro-voice-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  voice-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Kokoro and audio deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "kokoro>=0.9.4" soundfile
+      - name: Generate four blind free voices
+        run: python scripts/b01_kokoro_voice_audit.py
+      - name: Probe outputs
+        run: |
+          for f in dist/voice-kokoro/candidate_*.wav; do
+            ffprobe -v error -show_entries format=duration -of default=nw=1 "$f"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: b01-kokoro-free-voice-audit-${{ github.run_id }}
+          path: dist/voice-kokoro/
+          retention-days: 7
+          if-no-files-found: error
