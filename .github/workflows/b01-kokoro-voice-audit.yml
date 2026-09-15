@@ -9,7 +9,7 @@ on:
       - ".github/workflows/b01-kokoro-voice-audit.yml"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   voice-audit:
@@ -33,6 +33,16 @@ jobs:
           for f in dist/voice-kokoro/candidate_*.wav; do
             ffprobe -v error -show_entries format=duration -of default=nw=1 "$f"
           done
+      - name: Publish blind review files in repository
+        run: |
+          mkdir -p review/b01-kokoro
+          cp dist/voice-kokoro/candidate_*.wav review/b01-kokoro/
+          cp dist/voice-kokoro/review_instructions.txt review/b01-kokoro/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add review/b01-kokoro/
+          git diff --cached --quiet || git commit -m "Publish B01 blind Kokoro review audio"
+          git push
       - uses: actions/upload-artifact@v4
         with:
           name: b01-kokoro-free-voice-audit-${{ github.run_id }}
