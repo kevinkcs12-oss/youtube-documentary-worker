@@ -1,0 +1,38 @@
+name: B01 Kokoro Full Narration
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/b01_kokoro_full_narration.py"
+      - ".github/workflows/b01-kokoro-full-narration.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  narration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "kokoro>=0.9.4" soundfile
+      - run: python scripts/b01_kokoro_full_narration.py
+      - name: Validate 91 takes
+        run: |
+          test "$(find dist/b01-kokoro-full -name 'T*.wav' | wc -l)" -eq 91
+          cat dist/b01-kokoro-full/summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: b01-kokoro-am-michael-full-narration-${{ github.run_id }}
+          path: dist/b01-kokoro-full/
+          retention-days: 7
+          if-no-files-found: error
