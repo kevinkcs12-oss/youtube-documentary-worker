@@ -1,0 +1,19 @@
+{
+  "schema": "pilot-01-kokoro-canonical-delivery-build-v1.0",
+  "verdict": "PASS_BUILD_ONLY",
+  "takes": 91,
+  "raw_natural_speed": 58,
+  "adaptive_existing": 16,
+  "surgical_rewrites": 14,
+  "editorial_boundary_transfers": 3,
+  "max_speed": 1.15,
+  "min_headroom_seconds": 0.1,
+  "cue_sheet_sha256": "272036201dfd947081a65e833ff8964ba8d37df5a0dbb32a11b1b53444c5b58f",
+  "contract_sha256": "501bdcbda2b6001a1f12603825c66ea991f81cbd247fb34a14dfdb1f010a3492",
+  "manifest_sha256": "9c681211df006f9202da7c406291931fcc8fde914cfebcc70ded23e301b08d36",
+  "lineage_sha256": "2b444ef4aad7f0fb478608b05d4739a3bb8f2f31bab337edb00439550e784eb0",
+  "intake_passed": false,
+  "conform_passed": false,
+  "publishable": false,
+  "release_authorized": false
+}

@@ -1,0 +1,9 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "am_michael",
+  "license": "Apache-2.0",
+  "primary_source": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "verified_date": "2026-09-19",
+  "scope_note": "Model card states Apache-licensed weights and production deployment is permitted.",
+  "publication_authority": false
+}

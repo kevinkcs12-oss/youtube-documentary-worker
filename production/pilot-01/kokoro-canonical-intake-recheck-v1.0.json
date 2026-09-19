@@ -1,0 +1,877 @@
+{
+  "schema": "pilot-01-kokoro-canonical-intake-v1.0",
+  "verdict": "PASS_INTAKE_ONLY",
+  "voice": "am_michael",
+  "takes_expected": 91,
+  "takes_validated": 91,
+  "failures": [],
+  "warnings": [
+    "T001: review active rate 181.6 WPM",
+    "T002: review active rate 223.2 WPM",
+    "T003: review active rate 179.4 WPM",
+    "T005: review active rate 204.3 WPM",
+    "T006: review active rate 224.6 WPM",
+    "T008: review active rate 189.9 WPM",
+    "T012: review active rate 175.4 WPM",
+    "T014: review active rate 190.7 WPM",
+    "T016: review active rate 224.1 WPM",
+    "T017: review active rate 83.4 WPM",
+    "T018: review active rate 115.2 WPM",
+    "T021: review active rate 215.8 WPM",
+    "T022: review active rate 182.1 WPM",
+    "T025: review active rate 112.4 WPM",
+    "T027: review active rate 114.3 WPM",
+    "T029: review active rate 211.7 WPM",
+    "T033: review active rate 187.8 WPM",
+    "T034: review active rate 183.1 WPM",
+    "T036: review active rate 173.1 WPM",
+    "T045: review active rate 101.7 WPM",
+    "T046: review active rate 207.6 WPM",
+    "T048: review active rate 202.5 WPM",
+    "T049: review active rate 105.0 WPM",
+    "T050: review active rate 218.3 WPM",
+    "T051: review active rate 208.4 WPM",
+    "T055: review active rate 173.0 WPM",
+    "T056: review active rate 171.5 WPM",
+    "T062: review active rate 84.7 WPM",
+    "T067: review active rate 192.2 WPM",
+    "T068: review active rate 195.0 WPM",
+    "T075: review active rate 178.4 WPM",
+    "T078: review active rate 183.8 WPM",
+    "T079: review active rate 173.0 WPM",
+    "T081: review active rate 216.3 WPM",
+    "T082: review active rate 114.3 WPM",
+    "T086: review active rate 177.3 WPM",
+    "Nielsen pronunciation requires human review",
+    "Spotify pronunciation requires human review",
+    "continuous naturalness review remains open"
+  ],
+  "pronunciation_review_open": true,
+  "naturalness_review_open": true,
+  "release_authorized": false,
+  "publishable": false,
+  "manifest_sha256": "9c681211df006f9202da7c406291931fcc8fde914cfebcc70ded23e301b08d36",
+  "cue_sheet_sha256": "272036201dfd947081a65e833ff8964ba8d37df5a0dbb32a11b1b53444c5b58f",
+  "contract_sha256": "501bdcbda2b6001a1f12603825c66ea991f81cbd247fb34a14dfdb1f010a3492",
+  "observed_takes": [
+    {
+      "take_id": "T001",
+      "sha256": "f50cf464b30ca2b42439407a7d652374701b02d9f9b3dde3f87d7d0ee7031b80",
+      "duration_seconds": 4.78,
+      "window_seconds": 7.0,
+      "headroom_seconds": 2.22,
+      "active_wpm": 181.6,
+      "peak_dbfs": -3.98
+    },
+    {
+      "take_id": "T002",
+      "sha256": "0bce0c51dca35575cc540cf554326cacc0a9e5da508a3ae5ce37f10df92c1760",
+      "duration_seconds": 2.36,
+      "window_seconds": 4.161,
+      "headroom_seconds": 1.801,
+      "active_wpm": 223.2,
+      "peak_dbfs": -8.69
+    },
+    {
+      "take_id": "T003",
+      "sha256": "390ed2ae94766270f8456cca56ab11023e9430b22825fcd33b204edb627b0120",
+      "duration_seconds": 3.16,
+      "window_seconds": 4.839,
+      "headroom_seconds": 1.679,
+      "active_wpm": 179.4,
+      "peak_dbfs": -4.98
+    },
+    {
+      "take_id": "T004",
+      "sha256": "f7b3bb68ce0c8d9dde23cc0d310258a02c0dffbaa0dd1446ad53134e0425e1f5",
+      "duration_seconds": 6.72,
+      "window_seconds": 7.0,
+      "headroom_seconds": 0.28,
+      "active_wpm": 136.7,
+      "peak_dbfs": -8.68
+    },
+    {
+      "take_id": "T005",
+      "sha256": "0e4ad1cfb36b8e17a21fbb2dfe93546cdcf812c7045a28ef631c37e4870c996a",
+      "duration_seconds": 3.99,
+      "window_seconds": 7.0,
+      "headroom_seconds": 3.01,
+      "active_wpm": 204.3,
+      "peak_dbfs": -8.72
+    },
+    {
+      "take_id": "T006",
+      "sha256": "56ea37a493b86742dbee725044dbb454ce4290544bf4eeae793a9d70c16fb2ea",
+      "duration_seconds": 2.55,
+      "window_seconds": 4.087,
+      "headroom_seconds": 1.537,
+      "active_wpm": 224.6,
+      "peak_dbfs": -9.65
+    },
+    {
+      "take_id": "T007",
+      "sha256": "7d4cf45a736cf72e7edc3fda82165e0579a90df93e19049453681ed482ff28e3",
+      "duration_seconds": 3.54,
+      "window_seconds": 3.913,
+      "headroom_seconds": 0.373,
+      "active_wpm": 158.3,
+      "peak_dbfs": -6.54
+    },
+    {
+      "take_id": "T008",
+      "sha256": "da2e10dd13796a4e5aadf01a37911784c79cdbd204d77408cc6229948e7d4ddd",
+      "duration_seconds": 2.73,
+      "window_seconds": 3.478,
+      "headroom_seconds": 0.748,
+      "active_wpm": 189.9,
+      "peak_dbfs": -7.23
+    },
+    {
+      "take_id": "T009",
+      "sha256": "1299106fc06807faa7dcb9bd615b9163a72072b2befa1e80b028e7aebecf8cb3",
+      "duration_seconds": 3.65,
+      "window_seconds": 4.522,
+      "headroom_seconds": 0.872,
+      "active_wpm": 155.3,
+      "peak_dbfs": -8.44
+    },
+    {
+      "take_id": "T010",
+      "sha256": "ec4c4cdd3fe40d09624587f0fbc3788db34dcae7a27e0de7ae630f01813bfd8b",
+      "duration_seconds": 4.6,
+      "window_seconds": 8.0,
+      "headroom_seconds": 3.4,
+      "active_wpm": 161.2,
+      "peak_dbfs": -6.67
+    },
+    {
+      "take_id": "T011",
+      "sha256": "becf7a8d3ac32a3129ea73b08eb6bbda33c49205941f4711e6435265c6c233c8",
+      "duration_seconds": 6.77,
+      "window_seconds": 10.0,
+      "headroom_seconds": 3.23,
+      "active_wpm": 126.4,
+      "peak_dbfs": -6.6
+    },
+    {
+      "take_id": "T012",
+      "sha256": "eee66f03c2a0264a3630a150ed984ab00562d91325b115f9a2f028c21a5b8505",
+      "duration_seconds": 3.19,
+      "window_seconds": 7.5,
+      "headroom_seconds": 4.31,
+      "active_wpm": 175.4,
+      "peak_dbfs": -5.0
+    },
+    {
+      "take_id": "T013",
+      "sha256": "cdfabd954ac86a64ea99902de7a65b179106dd9db8f9e55ccf3ee8ff5457d492",
+      "duration_seconds": 4.95,
+      "window_seconds": 9.5,
+      "headroom_seconds": 4.55,
+      "active_wpm": 149.9,
+      "peak_dbfs": -6.81
+    },
+    {
+      "take_id": "T014",
+      "sha256": "ebe48c2199e85ad732000be1890c56ea16b41e460388e7943520e032a2fc698e",
+      "duration_seconds": 4.57,
+      "window_seconds": 6.0,
+      "headroom_seconds": 1.43,
+      "active_wpm": 190.7,
+      "peak_dbfs": -8.27
+    },
+    {
+      "take_id": "T015",
+      "sha256": "3ac1c765d3892cb90153f03aaac4fb1b7d3bcf36db949f5eeb34481ac6bf3599",
+      "duration_seconds": 5.12,
+      "window_seconds": 9.0,
+      "headroom_seconds": 3.88,
+      "active_wpm": 145.8,
+      "peak_dbfs": -7.73
+    },
+    {
+      "take_id": "T016",
+      "sha256": "e3250b5331f034cb72f2d77557fa49684cc1662c1179869a84bd0f4eafb107c7",
+      "duration_seconds": 2.55,
+      "window_seconds": 5.0,
+      "headroom_seconds": 2.45,
+      "active_wpm": 224.1,
+      "peak_dbfs": -7.16
+    },
+    {
+      "take_id": "T017",
+      "sha256": "42404d4a8e000ef9857d8fbec8d6c0741afa586a247d08f46b6c327e80b7ee25",
+      "duration_seconds": 8.09,
+      "window_seconds": 10.0,
+      "headroom_seconds": 1.91,
+      "active_wpm": 83.4,
+      "peak_dbfs": -3.33
+    },
+    {
+      "take_id": "T018",
+      "sha256": "1462e2db503db26b45a4959667d149ba91dfd49157d39b1a8611d2e1837d6018",
+      "duration_seconds": 7.37,
+      "window_seconds": 11.0,
+      "headroom_seconds": 3.63,
+      "active_wpm": 115.2,
+      "peak_dbfs": -4.27
+    },
+    {
+      "take_id": "T019",
+      "sha256": "d676c2507c83d65e246d060b67c2b6b2a0a9d2c1061768bb3352b174fa92ad35",
+      "duration_seconds": 4.73,
+      "window_seconds": 7.0,
+      "headroom_seconds": 2.27,
+      "active_wpm": 132.5,
+      "peak_dbfs": -7.68
+    },
+    {
+      "take_id": "T020",
+      "sha256": "774e1a5e6a3cb227a2111083cc791e121f93bb9b8d96a3ba0de940684ae81144",
+      "duration_seconds": 3.46,
+      "window_seconds": 4.535,
+      "headroom_seconds": 1.075,
+      "active_wpm": 164.5,
+      "peak_dbfs": -7.29
+    },
+    {
+      "take_id": "T021",
+      "sha256": "c28262e490224cbeed94c86a7e998adb42a270aa43a2cf79ae59952593e158b2",
+      "duration_seconds": 2.39,
+      "window_seconds": 3.465,
+      "headroom_seconds": 1.075,
+      "active_wpm": 215.8,
+      "peak_dbfs": -6.61
+    },
+    {
+      "take_id": "T022",
+      "sha256": "0e7e5e7ef4390443f440ff7a91ad8a3eef8c682d143544c773b949bb66c1fc43",
+      "duration_seconds": 3.48,
+      "window_seconds": 5.0,
+      "headroom_seconds": 1.52,
+      "active_wpm": 182.1,
+      "peak_dbfs": -5.35
+    },
+    {
+      "take_id": "T023",
+      "sha256": "ff515db4189701007f5a05dd68cf22d5f8289f0926148d4206aa78a696b199dd",
+      "duration_seconds": 4.13,
+      "window_seconds": 4.308,
+      "headroom_seconds": 0.178,
+      "active_wpm": 137.1,
+      "peak_dbfs": -8.2
+    },
+    {
+      "take_id": "T024",
+      "sha256": "bc85be07ef072d50a31d42c8ae1fc2db2500ff10b6c188e7e071c1aae376b83f",
+      "duration_seconds": 5.02,
+      "window_seconds": 5.12,
+      "headroom_seconds": 0.1,
+      "active_wpm": 148.0,
+      "peak_dbfs": -7.08
+    },
+    {
+      "take_id": "T025",
+      "sha256": "39dd5bef84b99780a095a4135d4f92944b345b32faa0f8b28a7a8f8f85a1f7e3",
+      "duration_seconds": 8.19,
+      "window_seconds": 8.367,
+      "headroom_seconds": 0.177,
+      "active_wpm": 112.4,
+      "peak_dbfs": -9.62
+    },
+    {
+      "take_id": "T026",
+      "sha256": "b9306517ebc4272708936557e0fd342a5ece1b8d3220d684b24fbdf3e781ee08",
+      "duration_seconds": 3.13,
+      "window_seconds": 3.253,
+      "headroom_seconds": 0.123,
+      "active_wpm": 163.8,
+      "peak_dbfs": -7.36
+    },
+    {
+      "take_id": "T027",
+      "sha256": "0978ebe806d9502631e4d61cd0c6c4131d4fa6a78a206e60dc8d3447616f629e",
+      "duration_seconds": 4.85,
+      "window_seconds": 5.099,
+      "headroom_seconds": 0.249,
+      "active_wpm": 114.3,
+      "peak_dbfs": -4.53
+    },
+    {
+      "take_id": "T028",
+      "sha256": "29c0492f5f7e2898f0d6c78d93823d6b2690d8e37367114bb4c787cfa020c0ad",
+      "duration_seconds": 4.13,
+      "window_seconds": 4.23,
+      "headroom_seconds": 0.1,
+      "active_wpm": 135.4,
+      "peak_dbfs": -9.79
+    },
+    {
+      "take_id": "T029",
+      "sha256": "b7df4b967b400302636dab0e17d9d970d915b2d9548bc070a9d010287b4a8ff7",
+      "duration_seconds": 3.0,
+      "window_seconds": 4.128,
+      "headroom_seconds": 1.128,
+      "active_wpm": 211.7,
+      "peak_dbfs": -6.4
+    },
+    {
+      "take_id": "T030",
+      "sha256": "7b274d2fe0f0b99d93d050b9b39e7be75092b52364a86fea4f7be995d25000d4",
+      "duration_seconds": 4.9,
+      "window_seconds": 5.37,
+      "headroom_seconds": 0.47,
+      "active_wpm": 140.7,
+      "peak_dbfs": -9.63
+    },
+    {
+      "take_id": "T031",
+      "sha256": "385cc919afdb39beb72e80687e2e0624a27ffa51c3a3436b8886d03e6d3b6b3b",
+      "duration_seconds": 5.15,
+      "window_seconds": 5.25,
+      "headroom_seconds": 0.1,
+      "active_wpm": 156.4,
+      "peak_dbfs": -9.16
+    },
+    {
+      "take_id": "T032",
+      "sha256": "dadd5d4639c17ea740b0917f4056333c5ba650e0f580b8c35fe4bf927b54bdd6",
+      "duration_seconds": 5.2,
+      "window_seconds": 5.896,
+      "headroom_seconds": 0.696,
+      "active_wpm": 129.9,
+      "peak_dbfs": -5.27
+    },
+    {
+      "take_id": "T033",
+      "sha256": "b0a750151f9cc9df4ca3d76e259782842d2abe0918f0fb3212b4987d0ef5fca8",
+      "duration_seconds": 2.73,
+      "window_seconds": 2.982,
+      "headroom_seconds": 0.252,
+      "active_wpm": 187.8,
+      "peak_dbfs": -7.56
+    },
+    {
+      "take_id": "T034",
+      "sha256": "2bb2d5d4bead748747af7807760a2e4bf785c3a0fd177990a47cf2c6b5da2921",
+      "duration_seconds": 3.45,
+      "window_seconds": 3.805,
+      "headroom_seconds": 0.355,
+      "active_wpm": 183.1,
+      "peak_dbfs": -7.59
+    },
+    {
+      "take_id": "T035",
+      "sha256": "67c1fd4a6f34368b77e4db7c30bd8ebcbfaa4a7a19295996eee7059c2f89fa71",
+      "duration_seconds": 11.74,
+      "window_seconds": 13.073,
+      "headroom_seconds": 1.333,
+      "active_wpm": 165.4,
+      "peak_dbfs": -4.45
+    },
+    {
+      "take_id": "T036",
+      "sha256": "1939c6ce35555a68492e62b9cba1425eb6bb101af1069a751c89487a44f317cd",
+      "duration_seconds": 4.31,
+      "window_seconds": 4.914,
+      "headroom_seconds": 0.604,
+      "active_wpm": 173.1,
+      "peak_dbfs": -8.16
+    },
+    {
+      "take_id": "T037",
+      "sha256": "89b2077501b3185e3500dff12bc4593cfc1516c72173413ece6d6703a575df16",
+      "duration_seconds": 5.96,
+      "window_seconds": 6.135,
+      "headroom_seconds": 0.175,
+      "active_wpm": 123.5,
+      "peak_dbfs": -8.58
+    },
+    {
+      "take_id": "T038",
+      "sha256": "33bb55d018aad85230dd7923ea1a09c51d9cc851a20725defa410881ceeac351",
+      "duration_seconds": 4.58,
+      "window_seconds": 4.88,
+      "headroom_seconds": 0.3,
+      "active_wpm": 136.5,
+      "peak_dbfs": -8.01
+    },
+    {
+      "take_id": "T039",
+      "sha256": "ef609a63b3cacfac4d509c37ef6ea60937f7d015d081dcd6e0357b00583c854e",
+      "duration_seconds": 3.36,
+      "window_seconds": 3.722,
+      "headroom_seconds": 0.362,
+      "active_wpm": 165.4,
+      "peak_dbfs": -9.28
+    },
+    {
+      "take_id": "T040",
+      "sha256": "b17057763b2a5572fb987185827ff04ec416bb2844be31eb58c8845be8e3963b",
+      "duration_seconds": 3.56,
+      "window_seconds": 3.751,
+      "headroom_seconds": 0.191,
+      "active_wpm": 159.2,
+      "peak_dbfs": -8.07
+    },
+    {
+      "take_id": "T041",
+      "sha256": "229161351eb26fca546592c02e030eb17438b34d89472e4437930d1de934be68",
+      "duration_seconds": 6.53,
+      "window_seconds": 6.961,
+      "headroom_seconds": 0.431,
+      "active_wpm": 141.5,
+      "peak_dbfs": -8.88
+    },
+    {
+      "take_id": "T042",
+      "sha256": "a2d8e919116313d063fe0e38db013364650c32d3e87ec710a45a4532aa36aa7d",
+      "duration_seconds": 4.71,
+      "window_seconds": 4.972,
+      "headroom_seconds": 0.262,
+      "active_wpm": 131.3,
+      "peak_dbfs": -5.83
+    },
+    {
+      "take_id": "T043",
+      "sha256": "cde2032efa174ab95efc393ddaf3ae1be9d25b4ed9397ff48aa8b5c74b8a9b7d",
+      "duration_seconds": 12.16,
+      "window_seconds": 13.162,
+      "headroom_seconds": 1.002,
+      "active_wpm": 155.4,
+      "peak_dbfs": -3.78
+    },
+    {
+      "take_id": "T044",
+      "sha256": "55d16128f9f12bc87c77d195ab4b7e716145a49d5b9f85f340622b65eaacc575",
+      "duration_seconds": 6.29,
+      "window_seconds": 6.916,
+      "headroom_seconds": 0.626,
+      "active_wpm": 136.9,
+      "peak_dbfs": -7.73
+    },
+    {
+      "take_id": "T045",
+      "sha256": "b3594137d8220793b8425ba3ea809c7304541499ea5e73440d30819c5f235cfe",
+      "duration_seconds": 6.64,
+      "window_seconds": 6.76,
+      "headroom_seconds": 0.12,
+      "active_wpm": 101.7,
+      "peak_dbfs": -5.3
+    },
+    {
+      "take_id": "T046",
+      "sha256": "829bb7fa3c4246238edc498c696ea55aed58b03ca51d9de5f227d8b7b907ef8e",
+      "duration_seconds": 3.33,
+      "window_seconds": 4.648,
+      "headroom_seconds": 1.318,
+      "active_wpm": 207.6,
+      "peak_dbfs": -6.49
+    },
+    {
+      "take_id": "T047",
+      "sha256": "cb624197ba51e0d5d20e1b01d5ac7cbe5785e0a320cbb27b8782c948decdb430",
+      "duration_seconds": 10.32,
+      "window_seconds": 11.831,
+      "headroom_seconds": 1.511,
+      "active_wpm": 165.2,
+      "peak_dbfs": -7.88
+    },
+    {
+      "take_id": "T048",
+      "sha256": "bdd62e625c0645fcb053fc777672af94a5ae6eeb0f3c9152a80757de44396aeb",
+      "duration_seconds": 3.45,
+      "window_seconds": 4.648,
+      "headroom_seconds": 1.198,
+      "active_wpm": 202.5,
+      "peak_dbfs": -8.28
+    },
+    {
+      "take_id": "T049",
+      "sha256": "a67956d2255c38cd930e6abd9792270a742894d8f7a018be57bd527bf61ab841",
+      "duration_seconds": 6.48,
+      "window_seconds": 6.653,
+      "headroom_seconds": 0.173,
+      "active_wpm": 105.0,
+      "peak_dbfs": -5.35
+    },
+    {
+      "take_id": "T050",
+      "sha256": "5137766ef0adf196f17c05fd0ee1e8a8f6763efabdfb9914edf475edda7c71d2",
+      "duration_seconds": 3.18,
+      "window_seconds": 4.648,
+      "headroom_seconds": 1.468,
+      "active_wpm": 218.3,
+      "peak_dbfs": -5.99
+    },
+    {
+      "take_id": "T051",
+      "sha256": "b74e5d4659cb47bf4f028fd92cb77380d40db70957d628eee40808e96049eb51",
+      "duration_seconds": 2.77,
+      "window_seconds": 3.802,
+      "headroom_seconds": 1.032,
+      "active_wpm": 208.4,
+      "peak_dbfs": -9.34
+    },
+    {
+      "take_id": "T052",
+      "sha256": "ca45c25c532606df060890d7b90a849ee04fd265e88f834f03b6ea6bbb689e71",
+      "duration_seconds": 7.07,
+      "window_seconds": 7.252,
+      "headroom_seconds": 0.182,
+      "active_wpm": 121.6,
+      "peak_dbfs": -7.28
+    },
+    {
+      "take_id": "T053",
+      "sha256": "98db11299a0abc9560b0c7935571661db2afeb30af91919632ea992cf06257ef",
+      "duration_seconds": 4.77,
+      "window_seconds": 4.87,
+      "headroom_seconds": 0.1,
+      "active_wpm": 144.6,
+      "peak_dbfs": -8.33
+    },
+    {
+      "take_id": "T054",
+      "sha256": "61414ce6f5a8d55f63dadf41c20c8c5504f4e95902d5abd2bd17ecbb1c5c91a3",
+      "duration_seconds": 7.57,
+      "window_seconds": 7.67,
+      "headroom_seconds": 0.1,
+      "active_wpm": 121.2,
+      "peak_dbfs": -5.51
+    },
+    {
+      "take_id": "T055",
+      "sha256": "95ec3ce124073624d7d23854e0bd8f55d112893a4e3d71957f6b38be72541cc9",
+      "duration_seconds": 3.63,
+      "window_seconds": 4.225,
+      "headroom_seconds": 0.595,
+      "active_wpm": 173.0,
+      "peak_dbfs": -9.87
+    },
+    {
+      "take_id": "T056",
+      "sha256": "9757615dd50261cc7addd027587efeb8666e7f0088bf73c2453dbfda2935ccc0",
+      "duration_seconds": 4.72,
+      "window_seconds": 5.493,
+      "headroom_seconds": 0.773,
+      "active_wpm": 171.5,
+      "peak_dbfs": -8.01
+    },
+    {
+      "take_id": "T057",
+      "sha256": "2e94eecef642028fd9d03561d10ba45b9cfdaf4a5205ae621e790b276294deee",
+      "duration_seconds": 2.98,
+      "window_seconds": 3.08,
+      "headroom_seconds": 0.1,
+      "active_wpm": 168.4,
+      "peak_dbfs": -7.75
+    },
+    {
+      "take_id": "T058",
+      "sha256": "579fda0c947aa86a75baafdbaa73a4dc044350f17dce64199e14d59e5b2a1104",
+      "duration_seconds": 4.88,
+      "window_seconds": 5.054,
+      "headroom_seconds": 0.174,
+      "active_wpm": 140.2,
+      "peak_dbfs": -7.06
+    },
+    {
+      "take_id": "T059",
+      "sha256": "0b66bfffeb16c654da1a7baddc0fe750ffc8865172c7f25ec85aa2f2af6fbdcc",
+      "duration_seconds": 3.53,
+      "window_seconds": 3.699,
+      "headroom_seconds": 0.169,
+      "active_wpm": 159.7,
+      "peak_dbfs": -7.71
+    },
+    {
+      "take_id": "T060",
+      "sha256": "b106754eac8644fee1d64a4e455fe8947b0d89c7f74dd7b76dd76ddfe6c1d2d5",
+      "duration_seconds": 3.91,
+      "window_seconds": 4.253,
+      "headroom_seconds": 0.343,
+      "active_wpm": 144.2,
+      "peak_dbfs": -9.28
+    },
+    {
+      "take_id": "T061",
+      "sha256": "80f57636a2ad95f3a8c0e2ffe9e878f58a66ed1816048e420b4545e800444598",
+      "duration_seconds": 4.32,
+      "window_seconds": 4.42,
+      "headroom_seconds": 0.1,
+      "active_wpm": 160.5,
+      "peak_dbfs": -8.75
+    },
+    {
+      "take_id": "T062",
+      "sha256": "227c958d67d32d31e9a66cc14c8729acfc7597f8ba8012e7aa39d8ca6dbc886e",
+      "duration_seconds": 7.19,
+      "window_seconds": 8.155,
+      "headroom_seconds": 0.965,
+      "active_wpm": 84.7,
+      "peak_dbfs": -4.66
+    },
+    {
+      "take_id": "T063",
+      "sha256": "094dfdad1c362089fa6ebab3e956717e6a681165d27d1f863e8562ed48d15281",
+      "duration_seconds": 4.75,
+      "window_seconds": 4.87,
+      "headroom_seconds": 0.12,
+      "active_wpm": 131.2,
+      "peak_dbfs": -5.33
+    },
+    {
+      "take_id": "T064",
+      "sha256": "449e7bf5636d05d520a89ac60b791b9f2a4ca31c87f64b0ffbe5271efd7029c4",
+      "duration_seconds": 15.05,
+      "window_seconds": 16.519,
+      "headroom_seconds": 1.469,
+      "active_wpm": 133.1,
+      "peak_dbfs": -4.15
+    },
+    {
+      "take_id": "T065",
+      "sha256": "ad3af094b6782fba7dbe25f9cdffb12ed31cef3c0186a761fb50928228ad4dbf",
+      "duration_seconds": 2.7,
+      "window_seconds": 2.836,
+      "headroom_seconds": 0.136,
+      "active_wpm": 164.1,
+      "peak_dbfs": -8.69
+    },
+    {
+      "take_id": "T066",
+      "sha256": "351a5a6cdaaf1e28b85c8f0b4473e21a6dc7f2d3b5cf7e6b5e3801331087e467",
+      "duration_seconds": 5.21,
+      "window_seconds": 5.98,
+      "headroom_seconds": 0.77,
+      "active_wpm": 166.7,
+      "peak_dbfs": -9.08
+    },
+    {
+      "take_id": "T067",
+      "sha256": "be0f76e99009cb84584d8d0dba1b226b31af49d73e7e8707c82aff39fbdb942b",
+      "duration_seconds": 4.49,
+      "window_seconds": 5.915,
+      "headroom_seconds": 1.425,
+      "active_wpm": 192.2,
+      "peak_dbfs": -8.7
+    },
+    {
+      "take_id": "T068",
+      "sha256": "f125fcb5eb5f86b168bd17beee496fd58bc457fad3cf5f6b618c26cddf183482",
+      "duration_seconds": 2.65,
+      "window_seconds": 3.38,
+      "headroom_seconds": 0.73,
+      "active_wpm": 195.0,
+      "peak_dbfs": -10.66
+    },
+    {
+      "take_id": "T069",
+      "sha256": "8c67ee4bfc29ae21cc2dacc889fb74a4cb21458f288b8da5b88039c4200c2fba",
+      "duration_seconds": 5.91,
+      "window_seconds": 6.399,
+      "headroom_seconds": 0.489,
+      "active_wpm": 145.5,
+      "peak_dbfs": -7.32
+    },
+    {
+      "take_id": "T070",
+      "sha256": "1988830aa88845466887754c0f6801904e7f3a6ac3066420e1b34c635592b8bc",
+      "duration_seconds": 8.12,
+      "window_seconds": 8.838,
+      "headroom_seconds": 0.718,
+      "active_wpm": 143.8,
+      "peak_dbfs": -7.0
+    },
+    {
+      "take_id": "T071",
+      "sha256": "fffb6d3d494f2d6bddc6e4d2caa7612d78737cbb2910f960231c30b0b97ad721",
+      "duration_seconds": 8.27,
+      "window_seconds": 9.147,
+      "headroom_seconds": 0.877,
+      "active_wpm": 148.7,
+      "peak_dbfs": -8.92
+    },
+    {
+      "take_id": "T072",
+      "sha256": "a1490f4530d08f51ae9c9056ca4db2a5202622e38f67bd4e210d89dc3db7f53c",
+      "duration_seconds": 4.53,
+      "window_seconds": 4.783,
+      "headroom_seconds": 0.253,
+      "active_wpm": 138.5,
+      "peak_dbfs": -9.96
+    },
+    {
+      "take_id": "T073",
+      "sha256": "5bab0a4e76f01935a3353d48ad5b8c5a3bfc1890a338b291394bb5cc80686298",
+      "duration_seconds": 5.24,
+      "window_seconds": 5.493,
+      "headroom_seconds": 0.253,
+      "active_wpm": 153.8,
+      "peak_dbfs": -7.53
+    },
+    {
+      "take_id": "T074",
+      "sha256": "1d41aafe96d5fb4c79c827ac1daf85da82ece1e64a9ace820f98e543f67a818f",
+      "duration_seconds": 3.73,
+      "window_seconds": 3.83,
+      "headroom_seconds": 0.1,
+      "active_wpm": 168.6,
+      "peak_dbfs": -6.43
+    },
+    {
+      "take_id": "T075",
+      "sha256": "d2f6b409be96bab5bb08aa21458fc647c3d395c468f24926d3136d0caa8d7c0f",
+      "duration_seconds": 3.53,
+      "window_seconds": 3.966,
+      "headroom_seconds": 0.436,
+      "active_wpm": 178.4,
+      "peak_dbfs": -7.64
+    },
+    {
+      "take_id": "T076",
+      "sha256": "d9e7c985dbcaa9a0774d559d8e8a175cf30f7ac70ad56f3a083b1e22b50f8421",
+      "duration_seconds": 6.77,
+      "window_seconds": 6.992,
+      "headroom_seconds": 0.222,
+      "active_wpm": 135.9,
+      "peak_dbfs": -7.22
+    },
+    {
+      "take_id": "T077",
+      "sha256": "f55d33b97fa57e09a7b8c28bbd9ba5651cfc50b6ca693d7bd7fe904b58d25059",
+      "duration_seconds": 5.07,
+      "window_seconds": 5.183,
+      "headroom_seconds": 0.113,
+      "active_wpm": 159.9,
+      "peak_dbfs": -9.35
+    },
+    {
+      "take_id": "T078",
+      "sha256": "36efc3659b1d4901394351ff905ed71bd9a178f5be539816801b998a868aff46",
+      "duration_seconds": 2.73,
+      "window_seconds": 3.285,
+      "headroom_seconds": 0.555,
+      "active_wpm": 183.8,
+      "peak_dbfs": -5.53
+    },
+    {
+      "take_id": "T079",
+      "sha256": "c331fb2f3f9b9a56080821d6da20a104be0edbeffa4ef46a6c1d84ac16ce3437",
+      "duration_seconds": 4.33,
+      "window_seconds": 5.475,
+      "headroom_seconds": 1.145,
+      "active_wpm": 173.0,
+      "peak_dbfs": -7.68
+    },
+    {
+      "take_id": "T080",
+      "sha256": "246b0f7d3390f599a032f45ab8fe6648d9ee4094d740622eeeb064252bfe60cf",
+      "duration_seconds": 3.3,
+      "window_seconds": 3.4,
+      "headroom_seconds": 0.1,
+      "active_wpm": 152.6,
+      "peak_dbfs": -7.23
+    },
+    {
+      "take_id": "T081",
+      "sha256": "d67d2ecac5562335527c70bdf2641e8a50a109023cbc3147278f3a675bb86452",
+      "duration_seconds": 2.33,
+      "window_seconds": 3.125,
+      "headroom_seconds": 0.795,
+      "active_wpm": 216.3,
+      "peak_dbfs": -8.96
+    },
+    {
+      "take_id": "T082",
+      "sha256": "5ecb8f5c24c7c9902bd4e6d13792b2dfb9bce471270753bdaaf0acb1d48a94d4",
+      "duration_seconds": 10.7,
+      "window_seconds": 11.115,
+      "headroom_seconds": 0.415,
+      "active_wpm": 114.3,
+      "peak_dbfs": -5.06
+    },
+    {
+      "take_id": "T083",
+      "sha256": "694b48481f0ee53e3d555ff5193d0742b6633ee5c255012276e2e3b0a7131a2b",
+      "duration_seconds": 8.06,
+      "window_seconds": 8.276,
+      "headroom_seconds": 0.216,
+      "active_wpm": 150.9,
+      "peak_dbfs": -8.37
+    },
+    {
+      "take_id": "T084",
+      "sha256": "bb48a357ce351d3da061847fb1ff2c27d6047bcb7b31bd092c5bb20ebb3a9d2b",
+      "duration_seconds": 5.08,
+      "window_seconds": 5.214,
+      "headroom_seconds": 0.134,
+      "active_wpm": 159.3,
+      "peak_dbfs": -4.87
+    },
+    {
+      "take_id": "T085",
+      "sha256": "1fe7f4f916df7c4adca6e011deb30da0dfbe507906a444c5c0db1acb1489daf0",
+      "duration_seconds": 15.42,
+      "window_seconds": 16.474,
+      "headroom_seconds": 1.054,
+      "active_wpm": 149.4,
+      "peak_dbfs": -7.83
+    },
+    {
+      "take_id": "T086",
+      "sha256": "c08bb07ed59745fc654ba7d4911a893460feb1de73c190b1806e9c303ff40831",
+      "duration_seconds": 3.49,
+      "window_seconds": 4.283,
+      "headroom_seconds": 0.793,
+      "active_wpm": 177.3,
+      "peak_dbfs": -9.24
+    },
+    {
+      "take_id": "T087",
+      "sha256": "57e008e578d710fc7e42e961c7961fbdbb0b3039124d8a157b271c8804ebc2f3",
+      "duration_seconds": 3.88,
+      "window_seconds": 3.993,
+      "headroom_seconds": 0.113,
+      "active_wpm": 162.5,
+      "peak_dbfs": -8.57
+    },
+    {
+      "take_id": "T088",
+      "sha256": "c2e8133cec0ea150370d27e212a481fe90d587cdadd3f441a8387717e6a4b29e",
+      "duration_seconds": 5.96,
+      "window_seconds": 6.06,
+      "headroom_seconds": 0.1,
+      "active_wpm": 143.5,
+      "peak_dbfs": -8.81
+    },
+    {
+      "take_id": "T089",
+      "sha256": "e3deb4eb5e9ed1973913da79cd139bdd6883983ff9b418b2ed6e2467247d3056",
+      "duration_seconds": 6.69,
+      "window_seconds": 7.182,
+      "headroom_seconds": 0.492,
+      "active_wpm": 165.7,
+      "peak_dbfs": -5.98
+    },
+    {
+      "take_id": "T090",
+      "sha256": "9a6501d08dd7776c03f5df433aeabc1d9b1e6bbb044e7293e706bf4dc8b01696",
+      "duration_seconds": 6.37,
+      "window_seconds": 6.47,
+      "headroom_seconds": 0.1,
+      "active_wpm": 144.6,
+      "peak_dbfs": -7.68
+    },
+    {
+      "take_id": "T091",
+      "sha256": "4b3071e813692493dabc5b9e224ef7cf6010aa6a299d221fabea4700e6c70f91",
+      "duration_seconds": 4.77,
+      "window_seconds": 4.966,
+      "headroom_seconds": 0.196,
+      "active_wpm": 156.1,
+      "peak_dbfs": -7.14
+    }
+  ]
+}
