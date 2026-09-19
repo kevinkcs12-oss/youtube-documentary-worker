@@ -7,7 +7,7 @@ import soundfile as sf
 from kokoro import KPipeline
 
 SRC=Path("production/pilot-01/final-voice-recording-script-v1.0.md")
-OUT=Path("dist/b01-kokoro-surgical-v1.0")
+OUT=Path("dist/b01-kokoro-surgical-v1.1")
 VOICE="am_michael"
 SPEEDS=[1.00,1.03,1.06,1.09,1.12,1.15]
 HEADROOM=0.100
@@ -16,20 +16,10 @@ KEEP_HEAD=0.080
 KEEP_TAIL=0.120
 TAKE_RE=re.compile(r"^### (T\d{3}) · cues .* · (\d\d):(\d\d):(\d\d\.\d{3})–(\d\d):(\d\d):(\d\d\.\d{3})$")
 REWRITES={
-"T023":"Avoiding rejection, rather than earning love, appears far beyond cars.",
-"T025":"Research suggests familiar forms, clear contrast, and repeated exposure may ease processing and influence preference.",
-"T027":"Complexity creates interest, identity, and meaning. Familiarity can become boredom.",
-"T037":"Navigation should need no tutorial. Familiar patterns can make digital services faster and more accessible.",
-"T041":"Logos face similar pressure: stay clear on phones, watches, browser tabs, packaging, video, and signs.",
-"T045":"McDonald's history calls its 1953 red-and-white tiled building an attention-getting design.",
-"T049":"McDonald's highlights newer locations using existing architecture and distinctive local features.",
-"T052":"A repeatable system must adapt across plots, rules, contractors, climates, maintenance, and customer expectations.",
-"T058":"A designer chooses familiar type. A café recreates a photogenic interior.",
-"T062":"Recommendation systems expose this tension: Spotify researchers describe balancing familiarity and similarity with discovery.",
-"T063":"The platform does not maximize sameness; it balances competing objectives.",
-"T064":"Algorithms did not invent visual convergence. They can accelerate the loop: familiar things are easier to recognize; recognition eases choice; choices are easier to measure; and what is measured is easier to imitate.",
-"T065":"This is our model, not Spotify's finding.",
-"T082":"Not because everything is the same. Across these cases, design happens inside systems rewarding legibility, familiarity, adaptability, and measurable performance."
+"T023":"Avoiding rejection rather than earning love appears beyond cars.",
+"T027":"Complexity creates interest and identity; familiarity can become boredom.",
+"T037":"Navigation needs no tutorial. Familiar patterns can improve digital speed and accessibility.",
+"T062":"Spotify researchers describe recommendation systems balancing familiarity, similarity, and discovery."
 }
 
 def sec(h,m,s): return int(h)*3600+int(m)*60+float(s)
@@ -70,7 +60,7 @@ def main():
           "trailing_silence":round(tail,3),"headroom_seconds":round(windows[take]-safe,3),
           "status":"PASS_SURGICAL_TIMING" if safe<=windows[take]-HEADROOM else "FAIL_SURGICAL_TIMING","attempts":attempts})
     unresolved=[r["take"] for r in rows if r["status"]!="PASS_SURGICAL_TIMING"]
-    summary={"schema":"pilot-01-kokoro-surgical-regeneration-v1.0","voice":VOICE,"regenerated_count":len(rows),
+    summary={"schema":"pilot-01-kokoro-surgical-regeneration-v1.1","voice":VOICE,"regenerated_count":len(rows),
       "regenerated_takes":list(REWRITES),"pass_count":len(rows)-len(unresolved),"unresolved_count":len(unresolved),
       "unresolved_takes":unresolved,"max_speed":max(r["speed"] for r in rows),"global_speed_change":False,
       "canonical_unaffected_takes_preserved":91-len(rows),"verdict":"PASS_TIMING_ONLY" if not unresolved else "BLOCKED",
