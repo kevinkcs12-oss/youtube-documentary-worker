@@ -1,0 +1,20 @@
+{
+  "files": {
+    "Pilot_01_Full_Film_Perceptual_Hotspots_v1.0.csv": "ebcd8584f59d28fc214ac7335cb80c828825021a25a56c28d0ce6a3a93f8319a",
+    "Pilot_01_Full_Film_Perceptual_Review_Card_v1.0.md": "7d9e3077d3e4dc7f9670c80b376a8db56fa60f75d7a5656ea935453174c970c0",
+    "Pilot_01_Full_Film_Perceptual_Review_Scorecard_v1.0.csv": "3d65055ec97a7c07c543a826ef98be49047c96f783e7b4b4d0a20a4fd3f5bb57"
+  },
+  "film_sha256": "8076d795c25f2fef0f377fd4abacaa72ad3a22b6f7dddb0cedfb47c7b413c580",
+  "final_master_authorized": false,
+  "final_spoken_cue_end": "00:09:56.960",
+  "human_decision": "OPEN",
+  "machine_rate_signal_count": 36,
+  "named_pronunciation_take_count": 3,
+  "publishable": false,
+  "release_authorized": false,
+  "schema": "pilot-01-perceptual-review-companion-v1.0",
+  "take_count": 91,
+  "timeline_seconds": 597.76,
+  "upload_authorized": false,
+  "verdict": "PASS_REVIEW_COMPANION_ONLY"
+}

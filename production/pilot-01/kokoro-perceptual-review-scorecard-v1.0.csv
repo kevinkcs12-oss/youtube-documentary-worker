@@ -1,0 +1,92 @@
+take_id,chapter,start,end,text,review_priority,machine_signal_only,pronunciation_check,human_verdict,severity,issue_type,notes,repair_authorized
+T001,The feeling of sameness,00:00:00.000,00:00:07.000,Walk through almost any new part of a city and something feels strangely familiar.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=181.6_WPM,,,,,,NO
+T002,The feeling of sameness,00:00:07.000,00:00:11.161,The cars arrive in the same narrow palette.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=223.2_WPM,,,,,,NO
+T003,The feeling of sameness,00:00:11.161,00:00:16.000,"The cafés share pale wood, black metal, and green.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=179.4_WPM,,,,,,NO
+T004,The feeling of sameness,00:00:16.000,00:00:23.000,"Logos use clean letters. New apartment blocks repeat grids of glass, concrete, and muted cladding.",CONTINUOUS_PASS,,,,,,,NO
+T005,The feeling of sameness,00:00:23.000,00:00:30.000,It can feel as if all of it came from one invisible catalog.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=204.3_WPM,,,,,,NO
+T006,The feeling of sameness,00:00:30.000,00:00:34.087,But the world does not literally look the same.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=224.6_WPM,,,,,,NO
+T007,The feeling of sameness,00:00:34.087,00:00:38.000,Tokyo is not Lagos. Geneva is not Mexico City.,CONTINUOUS_PASS,,,,,,,NO
+T008,The feeling of sameness,00:00:38.000,00:00:41.478,A family shop is not a global franchise.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=189.9_WPM,,,,,,NO
+T009,The feeling of sameness,00:00:41.478,00:00:46.000,The past was never one continuous carnival of color.,CONTINUOUS_PASS,,,,,,,NO
+T010,The feeling of sameness,00:00:46.000,00:00:54.000,This is not a film about a secret committee that deleted personality.,CONTINUOUS_PASS,,,,,,,NO
+T011,The feeling of sameness,00:00:54.000,00:01:04.000,"Different industries, facing different problems, have begun solving them with the same visual vocabulary.",CONTINUOUS_PASS,,,,,,,NO
+T012,What the evidence can—and cannot—show,00:01:04.000,00:01:11.500,Color gives us one measurable piece of the pattern.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=175.4_WPM,,,,,,NO
+T013,What the evidence can—and cannot—show,00:01:11.500,00:01:21.000,"One museum collection grew grayer over time, while brown and yellow declined.",CONTINUOUS_PASS,,,,,,,NO
+T014,What the evidence can—and cannot—show,00:01:21.000,00:01:27.000,But the researchers warn: the collection is not a random sample of the world.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=190.7_WPM,,,,,,NO
+T015,What the evidence can—and cannot—show,00:01:27.000,00:01:36.000,They also point to a material shift: from wood toward manufactured surfaces.,CONTINUOUS_PASS,,,,,,,NO
+T016,What the evidence can—and cannot—show,00:01:36.000,00:01:41.000,The car park makes the pattern easier to see.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=224.1_WPM,,,,,,NO
+T017,What the evidence can—and cannot—show,00:01:41.000,00:01:51.000,"In 2025: white 29%, black 23%, gray 22%, and silver 7%.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=83.4_WPM,,,,,,NO
+T018,What the evidence can—and cannot—show,00:01:51.000,00:02:02.000,"White, black, and gray together: 74%. Add silver, and the grayscale share reaches 81%.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=115.2_WPM,,,,,,NO
+T019,What the evidence can—and cannot—show,00:02:02.000,00:02:09.000,"In Europe, gray alone led at 26%. That proves dominance.",CONTINUOUS_PASS,,,,,,,NO
+T020,What the evidence can—and cannot—show,00:02:09.000,00:02:13.535,It does not prove why. Several forces may contribute.,CONTINUOUS_PASS,,,,,,,NO
+T021,What the evidence can—and cannot—show,00:02:13.535,00:02:17.000,The report does not isolate or rank them.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=215.8_WPM,,,,,,NO
+T022,What the evidence can—and cannot—show,00:02:17.000,00:02:22.000,The safest color is the one the fewest people reject.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=182.1_WPM,,,,,,NO
+T023,Why familiarity feels easier,00:02:22.547,00:02:26.855,Avoiding rejection rather than earning love appears beyond cars.,CONTINUOUS_PASS,,,,,,,NO
+T024,Why familiarity feels easier,00:02:27.863,00:02:32.983,Psychologists call this processing fluency: the ease of making sense of something.,CONTINUOUS_PASS,,,,,,,NO
+T025,Why familiarity feels easier,00:02:32.983,00:02:41.350,"Research suggests familiar forms, clear contrast, and repeated exposure may ease processing and influence preference.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=112.4_WPM,,,,,,NO
+T026,Why familiarity feels easier,00:02:45.323,00:02:48.576,This does not mean simple is objectively beautiful.,CONTINUOUS_PASS,,,,,,,NO
+T027,Why familiarity feels easier,00:02:48.576,00:02:53.675,Complexity creates interest and identity; familiarity can become boredom.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=114.3_WPM,,,,,,NO
+T028,Why familiarity feels easier,00:02:55.271,00:02:59.501,"But in a crowded marketplace, immediate comprehension has value.",CONTINUOUS_PASS,,,,,,,NO
+T029,Why familiarity feels easier,00:03:00.592,00:03:04.720,A product has seconds to explain itself on a shelf.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=211.7_WPM,,,,,,NO
+T030,Why familiarity feels easier,00:03:04.720,00:03:10.090,"A building proposal must survive clients, planners, engineers, budgets, and neighbors.",CONTINUOUS_PASS,,,,,,,NO
+T031,Why familiarity feels easier,00:03:10.090,00:03:15.340,A brand must remain recognizable on a billboard and inside a tiny icon.,CONTINUOUS_PASS,,,,,,,NO
+T032,Why familiarity feels easier,00:03:17.919,00:03:23.815,"At every stage, unfamiliarity creates a question. A question creates friction.",CONTINUOUS_PASS,,,,,,,NO
+T033,Why familiarity feels easier,00:03:25.621,00:03:28.603,And friction needs someone willing to defend it.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=187.8_WPM,,,,,,NO
+T034,Interfaces and identities,00:03:30.640,00:03:34.445,Nowhere is low friction more visible than on a screen.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=183.1_WPM,,,,,,NO
+T035,Interfaces and identities,00:03:35.656,00:03:48.729,"Jakob Nielsen summarized a basic rule of internet behavior: users spend most of their time on other websites, so they prefer a new site to work like the sites they already know.",RECHECK_AFTER_CONTINUOUS_PASS,named_pronunciation,Nielsen,,,,,NO
+T036,Interfaces and identities,00:03:50.569,00:03:55.483,That is good usability. A shopping basket should not become a puzzle.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=173.1_WPM,,,,,,NO
+T037,Interfaces and identities,00:03:55.483,00:04:01.618,Navigation needs no tutorial. Familiar patterns can improve digital speed and accessibility.,CONTINUOUS_PASS,,,,,,,NO
+T038,Interfaces and identities,00:04:03.120,00:04:08.000,But successful conventions spread beyond function. The same rounded cards.,CONTINUOUS_PASS,,,,,,,NO
+T039,Interfaces and identities,00:04:08.000,00:04:11.722,The same generous white space. The same centered headline.,CONTINUOUS_PASS,,,,,,,NO
+T040,Interfaces and identities,00:04:11.722,00:04:15.473,The same soft gradient. The same friendly geometric type.,CONTINUOUS_PASS,,,,,,,NO
+T041,Interfaces and identities,00:04:16.979,00:04:23.940,"Logos face similar pressure: stay clear on phones, watches, browser tabs, packaging, video, and signs.",CONTINUOUS_PASS,,,,,,,NO
+T042,Interfaces and identities,00:04:23.940,00:04:28.912,Responsive identity systems often remove detail as space becomes smaller.,CONTINUOUS_PASS,,,,,,,NO
+T043,Interfaces and identities,00:04:30.597,00:04:43.759,"Each individual simplification may be rational. The convergence appears one decision later—when every company reaches for the same solution to signal that it is modern, trustworthy, and easy to use.",CONTINUOUS_PASS,,,,,,,NO
+T044,Architecture at scale,00:04:45.800,00:04:52.716,Physical space follows a similar logic. Early McDonald’s restaurants were designed to attract attention.,CONTINUOUS_PASS,,,,,,,NO
+T045,Architecture at scale,00:04:52.716,00:04:59.476,McDonald's history calls its 1953 red-and-white tiled building an attention-getting design.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=101.7_WPM,,,,,,NO
+T046,Architecture at scale,00:04:59.476,00:05:04.124,The arches were not merely a logo placed on the building.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=207.6_WPM,,,,,,NO
+T047,Architecture at scale,00:05:04.124,00:05:15.955,"They were part of the building. In the late nineteen-sixties, that design gave way to the Mansard roof, which could be repeated and remodeled across a growing system.",CONTINUOUS_PASS,,,,,,,NO
+T048,Architecture at scale,00:05:17.195,00:05:21.843,The lesson is not that every chain became a gray box.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=202.5_WPM,,,,,,NO
+T049,Architecture at scale,00:05:21.843,00:05:28.496,McDonald's highlights newer locations using existing architecture and distinctive local features.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=105.0_WPM,,,,,,NO
+T050,Architecture at scale,00:05:28.576,00:05:33.224,The lesson is that scale changes what a design must do.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=218.3_WPM,,,,,,NO
+T051,Architecture at scale,00:05:34.465,00:05:38.267,A one-off building can be inseparable from its site.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=208.4_WPM,,,,,,NO
+T052,Architecture at scale,00:05:38.267,00:05:45.519,"A repeatable system must adapt across plots, rules, contractors, climates, maintenance, and customer expectations.",CONTINUOUS_PASS,,,,,,,NO
+T053,Architecture at scale,00:05:46.046,00:05:50.916,"The larger the network, the more valuable the adaptable container becomes.",CONTINUOUS_PASS,,,,,,,NO
+T054,Architecture at scale,00:05:51.366,00:05:59.036,"Identity then migrates into controlled layers: signage, furniture, packaging, lighting, menu screens, and the app.",CONTINUOUS_PASS,,,,,,,NO
+T055,Architecture at scale,00:05:59.735,00:06:03.960,The building becomes quieter so the system can travel further.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=173.0_WPM,,,,,,NO
+T056,The feedback loop,00:06:05.560,00:06:11.053,"At this point, sameness can emerge without anyone choosing sameness as the goal.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=171.5_WPM,,,,,,NO
+T057,The feedback loop,00:06:11.639,00:06:14.719,One developer copies a layout that sold quickly.,CONTINUOUS_PASS,,,,,,,NO
+T058,The feedback loop,00:06:14.719,00:06:19.773,A designer chooses familiar type. A café recreates a photogenic interior.,CONTINUOUS_PASS,,,,,,,NO
+T059,The feedback loop,00:06:19.773,00:06:23.472,One platform recommends work similar to what held attention.,CONTINUOUS_PASS,,,,,,,NO
+T060,The feedback loop,00:06:23.472,00:06:27.725,Different actors can reinforce the same pattern without coordinating.,CONTINUOUS_PASS,,,,,,,NO
+T061,The feedback loop,00:06:27.725,00:06:32.145,No single choice transforms culture. Each becomes evidence for the next.,CONTINUOUS_PASS,,,,,,,NO
+T062,The feedback loop,00:06:32.145,00:06:40.300,"Spotify researchers describe recommendation systems balancing familiarity, similarity, and discovery.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=84.7_WPM;named_pronunciation,Spotify,,,,,NO
+T063,The feedback loop,00:06:40.300,00:06:45.170,The platform does not maximize sameness; it balances competing objectives.,CONTINUOUS_PASS,,,,,,,NO
+T064,The feedback loop,00:06:45.170,00:07:01.689,Algorithms did not invent visual convergence. They can accelerate the loop: familiar things are easier to recognize; recognition eases choice; choices are easier to measure; and what is measured is easier to imitate.,CONTINUOUS_PASS,,,,,,,NO
+T065,The feedback loop,00:07:01.689,00:07:04.525,"This is our model, not Spotify's finding.",RECHECK_AFTER_CONTINUOUS_PASS,named_pronunciation,Spotify,,,,,NO
+T066,The feedback loop,00:07:05.891,00:07:11.871,The conspiracy is not a room full of designers agreeing to make everything identical.,CONTINUOUS_PASS,,,,,,,NO
+T067,The feedback loop,00:07:13.045,00:07:18.960,It is a feedback loop in which nobody wants to be the expensive exception.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=192.2_WPM,,,,,,NO
+T068,The exceptions that matter,00:07:20.560,00:07:23.940,But a useful theory must explain its limits.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=195.0_WPM,,,,,,NO
+T069,The exceptions that matter,00:07:24.790,00:07:31.189,"If scale automatically destroyed difference, every global brand would look identical in every city.",CONTINUOUS_PASS,,,,,,,NO
+T070,The exceptions that matter,00:07:31.189,00:07:40.027,"They do not. If digital legibility required one style, every successful interface would use the same colors and shapes.",CONTINUOUS_PASS,,,,,,,NO
+T071,The exceptions that matter,00:07:40.027,00:07:49.174,"They do not. If neutral cars were the inevitable result of economics, expressive models would never sell in bright colors.",CONTINUOUS_PASS,,,,,,,NO
+T072,The exceptions that matter,00:07:49.174,00:07:53.957,They do. Constraints narrow possibilities. They do not eliminate choice.,CONTINUOUS_PASS,,,,,,,NO
+T073,The exceptions that matter,00:07:54.806,00:08:00.299,"And once a visual language becomes too common, difference can recover economic value.",CONTINUOUS_PASS,,,,,,,NO
+T074,The exceptions that matter,00:08:01.149,00:08:04.979,A colorful car becomes memorable because the road is neutral.,CONTINUOUS_PASS,,,,,,,NO
+T075,The exceptions that matter,00:08:04.979,00:08:08.945,An ornate wordmark stands out because competitors use plain type.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=178.4_WPM,,,,,,NO
+T076,The exceptions that matter,00:08:08.945,00:08:15.937,A restaurant filled with local materials becomes a destination because the standardized alternative is everywhere.,CONTINUOUS_PASS,,,,,,,NO
+T077,The exceptions that matter,00:08:16.787,00:08:21.970,This is why design moves in cycles. A solution spreads because it works.,CONTINUOUS_PASS,,,,,,,NO
+T078,The exceptions that matter,00:08:21.970,00:08:25.255,It becomes a convention because it is copied.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=183.8_WPM,,,,,,NO
+T079,The exceptions that matter,00:08:25.255,00:08:30.730,Then the convention creates an opportunity for someone willing to break it.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=173.0_WPM,,,,,,NO
+T080,The exceptions that matter,00:08:31.560,00:08:34.960,Sameness contains the conditions for its own reversal.,CONTINUOUS_PASS,,,,,,,NO
+T081,A more defensible answer,00:08:36.560,00:08:39.685,So why does everything look the same now?,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=216.3_WPM,,,,,,NO
+T082,A more defensible answer,00:08:39.685,00:08:50.800,"Not because everything is the same. Across these cases, design happens inside systems rewarding legibility, familiarity, adaptability, and measurable performance.",RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=114.3_WPM,,,,,,NO
+T083,A more defensible answer,00:08:51.384,00:08:59.660,"Those pressures are real. They can help products function, interfaces remain usable, buildings get approved, and brands operate at scale.",CONTINUOUS_PASS,,,,,,,NO
+T084,A more defensible answer,00:09:00.244,00:09:05.458,The problem begins when a useful constraint is mistaken for an aesthetic commandment.,CONTINUOUS_PASS,,,,,,,NO
+T085,A more defensible answer,00:09:05.458,00:09:21.932,When “easy to recognize” becomes “must look familiar.” When “adaptable” becomes “without local character.” When “low risk” becomes “without a point of view.” The world does not have to become identical for difference to become harder to defend.,CONTINUOUS_PASS,,,,,,,NO
+T086,A more defensible answer,00:09:22.517,00:09:26.800,And perhaps that is the hidden cost of frictionless design.,RECHECK_AFTER_CONTINUOUS_PASS,active_span_rate=177.3_WPM,,,,,,NO
+T087,A more defensible answer,00:09:26.800,00:09:30.793,We notice fewer bad surprises—but also fewer good ones.,CONTINUOUS_PASS,,,,,,,NO
+T088,A more defensible answer,00:09:31.377,00:09:37.437,"Personality requires an argument. It may cost more, divide opinion, age badly, or fail.",CONTINUOUS_PASS,,,,,,,NO
+T089,A more defensible answer,00:09:37.437,00:09:44.619,Many distinctive things began as choices that could not be defended by saying: everyone else is doing it.,CONTINUOUS_PASS,,,,,,,NO
+T090,A more defensible answer,00:09:45.203,00:09:51.673,"Sameness is rarely imposed all at once. It accumulates, one reasonable decision at a time.",CONTINUOUS_PASS,,,,,,,NO
+T091,A more defensible answer,00:09:51.994,00:09:56.960,And difference returns the same way: one defensible exception at a time.,CONTINUOUS_PASS,,,,,,,NO

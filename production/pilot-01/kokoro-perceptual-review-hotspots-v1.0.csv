@@ -1,0 +1,39 @@
+take_id,start,end,reason,text
+T001,00:00:00.000,00:00:07.000,"active-span rate 181.6 WPM; listen, do not auto-fail",Walk through almost any new part of a city and something feels strangely familiar.
+T002,00:00:07.000,00:00:11.161,"active-span rate 223.2 WPM; listen, do not auto-fail",The cars arrive in the same narrow palette.
+T003,00:00:11.161,00:00:16.000,"active-span rate 179.4 WPM; listen, do not auto-fail","The cafés share pale wood, black metal, and green."
+T005,00:00:23.000,00:00:30.000,"active-span rate 204.3 WPM; listen, do not auto-fail",It can feel as if all of it came from one invisible catalog.
+T006,00:00:30.000,00:00:34.087,"active-span rate 224.6 WPM; listen, do not auto-fail",But the world does not literally look the same.
+T008,00:00:38.000,00:00:41.478,"active-span rate 189.9 WPM; listen, do not auto-fail",A family shop is not a global franchise.
+T012,00:01:04.000,00:01:11.500,"active-span rate 175.4 WPM; listen, do not auto-fail",Color gives us one measurable piece of the pattern.
+T014,00:01:21.000,00:01:27.000,"active-span rate 190.7 WPM; listen, do not auto-fail",But the researchers warn: the collection is not a random sample of the world.
+T016,00:01:36.000,00:01:41.000,"active-span rate 224.1 WPM; listen, do not auto-fail",The car park makes the pattern easier to see.
+T017,00:01:41.000,00:01:51.000,"active-span rate 83.4 WPM; listen, do not auto-fail","In 2025: white 29%, black 23%, gray 22%, and silver 7%."
+T018,00:01:51.000,00:02:02.000,"active-span rate 115.2 WPM; listen, do not auto-fail","White, black, and gray together: 74%. Add silver, and the grayscale share reaches 81%."
+T021,00:02:13.535,00:02:17.000,"active-span rate 215.8 WPM; listen, do not auto-fail",The report does not isolate or rank them.
+T022,00:02:17.000,00:02:22.000,"active-span rate 182.1 WPM; listen, do not auto-fail",The safest color is the one the fewest people reject.
+T025,00:02:32.983,00:02:41.350,"active-span rate 112.4 WPM; listen, do not auto-fail","Research suggests familiar forms, clear contrast, and repeated exposure may ease processing and influence preference."
+T027,00:02:48.576,00:02:53.675,"active-span rate 114.3 WPM; listen, do not auto-fail",Complexity creates interest and identity; familiarity can become boredom.
+T029,00:03:00.592,00:03:04.720,"active-span rate 211.7 WPM; listen, do not auto-fail",A product has seconds to explain itself on a shelf.
+T033,00:03:25.621,00:03:28.603,"active-span rate 187.8 WPM; listen, do not auto-fail",And friction needs someone willing to defend it.
+T034,00:03:30.640,00:03:34.445,"active-span rate 183.1 WPM; listen, do not auto-fail",Nowhere is low friction more visible than on a screen.
+T035,00:03:35.656,00:03:48.729,pronunciation: Nielsen,"Jakob Nielsen summarized a basic rule of internet behavior: users spend most of their time on other websites, so they prefer a new site to work like the sites they already know."
+T036,00:03:50.569,00:03:55.483,"active-span rate 173.1 WPM; listen, do not auto-fail",That is good usability. A shopping basket should not become a puzzle.
+T045,00:04:52.716,00:04:59.476,"active-span rate 101.7 WPM; listen, do not auto-fail",McDonald's history calls its 1953 red-and-white tiled building an attention-getting design.
+T046,00:04:59.476,00:05:04.124,"active-span rate 207.6 WPM; listen, do not auto-fail",The arches were not merely a logo placed on the building.
+T048,00:05:17.195,00:05:21.843,"active-span rate 202.5 WPM; listen, do not auto-fail",The lesson is not that every chain became a gray box.
+T049,00:05:21.843,00:05:28.496,"active-span rate 105.0 WPM; listen, do not auto-fail",McDonald's highlights newer locations using existing architecture and distinctive local features.
+T050,00:05:28.576,00:05:33.224,"active-span rate 218.3 WPM; listen, do not auto-fail",The lesson is that scale changes what a design must do.
+T051,00:05:34.465,00:05:38.267,"active-span rate 208.4 WPM; listen, do not auto-fail",A one-off building can be inseparable from its site.
+T055,00:05:59.735,00:06:03.960,"active-span rate 173.0 WPM; listen, do not auto-fail",The building becomes quieter so the system can travel further.
+T056,00:06:05.560,00:06:11.053,"active-span rate 171.5 WPM; listen, do not auto-fail","At this point, sameness can emerge without anyone choosing sameness as the goal."
+T062,00:06:32.145,00:06:40.300,"active-span rate 84.7 WPM; listen, do not auto-fail; pronunciation: Spotify","Spotify researchers describe recommendation systems balancing familiarity, similarity, and discovery."
+T065,00:07:01.689,00:07:04.525,pronunciation: Spotify,"This is our model, not Spotify's finding."
+T067,00:07:13.045,00:07:18.960,"active-span rate 192.2 WPM; listen, do not auto-fail",It is a feedback loop in which nobody wants to be the expensive exception.
+T068,00:07:20.560,00:07:23.940,"active-span rate 195.0 WPM; listen, do not auto-fail",But a useful theory must explain its limits.
+T075,00:08:04.979,00:08:08.945,"active-span rate 178.4 WPM; listen, do not auto-fail",An ornate wordmark stands out because competitors use plain type.
+T078,00:08:21.970,00:08:25.255,"active-span rate 183.8 WPM; listen, do not auto-fail",It becomes a convention because it is copied.
+T079,00:08:25.255,00:08:30.730,"active-span rate 173.0 WPM; listen, do not auto-fail",Then the convention creates an opportunity for someone willing to break it.
+T081,00:08:36.560,00:08:39.685,"active-span rate 216.3 WPM; listen, do not auto-fail",So why does everything look the same now?
+T082,00:08:39.685,00:08:50.800,"active-span rate 114.3 WPM; listen, do not auto-fail","Not because everything is the same. Across these cases, design happens inside systems rewarding legibility, familiarity, adaptability, and measurable performance."
+T086,00:09:22.517,00:09:26.800,"active-span rate 177.3 WPM; listen, do not auto-fail",And perhaps that is the hidden cost of frictionless design.
