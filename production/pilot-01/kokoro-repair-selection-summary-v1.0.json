@@ -1,0 +1,31 @@
+{
+  "schema": "pilot-01-kokoro-repair-selection-v1.0",
+  "voice": "am_michael",
+  "affected_takes": 17,
+  "surgical_rewrites": 14,
+  "editorial_boundary_transfers": 3,
+  "timing_pass_count": 17,
+  "timing_fail_count": 0,
+  "unaffected_takes_preserved": 74,
+  "global_speed_change": false,
+  "max_speed": 1.15,
+  "verdict": "PASS_REPAIR_SELECTION_ONLY",
+  "intake_passed": false,
+  "conform_passed": false,
+  "publishable": false,
+  "release_authorized": false,
+  "micro_transfers": {
+    "T061": {
+      "borrow_from": "T062",
+      "seconds": 0.043
+    },
+    "T074": {
+      "borrow_from": "T075",
+      "seconds": 0.056
+    },
+    "T088": {
+      "borrow_from": "T089",
+      "seconds": 0.066
+    }
+  }
+}
