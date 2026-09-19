@@ -1,0 +1,12 @@
+{
+  "schema": "pilot-01-perceptual-review-decision-v1.0",
+  "film_sha256": "8076d795c25f2fef0f377fd4abacaa72ad3a22b6f7dddb0cedfb47c7b413c580",
+  "reviewer_id": "",
+  "review_completed_at": "",
+  "continuous_watch_completed": false,
+  "normal_speed": false,
+  "hotspots_opened_after_first_pass": false,
+  "overall_decision": "",
+  "systemic_failure_confirmed": false,
+  "attestation": ""
+}
