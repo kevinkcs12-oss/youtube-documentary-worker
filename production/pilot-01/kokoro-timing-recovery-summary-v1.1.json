@@ -1,0 +1,54 @@
+{
+  "schema": "pilot-01-kokoro-timing-recovery-map-v1.1",
+  "voice": "am_michael",
+  "takes": 91,
+  "film_seconds": 597.76,
+  "headroom_seconds": 0.1,
+  "activity_detection": {
+    "frame_ms": 10,
+    "threshold_dbfs": -45.0,
+    "keep_head_seconds": 0.08,
+    "keep_tail_seconds": 0.12
+  },
+  "timeline_silence_total": 48.428,
+  "timeline_silence_conservatively_recoverable": 11.157,
+  "remedy_counts": {
+    "SAFE_TRIM_PLUS_UNIQUE_SILENCE_AT_1_00": 58,
+    "SAFE_TRIM_PLUS_UNIQUE_SILENCE_AT_ADAPTIVE_SPEED": 16,
+    "SURGICAL_TEXT_OR_EDITORIAL_REVIEW": 17
+  },
+  "residual_review_count": 17,
+  "residual_review_takes": [
+    "T023",
+    "T025",
+    "T027",
+    "T037",
+    "T041",
+    "T045",
+    "T049",
+    "T052",
+    "T058",
+    "T061",
+    "T062",
+    "T063",
+    "T064",
+    "T065",
+    "T074",
+    "T082",
+    "T088"
+  ],
+  "residual_review_seconds_total": 11.018,
+  "limitations": [
+    "Intra-chapter silence reserves are conservative planning rules, not editorial approval.",
+    "Chapter-boundary gaps and sub-200ms micro-pauses are fully locked.",
+    "No audio was edited, stretched, regenerated, conformed, mixed, or approved for release."
+  ],
+  "source_hashes": {
+    "script": "33e31d23fdcfb36e99f417c94d21ef0d386963f1df230cd40aa017e119a3d9d2",
+    "raw_manifest": "05ba82f3745065e10f379819a30708802c39419e7c4082a133f5b79de39f2669",
+    "adaptive_manifest": "9b07e1979a3ed655469501cc8803a4194f7b4db7a5a80a5917afe21f9f6099e7",
+    "evidence_overlay_map": "666d626383ddec561b3dfd089c17f626e47c7da4f38ab9c0f5275c3ea0c95aaa",
+    "chapter_transition_map": "a2745de80899ab27714fc29126db037aa1ec989027d2f4c2852d10c6d3318bf6"
+  },
+  "protected_visual_intervals": 26
+}

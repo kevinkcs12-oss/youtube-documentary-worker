@@ -76,9 +76,12 @@ def wav_activity(path: Path):
         "safe_duration": (n / rate) - keep_start - keep_end,
     }
 
-def recoverable_gap(gap: float, crosses_chapter: bool):
+def recoverable_gap(gap: float, crosses_chapter: bool, start: float, end: float, protected):
     if crosses_chapter or gap < 0.200:
         return 0.0, gap, "LOCK_CHAPTER_OR_MICRO_PAUSE"
+    collisions = [p for p in protected if start < p[1] and end > p[0]]
+    if collisions:
+        return 0.0, gap, "LOCK_PROTECTED_VISUAL"
     reserve = 0.250 if gap < 0.800 else (0.450 if gap < 1.500 else 0.750)
     return max(0.0, gap - reserve), min(gap, reserve), "PROVISIONAL_INTRA_CHAPTER"
 
@@ -110,9 +113,16 @@ def main():
     ap.add_argument("--script", type=Path, required=True)
     ap.add_argument("--raw-dir", type=Path, required=True)
     ap.add_argument("--adaptive-dir", type=Path, required=True)
+    ap.add_argument("--evidence-overlay-map", type=Path, required=True)
+    ap.add_argument("--chapter-transition-map", type=Path, required=True)
     ap.add_argument("--out-dir", type=Path, required=True)
     args = ap.parse_args()
     args.out_dir.mkdir(parents=True, exist_ok=True)
+    protected=[]
+    with args.evidence_overlay_map.open(newline="",encoding="utf-8") as f:
+        for x in csv.DictReader(f): protected.append((float(x["start_s"]),float(x["end_s"]),"evidence:"+x["kind"]))
+    with args.chapter_transition_map.open(newline="",encoding="utf-8") as f:
+        for x in csv.DictReader(f): protected.append((float(x["bridge_start"]),float(x["bridge_end"]),"chapter_bridge:"+x["chapter_id"]))
     rows = parse_script(args.script)
     raw_manifest = {x["take"]: x for x in json.loads((args.raw_dir / "manifest.json").read_text())}
     adaptive_manifest = {x["take"]: x for x in json.loads((args.adaptive_dir / "manifest.json").read_text())}
@@ -137,9 +147,10 @@ def main():
     gaps = []
     for i in range(len(rows) - 1):
         gap = rows[i + 1]["start"] - rows[i]["end"]
-        rec, reserve, rule = recoverable_gap(gap, rows[i]["chapter"] != rows[i + 1]["chapter"])
+        rec, reserve, rule = recoverable_gap(gap, rows[i]["chapter"] != rows[i + 1]["chapter"],rows[i]["end"],rows[i+1]["start"],protected)
+        collisions=";".join(p[2] for p in protected if rows[i]["end"] < p[1] and rows[i+1]["start"] > p[0])
         gaps.append({"left": rows[i]["take"], "right": rows[i + 1]["take"], "gap": gap,
-                     "recoverable": rec, "reserved": reserve, "rule": rule})
+                     "recoverable": rec, "reserved": reserve, "rule": rule,"protected_collision":collisions})
     gap_available = [g["recoverable"] for g in gaps]
     allocate(rows, gap_available, "raw_safe_demand", "raw")
     # Adaptive pass reuses only silence that the natural-speed-first phase did not already consume.
@@ -166,19 +177,19 @@ def main():
         "adaptive_from_before","adaptive_from_after","adaptive_residual","recommended_remedy","residual_seconds",
         "raw_sha256","adaptive_sha256","text"
     ]
-    with (args.out_dir / "Pilot_01_Kokoro_Timing_Recovery_Map_v1.0.csv").open("w", newline="", encoding="utf-8") as f:
+    with (args.out_dir / "Pilot_01_Kokoro_Timing_Recovery_Map_v1.1.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore"); w.writeheader()
         for r in rows:
             w.writerow({k: (round(v, 6) if isinstance(v, float) else v) for k, v in r.items()})
-    with (args.out_dir / "Pilot_01_Kokoro_Neighboring_Silence_Map_v1.0.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["left","right","gap","recoverable","reserved","rule","remaining_unallocated"]); w.writeheader()
+    with (args.out_dir / "Pilot_01_Kokoro_Neighboring_Silence_Map_v1.1.csv").open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["left","right","gap","recoverable","reserved","rule","protected_collision","remaining_unallocated"]); w.writeheader()
         for g, remain in zip(gaps, gap_available):
             w.writerow({**{k:(round(v,6) if isinstance(v,float) else v) for k,v in g.items()}, "remaining_unallocated":round(remain,6)})
     counts = {}
     for r in rows: counts[r["recommended_remedy"]] = counts.get(r["recommended_remedy"], 0) + 1
     unresolved = [r for r in rows if r["residual_seconds"] > 1e-6]
     summary = {
-        "schema":"pilot-01-kokoro-timing-recovery-map-v1.0", "voice":"am_michael", "takes":91,
+        "schema":"pilot-01-kokoro-timing-recovery-map-v1.1", "voice":"am_michael", "takes":91,
         "film_seconds":FILM_SECONDS, "headroom_seconds":HEADROOM,
         "activity_detection":{"frame_ms":FRAME_MS,"threshold_dbfs":ACTIVE_DBFS,"keep_head_seconds":KEEP_HEAD,"keep_tail_seconds":KEEP_TAIL},
         "timeline_silence_total":round(sum(g["gap"] for g in gaps) + rows[0]["start"] + (FILM_SECONDS-rows[-1]["end"]),6),
@@ -192,9 +203,11 @@ def main():
             "Chapter-boundary gaps and sub-200ms micro-pauses are fully locked.",
             "No audio was edited, stretched, regenerated, conformed, mixed, or approved for release."
         ],
-        "source_hashes":{"script":sha256(args.script),"raw_manifest":sha256(args.raw_dir/'manifest.json'),"adaptive_manifest":sha256(args.adaptive_dir/'manifest.json')}
+        "source_hashes":{"script":sha256(args.script),"raw_manifest":sha256(args.raw_dir/'manifest.json'),"adaptive_manifest":sha256(args.adaptive_dir/'manifest.json')},
+        "protected_visual_intervals":len(protected)
     }
-    (args.out_dir / "Pilot_01_Kokoro_Timing_Recovery_Summary_v1.0.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    summary["source_hashes"].update({"evidence_overlay_map":sha256(args.evidence_overlay_map),"chapter_transition_map":sha256(args.chapter_transition_map)})
+    (args.out_dir / "Pilot_01_Kokoro_Timing_Recovery_Summary_v1.1.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))
 
 if __name__ == "__main__":

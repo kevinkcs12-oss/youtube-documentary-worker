@@ -1,0 +1,46 @@
+name: B01 Kokoro Surgical Regeneration
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/b01_kokoro_surgical_regeneration.py"
+      - ".github/workflows/b01-kokoro-surgical-regeneration.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "kokoro>=0.9.4" soundfile
+      - run: python scripts/b01_kokoro_surgical_regeneration.py
+      - name: Validate affected-only output
+        run: |
+          test "$(find dist/b01-kokoro-surgical-v1.0 -name 'T*.wav' | wc -l)" -eq 14
+          python - <<'PY'
+          import json
+          s=json.load(open('dist/b01-kokoro-surgical-v1.0/summary.json'))
+          assert s['regenerated_count']==14
+          assert s['canonical_unaffected_takes_preserved']==77
+          assert s['global_speed_change'] is False
+          assert s['publishable'] is False and s['release_authorized'] is False and s['conform_authorized'] is False
+          PY
+          cat dist/b01-kokoro-surgical-v1.0/summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: b01-kokoro-surgical-regeneration-${{ github.run_id }}
+          path: dist/b01-kokoro-surgical-v1.0/
+          retention-days: 7
+          if-no-files-found: error
